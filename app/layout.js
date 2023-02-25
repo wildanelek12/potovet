@@ -7,6 +7,7 @@ import Image from 'next/image'
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
+  display: "fallback", // <--
 })
 
 
@@ -19,14 +20,21 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
-        <nav className={`${montserrat.variable} font-sans py-6 px-12 shadow-md flex items-center`}>
+      <body className={`${montserrat.variable}  font-sans`}>
+        <nav className={`${montserrat.variable} font-sans py-6 px-16 shadow-md flex items-center bg-primary text-white`}>
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              width={1200}
+              height={1200}
 
-          <Link href={"/a"} className="font-semibold text-emerald-700 text-xl w-32 tracking-wider">LIOKEE </Link>
+              className="w-32 object-contain self-center mr-8"
+            />
+          </Link>
           <div className='flex-1 flex-row space-x-12'>
-            <Link href={"/a "} className="text-sm">Home</Link>
-            <Link href={"/a"} className="text-sm">Pricing</Link>
-            <Link href={"/a"} className="text-sm">About</Link>
+            <Link href={"/project "} className="text-base font-medium">Home</Link>
+            <Link href={"/project"} className="text-base font-medium">Pricing</Link>
+            <Link href={"/project"} className="text-base font-medium">About</Link>
           </div>
           <div className='flex flex-row space-x-3'>
             <Image
@@ -37,10 +45,12 @@ export default function RootLayout({ children }) {
 
               height={32}
             />
-            <button className='bg-emerald-700 text-white px-4 py-2 text-sm font-medium rounded-md '>Logout</button>
+            <button className='bg-secondary text-white px-4 py-2 text-sm font-medium rounded-md '>Logout</button>
           </div>
         </nav>
-        {children}
+        <div >
+          {children}
+        </div>
       </body>
     </html >
   )
