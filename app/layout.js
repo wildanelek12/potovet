@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className={`${montserrat.variable}  font-sans`}>
-        <nav className={`${montserrat.variable} font-sans py-6 px-16 shadow-md flex items-center bg-primary text-white`}>
+        <nav className={`${montserrat.variable} font-sans py-6 px-16 shadow-md flex items-center bg-white text-white`}>
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -32,9 +32,9 @@ export default function RootLayout({ children }) {
             />
           </Link>
           <div className='flex-1 flex-row space-x-12'>
-            <Link href={"/project "} className="text-base font-medium">Home</Link>
-            <Link href={"/project"} className="text-base font-medium">Pricing</Link>
-            <Link href={"/project"} className="text-base font-medium">About</Link>
+            <Link href={"/project "} className="text-base font-medium text-[#6E6F70]">Home</Link>
+            <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">Pricing</Link>
+            <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">About</Link>
           </div>
           <div className='flex flex-row space-x-3'>
             <Image

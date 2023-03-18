@@ -1,66 +1,59 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 
 import { FaBeer } from 'react-icons/fa';
 import Link from 'next/link';
-
+import Kategori from '@/components/kategori-card';
+import SearchBoxHero from '@/components/search-bar-home';
+import RecentSearch from '@/components/recent-search';
+import FilterProject from '@/components/filter-project';
+import Project from '@/components/project';
 
 export default function Home() {
+
   return (
     <div className=''>
-      <div id='hero' className='flex flex-row bg-primary py-32  '>
-        <div class="basis-1/2 self-center">
-          <div className='flex flex-col justify-center pl-48 pr-32'>
-            <h1 className='text-4xl font-semibold tracking-wider leading-tight text-white'>The <span className='text-secondary font-bold'>Future</span> Of Portofolio Here !</h1>
-            <p className='text-base font-normal mt-6 leading-relaxed text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <button className='w-fit bg-secondary px-4 py-2 text-white font-medium rounded-md shadow-xl mt-4'>Get Started</button>
-          </div>
+      <div id='hero' className='flex flex-col bg-primary py-16 items-center '
+        style={{
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.3)),url("/bg-profile.jpg")`,
+          height: 'fit-content',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+        }}>
+        <div id='category' className='flex flex-row space-x-4'>
+          <Kategori title="Mobile" isActive={true} />
+          <Kategori title="Website" />
+          <Kategori title="Design" />
+          <Kategori title="Paper" />
         </div>
-        <div class="basis-2/3 px-16">
-          <Image
-            src="/hero-2.svg"
-            width={1200}
-            height={1200}
-            className="w-3/4 h-full object-cover self-center "
-          />
+        <p className='text-white text-4xl font-bold text-center tracking-wide mt-12 leading-snug'>
+          Explore the world’s leading <br /> design portfolios
+        </p>
+        <p className='text-white text-lg font-normal text-center tracking-wide mt-8 leading-snug'>
+          Millions of designers and agencies around the world showcase their portfolio work on <br />Dribbble - the home to the world’s best design and creative professionals.
+        </p>
+        <SearchBoxHero className="mt-4" />
+        <div className='flex flex-row mt-8 space-x-4  items-center'>
+          <p className='text-white'>Trending Search</p>
+          <RecentSearch title={"Portofolio Page"} />
+          <RecentSearch title={"Landing Page"} />
+          <RecentSearch title={"Mobile Card"} />
+          <RecentSearch title={"Mobile"} />
         </div>
       </div>
-      <div id='company' className='flex flex-col px-64 py-16'>
-        <p className='text-center font-bold text-2xl'>Trusted by 5,000 Companies Worldwide</p>
-        <div className='grid grid-cols-5 gap-5 mt-8'>
-          <Image
-            src="/gojek.svg"
-            width={200}
-            height={200}
-            className="object-cover self-center fill-blue-500 "
-          />
-          <Image
-            src="/gojek.svg"
-            width={200}
-            height={200}
-            color={"white"}
-            className="object-cover self-center "
-          />
-          <Image
-            src="/gojek.svg"
-            width={200}
-            height={200}
-            className="object-cover self-center "
-          />
-          <Image
-            src="/gojek.svg"
-            width={200}
-            height={200}
-            className="object-cover self-center "
-          />
-          <Image
-            src="/gojek.svg"
-            width={200}
-            height={200}
-            className="object-cover self-center "
-          />
-
-
+      <div id='company' className='flex flex-col px-32 py-8'>
+        <div className='w-fit'>
+          <FilterProject />
+        </div>
+        <div className='grid grid-cols-5 gap-5 mt-2'>
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
 
         </div>
       </div>
