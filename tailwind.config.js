@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-montserrat)', ...fontFamily.sans],
+        'montserrat': ['var(--font-montserrat)', ...fontFamily.sans],
       },
       colors: {
         'primary': '#0CADB7',

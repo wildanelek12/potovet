@@ -15,7 +15,7 @@ export default function Project() {
                 <p className='font-semibold'>Portofolio Website with elegan color </p>
             </div>
             <div className='flex flex-row mt-2 items-center'>
-                <div class="basis-2/3  flex flex-row items-center">
+                <div className="basis-2/3  flex flex-row items-center">
                     <Image
                         className='rounded-full w-6 h-6'
                         src="https://picsum.photos/id/237/400/400"

@@ -10,8 +10,7 @@ import RecentSearch from '@/components/recent-search';
 import FilterProject from '@/components/filter-project';
 import Project from '@/components/project';
 
-export default function Home() {
-
+export default function Page() {
   return (
     <div className=''>
       <div id='hero' className='flex flex-col bg-primary py-16 items-center '
