@@ -11,7 +11,7 @@ const editorConfiguration = {
         'uploadImage', 'blockQuote', '|',
         'undo', 'redo'
     ],
-    height: '40vh'
+    height: '10000px'
 };
 
 export default function RichTextEditor({ value, onChange, label }) {

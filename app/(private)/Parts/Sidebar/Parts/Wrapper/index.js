@@ -30,7 +30,7 @@ const Wrapper = ({ children }) => {
             variants={sidebar}
             initial={isOpen ? "open" : "closed"}
             animate={isOpen ? "open" : "closed"}
-            className="lg:min-w-[17rem] lg:w-[17rem] w-full h-full lg:static fixed z-50"
+            className="lg:min-w-[14rem] lg:w-[14rem] w-full h-full lg:static fixed z-50"
         >
             <div className="flex flex-col w-[inherit] lg:fixed lg:left-0 h-full bg-white overflow-hidden shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
                 <div className="h-full overflow-auto scrollbar-hide">
