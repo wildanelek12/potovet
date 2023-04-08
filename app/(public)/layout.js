@@ -49,11 +49,7 @@ export default function RootLayout({ children }) {
             {children}
           </RecoilRoot>
         </div>
-        <div >
-          <RecoilRoot>
-            {children}
-          </RecoilRoot>
-        </div>
+
       </body>
     </html>
   )
