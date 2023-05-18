@@ -39,3 +39,16 @@ export const showProjectContent = atom({
     key: 'showProjectContent',
     default: false
 });
+
+export const atomProjectName = atom({
+    key: 'atomProjectName',
+    default: ''
+});
+export const atomProjectImage = atom({
+    key: 'atomProjectImage',
+    default: []
+});
+export const atomDescProblemStatement = atom({
+    key: 'atomDescProblemStatement',
+    default: ''
+});
