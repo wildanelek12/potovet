@@ -6,6 +6,7 @@ import Select from "../../Parts/Select";
 import ProjectCard from "@/components/project-card";
 import { AiOutlineEdit } from "react-icons/ai";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Page() {
   const optionYears = [
@@ -16,14 +17,29 @@ export default function Page() {
     { id: 1, name: "January", unavailable: false },
     { id: 2, name: "February", unavailable: false },
   ];
+
+  const [year, setYear] = useState(optionYears[0]);
+  const [month, setMonth] = useState(optionMonth[0]);
   return (
     <>
       <p className="col-span-12 mt-4">Project List</p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <div className="grid grid-cols-5 gap-x-2">
-          <Select options={optionYears} />
-          <Select options={optionMonth} />
+          <Select
+            options={optionYears}
+            defaultValue={optionYears[0]}
+            selected={year}
+            onChange={(e) => setYear(e)}
+            label={""}
+          />
+          <Select
+            options={optionMonth}
+            defaultValue={optionMonth[0]}
+            selected={month}
+            onChange={(e) => setMonth(e)}
+            label={""}
+          />
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-8">
           <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
