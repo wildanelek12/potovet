@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./app/*.{js,ts,jsx,tsx}",
@@ -10,20 +10,19 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./components/**/**/*.{js,ts,jsx,tsx}",
     "./components/**/**/**/*.{js,ts,jsx,tsx}",
-
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
-
-
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        'montserrat': ['var(--font-montserrat)', ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       colors: {
-        'primary': '#0CADB7',
-        'secondary': '#FE7263'
+        primary: "#0CADB7",
+        secondary: "#FE7263",
       },
     },
   },
   plugins: [],
-}
+};

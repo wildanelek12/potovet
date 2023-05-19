@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Card from "../../Parts/Card";
-import RichTextEditor from "../../Parts/RichTextEditor";
-import FileInput from "../../Parts/FileInput";
-import Input from "../../Parts/Input";
+import Card from "../../../Parts/Card";
+import RichTextEditor from "../../../Parts/RichTextEditor";
+import FileInput from "../../../Parts/FileInput";
+import Input from "../../../Parts/Input";
 import Button from "@/components/Button";
 import { list } from "postcss";
-import ProjectOverview from "./project-overview/form";
+import ProjectOverview from "../../add-project/project-overview/form";
 
 export default function Page() {
   const defaultProblemStatement =
@@ -22,14 +22,14 @@ export default function Page() {
     defaultRolesAndResponsibilities
   );
   var [index, setIndex] = useState(0);
-  const listComponent = [<ProjectOverview/>];
+  const listComponent = [<ProjectOverview />];
   var renderComponent = (index) => {
     return listComponent[index];
   };
 
   return (
     <>
-      <p className="col-span-12 mt-4">Project Area</p>
+      <p className="col-span-12 mt-4 font-bold">Edit Project</p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base mb-4">

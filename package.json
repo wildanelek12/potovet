@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^6.0.0",
+    "@ckeditor/ckeditor5-word-count": "^37.1.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
     "@next/font": "13.1.6",
     "@reduxjs/toolkit": "^1.9.3",
     "chart.js": "^4.2.1",
     "ckeditor5-custom-build": "file:./public/js/ckeditor5/",
+    "dayjs": "^1.11.7",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "flowbite-datepicker": "^1.2.2",
     "framer-motion": "^10.11.2",
     "next": "13.1.6",
     "react": "18.2.0",
@@ -26,6 +29,7 @@
     "react-drag-drop-files": "^2.3.9",
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
+    "react-tailwindcss-datepicker": "^1.6.1",
     "recoil": "^0.7.7"
   },
   "devDependencies": {
