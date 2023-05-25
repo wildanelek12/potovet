@@ -2,11 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Card from "../../Parts/Card";
-import RichTextEditor from "../../Parts/RichTextEditor";
-import FileInput from "../../Parts/FileInput";
-import Input from "../../Parts/Input";
 import Button from "@/components/Button";
-import { list } from "postcss";
 import ProjectOverview from "./project-overview/form";
 import { useRecoilValue } from "recoil";
 import { atomFormProject } from "@/recoil/atom";

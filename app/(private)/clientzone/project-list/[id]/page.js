@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 import Card from "../../../Parts/Card";
-import RichTextEditor from "../../../Parts/RichTextEditor";
-import FileInput from "../../../Parts/FileInput";
-import Input from "../../../Parts/Input";
 import Button from "@/components/Button";
-import { list } from "postcss";
 import ProjectOverview from "../../add-project/project-overview/form";
 
 export default function Page() {
@@ -14,13 +10,6 @@ export default function Page() {
     " <p> here is the problem, .............., you must ....... and then ........ </p>";
   const defaultRolesAndResponsibilities =
     " <p> here is roles and responsibilities, .............., you must ....... and then ........ </p>";
-  const [name, setName] = useState("");
-  const [descProblemStatement, setDescProblemStatement] = useState(
-    defaultProblemStatement
-  );
-  const [descRolesAndResponsibilities, setRolesAndResponsibilities] = useState(
-    defaultRolesAndResponsibilities
-  );
   var [index, setIndex] = useState(0);
   const listComponent = [<ProjectOverview />];
   var renderComponent = (index) => {
