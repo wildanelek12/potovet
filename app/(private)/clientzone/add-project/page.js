@@ -16,6 +16,7 @@ export default function Page() {
   const defaultRolesAndResponsibilities =
     " <p> here is roles and responsibilities, .............., you must ....... and then ........ </p>";
   const [name, setName] = useState("");
+  const [rendered, setRendered] = useState(false)
   const [descProblemStatement, setDescProblemStatement] = useState(
     defaultProblemStatement
   );
@@ -23,7 +24,7 @@ export default function Page() {
     defaultRolesAndResponsibilities
   );
   var [index, setIndex] = useState(0);
-  const listComponent = [<ProjectOverview />, <ProjectProcess />, <Result />];
+  const listComponent = [<ProjectOverview key={1} />, <ProjectProcess key={2} />, <Result key={3} />];
   var renderComponent = (index) => {
     return listComponent[index];
   };
@@ -32,6 +33,10 @@ export default function Page() {
   useEffect(() => {
     console.log(project);
   }, [project]);
+
+  useEffect(() => {
+    setRendered(true)
+  }, [])
 
   return (
     <>
@@ -42,7 +47,7 @@ export default function Page() {
           items={["Overview", "Process", "Result"]}
           activeIndex={index}
         />
-        <div>{renderComponent(index)}</div>
+        <div>{rendered && renderComponent(index)}</div>
         <div className="flex justify-between mt-8">
           {index != 0 ? (
             <Button

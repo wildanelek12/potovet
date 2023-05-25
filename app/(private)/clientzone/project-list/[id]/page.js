@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../../../Parts/Card";
 import Button from "@/components/Button";
 import ProjectOverview from "../../add-project/project-overview/form";
@@ -11,10 +11,16 @@ export default function Page() {
   const defaultRolesAndResponsibilities =
     " <p> here is roles and responsibilities, .............., you must ....... and then ........ </p>";
   var [index, setIndex] = useState(0);
-  const listComponent = [<ProjectOverview />];
+  const [rendered, setRendered] = useState(false)
+
+  const listComponent = [<ProjectOverview key={1} />];
   var renderComponent = (index) => {
     return listComponent[index];
   };
+
+  useEffect(() => {
+    setRendered(true)
+  }, [])
 
   return (
     <>
@@ -53,7 +59,7 @@ export default function Page() {
           </li>
         </ol>
 
-        <div>{renderComponent(index)}</div>
+        <div>{rendered && renderComponent(index)}</div>
         <div className="flex justify-between mt-2">
           {index != 0 ? (
             <Button
