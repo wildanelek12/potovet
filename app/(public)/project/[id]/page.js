@@ -16,7 +16,10 @@ export default function Detail() {
         <p className="font-medium text-sm mt-1">
           By : Muhammad Wildan Romiza Fauwaz
         </p>
-        <p className="text-xs mt-1">at : 20 Februari 2023 </p>
+        <p className="text-xs mt-1">Categories : Academic </p>
+        <p className="text-xs mt-1">
+          Project Time Elapsed : 20 Februari 2023 - 20 December 2023{" "}
+        </p>
         <Image
           src={
             "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc"
