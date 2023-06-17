@@ -25,8 +25,8 @@ export default function Page() {
             </Card>
             <Card className="col-span-full lg:col-span-3 p-8 h-fit  bg-secondary/80 text-white  border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
                 <div className="grid gap-2">
-                    <h2 className="text-lg">Lorem Ipsum</h2>
-                    <p className="text-2xl font-medium">Rp 5.123.456</p>
+                    <h2 className="text-lg">Total Viewer</h2>
+                    <p className="text-2xl font-medium">2000 Viewer</p>
                 </div>
             </Card>
             <Card className="col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">

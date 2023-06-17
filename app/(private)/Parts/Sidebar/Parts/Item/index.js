@@ -29,7 +29,7 @@ export default function Item({ id, label, href }) {
     return (
         <>
             {
-                href && !active ?
+                href ?
                     (
                         <Link href={href}>
                             {content}
