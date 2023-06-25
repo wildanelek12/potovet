@@ -17,6 +17,8 @@ exports.modules = {
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9722);
+
 
 
 
@@ -44,9 +46,20 @@ function ProjectCard() {
                             className: "text-white font-normal text-sm mt-2 tracking-normal",
                             children: "Website Perhitungan otomatis gaji karyawan yang .... Read More."
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                            className: "text-white font-thin text-xs mt-2 tracking-normal",
-                            children: "at 20 Feb 2022"
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "flex flex-row flex-1 item-center mt-2 justify-between",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: "text-white font-thin text-xs tracking-normal",
+                                    children: "at 20 Feb 2022"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    href: "/clientzone/project-list/1",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_4__/* .AiOutlineEdit */ .$iz, {
+                                        class: "w-5 h-5 flex-1 mx-2 text-white"
+                                    })
+                                })
+                            ]
                         })
                     ]
                 })

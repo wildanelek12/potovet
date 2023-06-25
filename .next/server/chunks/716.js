@@ -183,6 +183,8 @@ function FileInput({ label , className , onChange , value , types , multiple , p
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5484);
+
 
 function Input({ id , label , type , onChange , value , placeholder , beforeElement , afterElement , className , inputClassName , labelClassName , disabled  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -222,7 +224,10 @@ function Input({ id , label , type , onChange , value , placeholder , beforeElem
                     afterElement && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                         className: "select-none",
                         children: afterElement
-                    })
+                    }),
+                    value ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_1__/* .BsCheckCircleFill */ .N9r, {
+                        color: "#64CCC5"
+                    }) : ""
                 ]
             })
         ]

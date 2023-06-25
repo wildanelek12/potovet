@@ -311,12 +311,18 @@ function Item({ id , label , href  }) {
             "relative flex flex-row justify-items-center items-center py-4 px-10 gap-3 select-none cursor-pointer"
         ].join(" "),
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h3", {
                 className: [
                     "capitalize z-10 text-xs transition-all",
                     active ? "font-semibold" : "font-normal"
                 ].join(" "),
-                children: label
+                children: [
+                    label,
+                    active ? /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                        class: "ml-2 bg-green-400 text-white text-xs font-bold mr-2 px-2.5 py-0.5 rounded dark:bg-green dark:text-green-300",
+                        children: "1"
+                    }) : ""
+                ]
             }),
             active && /*#__PURE__*/ jsx_runtime_.jsx(motion/* motion.div */.E.div, {
                 className: [

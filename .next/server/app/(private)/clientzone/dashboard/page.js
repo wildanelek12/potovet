@@ -527,11 +527,11 @@ function Page() {
                     children: [
                         /*#__PURE__*/ jsx_runtime.jsx("h2", {
                             className: "text-lg",
-                            children: "Lorem Ipsum"
+                            children: "Total Viewer"
                         }),
                         /*#__PURE__*/ jsx_runtime.jsx("p", {
                             className: "text-2xl font-medium",
-                            children: "Rp 5.123.456"
+                            children: "2000 Viewer"
                         })
                     ]
                 })
