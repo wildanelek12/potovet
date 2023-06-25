@@ -1,3 +1,4 @@
+import { BsCheckCircleFill } from "react-icons/bs";
 export default function Input({
   id,
   label,
@@ -43,6 +44,7 @@ export default function Input({
           disabled={disabled}
         />
         {afterElement && <span className="select-none">{afterElement}</span>}
+        {value ? <BsCheckCircleFill color="#64CCC5" /> : ""}
       </div>
     </div>
   );

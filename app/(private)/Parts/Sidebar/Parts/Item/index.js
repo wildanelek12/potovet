@@ -15,12 +15,14 @@ export default function Item({ id, label, href }) {
 
     const content = (
         <div className={["relative flex flex-row justify-items-center items-center py-4 px-10 gap-3 select-none cursor-pointer"].join(' ')}>
-            <h3 className={["capitalize z-10 text-xs transition-all", active ? 'font-semibold' : 'font-normal'].join(' ')}>{label}</h3>
+            <h3 className={["capitalize z-10 text-xs transition-all", active ? 'font-semibold' : 'font-normal'].join(' ')}>{label} 
+                 {active ?<span class="ml-2 bg-green-400 text-white text-xs font-bold mr-2 px-2.5 py-0.5 rounded dark:bg-green dark:text-green-300">1</span>:"" } 
+            </h3>
             {active && (
                 <motion.div className={["absolute flex items-center justify-center w-full h-full right-0"].join(' ')}>
                     <Card className="bg-[#E3E8F2] mx-6 w-full h-full border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)] rounded-xl">
-
-                    </Card>
+                        
+                    </Card> 
                 </motion.div>
             )}
         </div>

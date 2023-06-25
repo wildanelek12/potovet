@@ -2,6 +2,7 @@ import React from "react";
 import { Montserrat } from "@next/font/google";
 import { BsPrinter } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
+import { MdOutlineEmail } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 const montserrat = Montserrat({
@@ -96,6 +97,9 @@ export default function Detail() {
         </p>
       </div>
       <div className="fixed bottom-10 right-10 flex flex-col">
+        <Link className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full mb-2" href={"mailto:support@example.com?subject=SendMail&body=Description"}>
+          <MdOutlineEmail />
+        </Link>
         <button className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full mb-2">
           <BsPrinter />
         </button>
