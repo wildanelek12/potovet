@@ -61,7 +61,7 @@ function Select({ labelClassname , label , onChange , options , value , defaultV
                                 leaveFrom: "opacity-100",
                                 leaveTo: "opacity-0",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__/* .Listbox.Options */ .R.Options, {
-                                    className: "absolute mt-1 max-h-60 z-10 rounded-md bg-white py-1 text-base shadow-lg ring-1 w-full ring-black ring-opacity-5 focus:outline-none sm:text-sm",
+                                    className: "absolute mt-1 max-h-60 rounded-md bg-white py-1 text-base shadow-lg ring-1 w-full ring-black ring-opacity-5 focus:outline-none sm:text-sm",
                                     children: options.map((option, optionIdx)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_2__/* .Listbox.Option */ .R.Option, {
                                             className: ({ active  })=>`relative cursor-default select-none py-2 pl-2 pr-8 ${active ? "bg-white text-amber-900" : "text-gray-900"}`,
                                             value: option,

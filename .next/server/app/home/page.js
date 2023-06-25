@@ -428,16 +428,6 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_re
 
 /***/ }),
 
-/***/ 8814:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2030, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6862, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3258, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9446, 23))
-
-/***/ }),
-
 /***/ 7021:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -688,7 +678,7 @@ function Home() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,149,722,775,338,740,344], () => (__webpack_exec__(8702)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,719,149,722,775,421,740,344], () => (__webpack_exec__(8702)));
 module.exports = __webpack_exports__;
 
 })();

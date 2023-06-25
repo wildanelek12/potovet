@@ -527,11 +527,11 @@ function Page() {
                     children: [
                         /*#__PURE__*/ jsx_runtime.jsx("h2", {
                             className: "text-lg",
-                            children: "Total Viewer"
+                            children: "Lorem Ipsum"
                         }),
                         /*#__PURE__*/ jsx_runtime.jsx("p", {
                             className: "text-2xl font-medium",
-                            children: "2000 Viewer"
+                            children: "Rp 5.123.456"
                         })
                     ]
                 })
@@ -618,7 +618,7 @@ function Chart() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,26,499,522,338,111], () => (__webpack_exec__(2070)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,26,499,522,421,113], () => (__webpack_exec__(2070)));
 module.exports = __webpack_exports__;
 
 })();
