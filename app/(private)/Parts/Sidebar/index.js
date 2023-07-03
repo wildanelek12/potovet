@@ -12,13 +12,18 @@ export default function Sidebar() {
       />
       <Wrapper.Item
         id="add-project"
-        label="Add Project"
+        label="Portofolios"
         href="/clientzone/add-project"
       />
       <Wrapper.Item
         id="project-list"
-        label="Project List"
+        label="Portofolio Journey"
         href="/clientzone/project-list"
+      />
+      <Wrapper.Item
+        id="my-library"
+        label="My Library"
+        href="/clientzone/my-library"
       />
     </Wrapper>
   );

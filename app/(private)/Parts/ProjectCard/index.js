@@ -2,13 +2,13 @@ import Link from "next/link";
 import { AiOutlineEdit, AiFillStar,Tras } from "react-icons/ai";
 import {BsFillTrashFill} from "react-icons/bs"
 
-export default function ProjectListCard({ status }) {
+export default function ProjectListCard({ status,src,title,desc,date }) {
   return (
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
       <div class="relative">
         <img
           class="rounded-t-lg"
-          src="https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc"
+          src={src}
           alt=""
         />
         <AiFillStar
@@ -28,12 +28,11 @@ export default function ProjectListCard({ status }) {
       <div class="p-5">
         <a href="#">
           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-500">
-            Noteworthy technology acquisitions 2021
+           {title}
           </h5>
         </a>
         <p class="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
+          {desc}
         </p>
         <div className="flex flex-row items-center">
           <button
@@ -53,7 +52,7 @@ export default function ProjectListCard({ status }) {
           </div>
         </div>
         <h5 class="mt-4 text-sm font-light tracking-tight text-gray-500">
-          at : 20 February 2022
+          at : {date}
         </h5>
       </div>
     </div>

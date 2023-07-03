@@ -22,7 +22,9 @@ export default function Page() {
   const [month, setMonth] = useState(optionMonth[0]);
   return (
     <>
-      <p className="col-span-12 mt-4">Project List</p>
+      <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
+        Edit Portofolio
+      </p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <div className="grid grid-cols-5 gap-x-2">
@@ -68,9 +70,39 @@ export default function Page() {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-8">
-          <ProjectListCard status={"draft"}/>
-          <ProjectListCard status={"edit"}/>
-          <ProjectListCard status={"publish"}/>
+          <ProjectListCard
+            status={"draft"}
+            src={
+              "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"
+            }
+            title={"Website Promosi International BAG for backpaker"}
+            date={"20 February 2023"}
+            desc={
+              "Find the best adventure bag for mountain expeditions and exploring nature tough and functional."
+            }
+          />
+          <ProjectListCard
+            status={"edit"}
+            src={
+              "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png"
+            }
+            title={"Food & Beverages Landing Page"}
+            date={"1 March 2023"}
+            desc={
+              "Explore the best culinary delights and enjoy delicious dishes and refreshing drinks at the restaurant kam"
+            }
+          />
+          <ProjectListCard
+            status={"publish"}
+            src={
+              "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg"
+            }
+            title={"Travelio : lets around the world"}
+            date={"9 December 2023"}
+            desc={
+              "Enjoy an unforgettable vacation with a choice of attractive destinations, comfortable lodging, and exciting experiences with us"
+            }
+          />
         </div>
       </Card>
     </>

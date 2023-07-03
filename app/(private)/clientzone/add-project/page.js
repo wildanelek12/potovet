@@ -16,7 +16,7 @@ export default function Page() {
   const defaultRolesAndResponsibilities =
     " <p> here is roles and responsibilities, .............., you must ....... and then ........ </p>";
   const [name, setName] = useState("");
-  const [rendered, setRendered] = useState(false)
+  const [rendered, setRendered] = useState(false);
   const [descProblemStatement, setDescProblemStatement] = useState(
     defaultProblemStatement
   );
@@ -24,7 +24,11 @@ export default function Page() {
     defaultRolesAndResponsibilities
   );
   var [index, setIndex] = useState(0);
-  const listComponent = [<ProjectOverview key={1} />, <ProjectProcess key={2} />, <Result key={3} />];
+  const listComponent = [
+    <ProjectOverview key={1} />,
+    <ProjectProcess key={2} />,
+    <Result key={3} />,
+  ];
   var renderComponent = (index) => {
     return listComponent[index];
   };
@@ -35,12 +39,14 @@ export default function Page() {
   }, [project]);
 
   useEffect(() => {
-    setRendered(true)
-  }, [])
+    setRendered(true);
+  }, []);
 
   return (
     <>
-      <p className="col-span-12 mt-4">Project Area</p>
+      <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
+        Portofolios
+      </p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <Stepper
