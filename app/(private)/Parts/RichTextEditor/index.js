@@ -59,7 +59,7 @@ export default function RichTextEditor({ value, onChange, label }) {
           />
         )}
       </div>
-      <p className="font-normal text-xs">{count} / 200 Character</p>
+      <p className="font-normal text-xs">{count} / 500 Character</p>
     </div>
   );
 }
