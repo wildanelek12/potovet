@@ -707,8 +707,8 @@ function Page() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                className: "col-span-12 mt-4",
-                children: "Project Area"
+                className: "col-span-12 mt-8 font-bold text-xl flex-1 text-center",
+                children: "Portofolios"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
                 className: "col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
@@ -761,7 +761,7 @@ function Page() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,149,26,484,960,421,113,378,464,716], () => (__webpack_exec__(6960)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,26,149,484,960,421,113,378,464,716], () => (__webpack_exec__(6960)));
 module.exports = __webpack_exports__;
 
 })();

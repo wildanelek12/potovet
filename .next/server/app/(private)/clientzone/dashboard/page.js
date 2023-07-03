@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
         'dashboard',
         {
         children: ['', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9368)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\dashboard\\page.js"]}]
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5449)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\dashboard\\page.js"]}]
       },
         {
           
@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
         },{
           type: 'page',
           layer: 3,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9368)),
+          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5449)),
           path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\dashboard\\page.js",
         },];
     const pages = ["C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\dashboard\\page.js"];
@@ -417,194 +417,265 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 9386:
+/***/ 1210:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3852))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3852));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9797, 23))
 
 /***/ }),
 
-/***/ 6875:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/* __next_internal_client_entry_do_not_use__ */ const { createProxy  } = __webpack_require__(4353);
-module.exports = createProxy("C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\Parts\\Chart\\index.js");
-
-
-/***/ }),
-
-/***/ 9368:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Page)
-});
-
-// EXTERNAL MODULE: ./node_modules/next/dist/compiled/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(8499);
-;// CONCATENATED MODULE: ./app/(private)/Parts/Card/index.js
-
-function Card({ children , className  }) {
-    return /*#__PURE__*/ jsx_runtime.jsx("div", {
-        className: [
-            "bg-white rounded-2xl shadow-[0_1.4px_4px_0_rgba(0,0,0,0.08)] border-[1px] border-[#E3E8F2]",
-            className
-        ].join(" "),
-        children: children
-    });
-}
-
-// EXTERNAL MODULE: ./app/(private)/Parts/Chart/index.js
-var Chart = __webpack_require__(6875);
-;// CONCATENATED MODULE: ./app/(private)/clientzone/dashboard/page.js
-
-
-
-function Page() {
-    return /*#__PURE__*/ (0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
-        children: [
-            /*#__PURE__*/ jsx_runtime.jsx("p", {
-                className: "col-span-12 mt-4",
-                children: "Dashboard"
-            }),
-            /*#__PURE__*/ jsx_runtime.jsx(Card, {
-                className: "col-span-full lg:col-span-3 p-8 h-fit bg-primary/80 text-white border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "grid gap-2",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime.jsx("h2", {
-                            className: "text-lg",
-                            children: "Total Comments"
-                        }),
-                        /*#__PURE__*/ jsx_runtime.jsx("p", {
-                            className: "text-2xl font-medium",
-                            children: "20 Comments"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime.jsx(Card, {
-                className: "col-span-full lg:col-span-3 p-8 h-fit bg-secondary/80 text-white border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "grid gap-2",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime.jsx("h2", {
-                            className: "text-lg",
-                            children: "Total Like"
-                        }),
-                        /*#__PURE__*/ jsx_runtime.jsx("p", {
-                            className: "text-2xl font-medium",
-                            children: "60 Like"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime.jsx(Card, {
-                className: "col-span-full lg:col-span-3 p-8 h-fit bg-primary/80 text-white border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "grid gap-2",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime.jsx("h2", {
-                            className: "text-lg",
-                            children: "Total Project"
-                        }),
-                        /*#__PURE__*/ jsx_runtime.jsx("p", {
-                            className: "text-2xl font-medium",
-                            children: "16 Project"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime.jsx(Card, {
-                className: "col-span-full lg:col-span-3 p-8 h-fit bg-secondary/80 text-white border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ (0,jsx_runtime.jsxs)("div", {
-                    className: "grid gap-2",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime.jsx("h2", {
-                            className: "text-lg",
-                            children: "Total Viewer"
-                        }),
-                        /*#__PURE__*/ jsx_runtime.jsx("p", {
-                            className: "text-2xl font-medium",
-                            children: "2000 Viewer"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime.jsx(Card, {
-                className: "col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ jsx_runtime.jsx(Chart.Chart, {})
-            })
-        ]
-    });
-}
-
-
-/***/ }),
-
-/***/ 3852:
+/***/ 5449:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Chart": () => (/* binding */ Chart),
-/* harmony export */   "data": () => (/* binding */ data),
-/* harmony export */   "options": () => (/* binding */ options)
+/* harmony export */   "default": () => (/* binding */ Page)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var chart_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(474);
-/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1522);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8499);
+/* harmony import */ var _Parts_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3853);
+/* harmony import */ var _Parts_Chart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6875);
+/* harmony import */ var _Parts_Chart__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Parts_Chart__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9769);
+/* harmony import */ var _Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5456);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(634);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
-chart_js__WEBPACK_IMPORTED_MODULE_2__/* .Chart.register */ .kL.register(chart_js__WEBPACK_IMPORTED_MODULE_2__/* .CategoryScale */ .uw, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .LinearScale */ .f$, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .PointElement */ .od, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .LineElement */ .jn, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .Title */ .Dx, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .Tooltip */ .u, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .Filler */ .Gu, chart_js__WEBPACK_IMPORTED_MODULE_2__/* .Legend */ .De);
-const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            position: "top"
-        },
-        title: {
-            display: true,
-            text: "Chart.js Line Chart"
-        }
-    }
-};
-const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July"
-];
-const data = {
-    labels,
-    datasets: [
-        {
-            fill: true,
-            label: "Dataset 2",
-            data: labels.map(()=>Math.floor(Math.random() * (10000 - 1 + 1) + 1)),
-            borderColor: "rgb(53, 162, 235)",
-            backgroundColor: "rgba(53, 162, 235, 0.5)"
-        }
-    ]
-};
-function Chart() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_chartjs_2__WEBPACK_IMPORTED_MODULE_3__/* .Line */ .x1, {
-        options: options,
-        data: data
+
+
+function Page() {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "col-span-full lg:col-12 flex flex-row mt-4 justify-center",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                        className: " font-bold text-xl flex-1 text-center",
+                        children: "Portofolio Insights"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        class: "inline-flex rounded-md shadow-sm justify-self-end",
+                        role: "group",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                class: "px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white",
+                                children: "Academic"
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                type: "button",
+                                class: "px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white",
+                                children: "<"
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                type: "button",
+                                class: "px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white",
+                                children: ">"
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+                className: "col-span-full lg:col-span-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    class: "flex h-full",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            class: "flex-1 flex flex-col pt-4 ",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                    className: "text-primary font-semibold ml-8",
+                                    children: "Portofolio Summary"
+                                }),
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "grid grid-cols-2 bg-primary mt-2 h-full",
+                                    children: [
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "grid bg text-center border p-2",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: "text-sm font-light text-white ",
+                                                    children: "Views"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-4xl font-bold text-white mt-2",
+                                                    children: "200"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "grid bg text-center border p-2",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: "text-sm font-light text-white ",
+                                                    children: "Likes"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-4xl font-bold text-white",
+                                                    children: "64"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "grid bg text-center border p-2",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: "text-sm font-light text-white ",
+                                                    children: "Comments"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-4xl font-bold text-white",
+                                                    children: "10"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                            className: "grid bg text-center border p-2",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                                    className: "text-sm font-light text-white ",
+                                                    children: "Share"
+                                                }),
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                    className: "text-4xl font-bold text-white",
+                                                    children: "66"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            class: "flex-1 p-8 ",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "grid gap-2 text-center place-items-center",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "justify-center",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_5__/* .AiFillAlert */ .AhU, {
+                                            size: 48,
+                                            color: "#E6846E"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        className: "text-base font-normal",
+                                        children: "Don't forget to describe the relevance of the work you include in portofolio. Mention skills that each item illustrates and talk about what you've learned"
+                                    })
+                                ]
+                            })
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+                className: "col-span-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Chart__WEBPACK_IMPORTED_MODULE_2__.Chart, {})
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+                className: "col-span-full h-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                        className: "text-primary font-semibold",
+                        children: "Top Items"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "flex flex-col mt-2 gap-y-6",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                                src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
+                                name: "Website Promosi International BAG for backpaker",
+                                rank: 1
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                                src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
+                                name: "Food & Beverages Landing Page",
+                                rank: 2
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                                src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
+                                name: "Travelio : lets around the world",
+                                rank: 3
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+                className: "col-span-full h-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                        className: "text-primary font-semibold",
+                        children: "Viewer Activity"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
+                        class: "relative border-l border-gray-200 dark:border-gray-700 mt-8",
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                class: "ml-6",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        class: "absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                            class: "rounded-full shadow-lg",
+                                            src: "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
+                                            alt: "Thomas Lean image",
+                                            width: 120,
+                                            height: 120
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        class: "items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("time", {
+                                                class: "mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0",
+                                                children: "1 day ago"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                class: "text-sm font-normal text-gray-500 lex dark:text-gray-300",
+                                                children: "Noval has comment in your project"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                class: "ml-6 mt-4",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        class: "absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                            class: "rounded-full shadow-lg",
+                                            src: "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
+                                            alt: "Thomas Lean image",
+                                            width: 120,
+                                            height: 120
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        class: "items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("time", {
+                                                class: "mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0",
+                                                children: "1 day ago"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                class: "text-sm font-normal text-gray-500 lex dark:text-gray-300",
+                                                children: "Noval has Liked your project"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
     });
 }
 
@@ -618,7 +689,7 @@ function Chart() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,26,499,522,421,113], () => (__webpack_exec__(2070)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,26,499,449,522,421,113,438], () => (__webpack_exec__(2070)));
 module.exports = __webpack_exports__;
 
 })();

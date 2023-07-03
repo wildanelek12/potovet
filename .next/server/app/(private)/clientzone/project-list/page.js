@@ -469,7 +469,7 @@ var bs_index_esm = __webpack_require__(5484);
 
 
 
-function ProjectListCard({ status  }) {
+function ProjectListCard({ status , src , title , desc , date  }) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         class: "max-w-sm bg-white border border-gray-200 rounded-lg shadow",
         children: [
@@ -478,7 +478,7 @@ function ProjectListCard({ status  }) {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("img", {
                         class: "rounded-t-lg",
-                        src: "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc",
+                        src: src,
                         alt: ""
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiFillStar */.pHD, {
@@ -499,12 +499,12 @@ function ProjectListCard({ status  }) {
                         href: "#",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                             class: "mb-2 text-md font-bold tracking-tight text-gray-500",
-                            children: "Noteworthy technology acquisitions 2021"
+                            children: title
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         class: "mb-3 font-normal text-sm text-gray-700 dark:text-gray-400",
-                        children: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+                        children: desc
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "flex flex-row items-center",
@@ -533,9 +533,12 @@ function ProjectListCard({ status  }) {
                             })
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h5", {
                         class: "mt-4 text-sm font-light tracking-tight text-gray-500",
-                        children: "at : 20 February 2022"
+                        children: [
+                            "at : ",
+                            date
+                        ]
                     })
                 ]
             })
@@ -582,8 +585,8 @@ function Page() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                className: "col-span-12 mt-4",
-                children: "Project List"
+                className: "col-span-12 mt-8 font-bold text-xl flex-1 text-center",
+                children: "Edit Portofolio"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
                 className: "col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
@@ -640,13 +643,25 @@ function Page() {
                         className: "grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mt-8",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx(ProjectListCard, {
-                                status: "draft"
+                                status: "draft",
+                                src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
+                                title: "Website Promosi International BAG for backpaker",
+                                date: "20 February 2023",
+                                desc: "Find the best adventure bag for mountain expeditions and exploring nature tough and functional."
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(ProjectListCard, {
-                                status: "edit"
+                                status: "edit",
+                                src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
+                                title: "Food & Beverages Landing Page",
+                                date: "1 March 2023",
+                                desc: "Explore the best culinary delights and enjoy delicious dishes and refreshing drinks at the\xa0restaurant\xa0kam"
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(ProjectListCard, {
-                                status: "publish"
+                                status: "publish",
+                                src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
+                                title: "Travelio : lets around the world",
+                                date: "9 December 2023",
+                                desc: "Enjoy an unforgettable vacation with a choice of attractive destinations, comfortable lodging, and exciting experiences with us"
                             })
                         ]
                     })
@@ -666,7 +681,7 @@ function Page() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,149,722,26,484,421,113,378,740,442], () => (__webpack_exec__(4758)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,26,149,722,484,421,113,378,740,442], () => (__webpack_exec__(4758)));
 module.exports = __webpack_exports__;
 
 })();

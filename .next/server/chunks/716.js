@@ -316,7 +316,7 @@ function RichTextEditor({ value , onChange , label  }) {
                 className: "font-normal text-xs",
                 children: [
                     count,
-                    " / 200 Character"
+                    " / 500 Character"
                 ]
             })
         ]

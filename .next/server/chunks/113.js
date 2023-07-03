@@ -138,7 +138,7 @@ function LogoutButton({ className  }) {
                 className: "flex items-center justify-between gap-6 px-2 py-1 border rounded-full border-[#E3E8F2] text-primary-black",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                        src: "/dummy_avatar.png",
+                        src: "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
                         alt: "photo-profile",
                         quality: 60,
                         width: 32,
@@ -146,8 +146,8 @@ function LogoutButton({ className  }) {
                         className: "object-cover rounded-full min-w-8 max-h-8"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        className: "capitalize select-none text-primary-black font-work-sans",
-                        children: "Jessica" ?? 0
+                        className: "capitalize select-none text-primary-black ",
+                        children: "Ario Bayu" ?? 0
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("svg", {
                         className: "rotate-180",
@@ -251,12 +251,9 @@ function Navbar() {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "flex items-center flex-1 gap-2 lg:gap-16 lg:pr-16",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                            src: "/logo.svg",
-                            alt: "logo",
-                            width: 1200,
-                            height: 1200,
-                            className: "self-center object-contain w-32 mr-8"
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                            className: "font-bold text-primary text-lg",
+                            children: "POTOVET"
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -415,13 +412,18 @@ function Sidebar() {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(Parts_Wrapper.Item, {
                 id: "add-project",
-                label: "Add Project",
+                label: "Portofolios",
                 href: "/clientzone/add-project"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(Parts_Wrapper.Item, {
                 id: "project-list",
-                label: "Project List",
+                label: "Portofolio Journey",
                 href: "/clientzone/project-list"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(Parts_Wrapper.Item, {
+                id: "my-library",
+                label: "My Library",
+                href: "/clientzone/my-library"
             })
         ]
     });
