@@ -6,8 +6,8 @@ export default function Sidebar() {
   return (
     <Wrapper>
       <Wrapper.Item
-        id="dashboard"
-        label="Dashboard"
+        id="portofolios-insight"
+        label="Portofolios Insight"
         href="/clientzone/dashboard"
       />
       <Wrapper.Item

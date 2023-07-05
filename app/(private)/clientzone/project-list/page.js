@@ -95,7 +95,7 @@ export default function Page() {
           <ProjectListCard
             status={"publish"}
             src={
-              "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg"
+              "https://cdn.dribbble.com/userupload/4954286/file/original-5b090bd73c1023c540ecae09bcb26c50.png?compress=1&resize=400x300&vertical=center"
             }
             title={"Travelio : lets around the world"}
             date={"9 December 2023"}

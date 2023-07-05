@@ -41,11 +41,33 @@ export default function RichTextEditor({ value, onChange, label }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    var text = value;
-    const count = text.replace(/(<([^>]+)>)/gi, "").length;
+
+  function handleChange(editor) {
+ 
+ 
+    var data = editor.getData();
+    var replaced_text = data.replace(/(<([^>]+)>)/gi, "");
+    const count = replaced_text.length;
     setCount(count);
-  }, [value]);
+    if(count > 500){
+      var old_data = value;
+      console.log("here");
+      editor.setData(old_data)
+      return old_data;
+    }else{
+      console.log("else");
+      return editor.getData();
+    }
+
+  }
+
+  // useEffect(() => {
+  //   var text = value;
+  //   const count = text.replace(/(<([^>]+)>)/gi, "").length;
+  //   console.log(text.replace(/(<([^>]+)>)/gi, ""));
+
+  //   setCount(count);
+  // }, [value]);
   return (
     <div className="grid">
       {label && <label className="capitalize font-semibold">{label}</label>}
@@ -55,7 +77,7 @@ export default function RichTextEditor({ value, onChange, label }) {
             editor={Editor}
             data={value}
             config={editorConfiguration}
-            onChange={(_, editor) => onChange(editor.getData())}
+            onChange={(_, editor) => onChange(handleChange(editor))}
           />
         )}
       </div>
