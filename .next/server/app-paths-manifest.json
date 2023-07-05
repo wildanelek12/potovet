@@ -2,10 +2,10 @@
   "/(private)/clientzone/add-project/page": "app/(private)/clientzone/add-project/page.js",
   "/(private)/clientzone/dashboard/page": "app/(private)/clientzone/dashboard/page.js",
   "/(private)/clientzone/my-library/page": "app/(private)/clientzone/my-library/page.js",
-  "/(private)/clientzone/project-list/page": "app/(private)/clientzone/project-list/page.js",
   "/(public)/page": "app/(public)/page.js",
-  "/(private)/clientzone/project-list/[id]/page": "app/(private)/clientzone/project-list/[id]/page.js",
+  "/(private)/clientzone/project-list/page": "app/(private)/clientzone/project-list/page.js",
   "/(public)/project/[id]/page": "app/(public)/project/[id]/page.js",
   "/(public)/project/page": "app/(public)/project/page.js",
+  "/(private)/clientzone/project-list/[id]/page": "app/(private)/clientzone/project-list/[id]/page.js",
   "/home/page": "app/home/page.js"
 }

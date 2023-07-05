@@ -406,8 +406,8 @@ function Sidebar() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Parts_Wrapper, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(Parts_Wrapper.Item, {
-                id: "dashboard",
-                label: "Dashboard",
+                id: "portofolios-insight",
+                label: "Portofolios Insight",
                 href: "/clientzone/dashboard"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(Parts_Wrapper.Item, {

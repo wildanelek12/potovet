@@ -1,4 +1,3 @@
-"use strict";
 exports.id = 716;
 exports.ids = [716];
 exports.modules = {
@@ -6,6 +5,7 @@ exports.modules = {
 /***/ 9381:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (/* binding */ DatePickerComponent)
 /* harmony export */ });
@@ -49,9 +49,8 @@ function DatePickerComponent({ asSingle , value , onChange  }) {
 /***/ 3702:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ FileInput)
-/* harmony export */ });
+"use strict";
+/* unused harmony export default */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
@@ -64,8 +63,8 @@ function DatePickerComponent({ asSingle , value , onChange  }) {
 
 
 function FileInput({ label , className , onChange , value , types , multiple , preview , previewClassName , previewInitial , labelClassName , fileOrFiles  }) {
-    const [previews, setPreviews] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+    const [previews, setPreviews] = useState([]);
+    useEffect(()=>{
         if (preview) {
             const temp = value.map((v)=>URL.createObjectURL(v));
             setPreviews(temp);
@@ -92,26 +91,26 @@ function FileInput({ label , className , onChange , value , types , multiple , p
             ]);
         }
     };
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    return /*#__PURE__*/ _jsxs("div", {
         className: "grid gap-1",
         children: [
-            label && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+            label && /*#__PURE__*/ _jsx("label", {
                 className: [
                     "capitalize",
                     labelClassName
                 ].join(" ") + " font-semibold",
                 children: label
             }),
-            previews.length == 0 && previewInitial?.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            previews.length == 0 && previewInitial?.length > 0 && /*#__PURE__*/ _jsx("div", {
                 className: [
                     "grid gap-4 w-full grid-cols-1 h-56",
                     previewClassName
                 ].join(" "),
                 children: previewInitial.map((v, i)=>{
                     if (v) {
-                        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        return /*#__PURE__*/ _jsx("div", {
                             className: "relative grid items-center justify-center",
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                            children: /*#__PURE__*/ _jsx(Image, {
                                 src: `/${v}`,
                                 alt: `image-preview-${i}`,
                                 layout: "fill",
@@ -123,14 +122,14 @@ function FileInput({ label , className , onChange , value , types , multiple , p
                     }
                 })
             }),
-            previews.length > 0 && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            previews.length > 0 && /*#__PURE__*/ _jsx("div", {
                 className: [
                     "grid gap-4 w-full grid-cols-1",
                     previewClassName
                 ].join(" "),
-                children: previews.map((v, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: previews.map((v, i)=>/*#__PURE__*/ _jsx("div", {
                         className: "relative grid items-center justify-center h-56",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                        children: /*#__PURE__*/ _jsx(Image, {
                             src: v,
                             alt: `image-preview-${i}`,
                             layout: "fill",
@@ -140,26 +139,26 @@ function FileInput({ label , className , onChange , value , types , multiple , p
                         })
                     }, i))
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            /*#__PURE__*/ _jsx("div", {
                 className: "w-full overflow-hidden",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_drag_drop_files__WEBPACK_IMPORTED_MODULE_3__/* .FileUploader */ .b, {
+                children: /*#__PURE__*/ _jsx(FileUploader, {
                     multiple: multiple,
                     handleChange: handleChange,
                     types: types,
                     fileOrFiles: fileOrFiles,
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    children: /*#__PURE__*/ _jsx("div", {
                         className: [
                             "flex gap-4 justify-between items-center border-2 border-[C6C6C6] rounded-md",
                             className
                         ].join(" "),
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        children: /*#__PURE__*/ _jsxs("div", {
                             className: "flex items-center w-full gap-4 p-3",
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                /*#__PURE__*/ _jsx("button", {
                                     className: "px-3 py-2 text-sm font-medium leading-4 transition duration-150 ease-in-out border border-gray-300 rounded-md select-none hover:text-secondary-orange hover:border-secondary-orange focus:outline-none",
                                     children: "Upload"
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                /*#__PURE__*/ _jsx("span", {
                                     className: "select-none text-[#7D7D7D] truncate",
                                     children: value.length > 0 ? value.map((v)=>v.name).join(", ") : "No file chosen"
                                 })
@@ -178,6 +177,7 @@ function FileInput({ label , className , onChange , value , types , multiple , p
 /***/ 4701:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (/* binding */ Input)
 /* harmony export */ });
@@ -240,6 +240,7 @@ function Input({ id , label , type , onChange , value , placeholder , beforeElem
 /***/ 6843:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (/* binding */ RichTextEditor)
 /* harmony export */ });
@@ -289,13 +290,27 @@ function RichTextEditor({ value , onChange , label  }) {
         setRendered(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        var text = value;
-        const count = text.replace(/(<([^>]+)>)/gi, "").length;
+    function handleChange(editor) {
+        var data = editor.getData();
+        var replaced_text = data.replace(/(<([^>]+)>)/gi, "");
+        const count = replaced_text.length;
         setCount(count);
-    }, [
-        value
-    ]);
+        if (count > 500) {
+            var old_data = value;
+            console.log("here");
+            editor.setData(old_data);
+            return old_data;
+        } else {
+            console.log("else");
+            return editor.getData();
+        }
+    }
+    // useEffect(() => {
+    //   var text = value;
+    //   const count = text.replace(/(<([^>]+)>)/gi, "").length;
+    //   console.log(text.replace(/(<([^>]+)>)/gi, ""));
+    //   setCount(count);
+    // }, [value]);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "grid",
         children: [
@@ -309,7 +324,7 @@ function RichTextEditor({ value , onChange , label  }) {
                     editor: Editor,
                     data: value,
                     config: editorConfiguration,
-                    onChange: (_, editor)=>onChange(editor.getData())
+                    onChange: (_, editor)=>onChange(handleChange(editor))
                 })
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
@@ -329,6 +344,7 @@ function RichTextEditor({ value , onChange , label  }) {
 /***/ 7716:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (/* binding */ ProjectOverview)
 /* harmony export */ });
@@ -345,6 +361,9 @@ function RichTextEditor({ value , onChange , label  }) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var recoil__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6779);
 /* harmony import */ var _app_private_Parts_DatePicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9381);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(9346);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -369,7 +388,7 @@ function ProjectOverview() {
         },
         {
             id: 2,
-            name: "Reseacrh",
+            name: "Research",
             unavailable: false
         },
         {
@@ -380,9 +399,10 @@ function ProjectOverview() {
     ];
     //const [projectName, setProjectName] = useRecoilState(atomProjectName);
     const [project, setProject] = (0,recoil__WEBPACK_IMPORTED_MODULE_8__/* .useRecoilState */ .FV)(_recoil_atom__WEBPACK_IMPORTED_MODULE_6__/* .atomFormProject */ .Cp);
+    const [value, setValue] = (0,react__WEBPACK_IMPORTED_MODULE_7__.useState)("");
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "grid gap-4",
+            className: "grid gap-4 ",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_private_Parts_Input__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                     id: "project-name",
@@ -412,23 +432,6 @@ function ProjectOverview() {
                             time_elapsed: newValue
                         })
                 }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_private_Parts_FileInput__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                    label: "Project Image",
-                    types: [
-                        "jpg",
-                        "png",
-                        "jpeg"
-                    ],
-                    onChange: (e)=>setProject({
-                            ...project,
-                            project_image: e
-                        }),
-                    value: project.project_image,
-                    fileOrFiles: project.project_image,
-                    previewClassName: "w-full grid-cols-4",
-                    preview: true,
-                    multiple: true
-                }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_app_private_Parts_RichTextEditor__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
                     label: "Description",
                     value: project.description,
@@ -448,6 +451,7 @@ function ProjectOverview() {
 /***/ 2123:
 /***/ ((module, exports, __webpack_require__) => {
 
+"use strict";
 /* module decorator */ module = __webpack_require__.nmd(module);
 
 (function(t) {
@@ -44711,6 +44715,13 @@ function ProjectOverview() {
         o = o["default"];
         return o;
     })()); //# sourceMappingURL=ckeditor.js.map
+
+
+/***/ }),
+
+/***/ 9346:
+/***/ (() => {
+
 
 
 /***/ })
