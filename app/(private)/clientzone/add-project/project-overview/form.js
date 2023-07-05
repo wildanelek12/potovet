@@ -8,20 +8,21 @@ import { atomFormProject } from "@/recoil/atom";
 import React, { useEffect, useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import DatePickerComponent from "@/app/(private)/Parts/DatePicker";
-
+import '../../../../../style.css'
 export default function ProjectOverview() {
   const optionCategories = [
     { id: 1, name: "Academic", unavailable: false },
     { id: 2, name: "Professional", unavailable: false },
-    { id: 2, name: "Reseacrh", unavailable: false },
+    { id: 2, name: "Research", unavailable: false },
     { id: 2, name: "Informal Trainings", unavailable: false },
   ];
   //const [projectName, setProjectName] = useRecoilState(atomProjectName);
   const [project, setProject] = useRecoilState(atomFormProject);
+  const [value, setValue] = useState('');
 
   return (
     <>
-      <div className="grid gap-4">
+      <div className="grid gap-4 ">
         <Input
           id="project-name"
           label="Name"
@@ -43,7 +44,7 @@ export default function ProjectOverview() {
             setProject({ ...project, time_elapsed: newValue })
           }
         />
-        <FileInput
+        {/* <FileInput
           label="Project Image"
           types={["jpg", "png", "jpeg"]}
           onChange={(e) => setProject({ ...project, project_image: e })}
@@ -52,12 +53,13 @@ export default function ProjectOverview() {
           previewClassName="w-full grid-cols-4"
           preview
           multiple
-        />
+        /> */}
         <RichTextEditor
           label="Description"
           value={project.description}
           onChange={(e) => setProject({ ...project, description: e })}
         />
+         {/* <ReactQuill  theme="snow" value={value} onChange={setValue} />; */}
       </div>
     </>
   );
