@@ -6,6 +6,6 @@
   "/(private)/clientzone/project-list/page": "app/(private)/clientzone/project-list/page.js",
   "/(public)/page": "app/(public)/page.js",
   "/(public)/project/[id]/page": "app/(public)/project/[id]/page.js",
-  "/(public)/project/page": "app/(public)/project/page.js",
-  "/home/page": "app/home/page.js"
+  "/home/page": "app/home/page.js",
+  "/(public)/project/page": "app/(public)/project/page.js"
 }

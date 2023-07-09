@@ -6,6 +6,6 @@
   "/(private)/clientzone/project-list/page": "/clientzone/project-list",
   "/(public)/page": "/",
   "/(public)/project/[id]/page": "/project/[id]",
-  "/(public)/project/page": "/project",
-  "/home/page": "/home"
+  "/home/page": "/home",
+  "/(public)/project/page": "/project"
 }
