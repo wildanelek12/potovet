@@ -56,12 +56,12 @@ export default function RootLayout({ children }) {
                 <Menu.Button className="inline-flex w-full justify-center items-center rounded-md bg-secondary px-2 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                   <Image
                     className="rounded-full w-6 h-6 mx-2"
-                    src="https://picsum.photos/id/237/400/400"
+                    src="https://picsum.photos/id/231/400/400"
                     alt="Picture of the author"
                     width={32}
                     height={32}
                   />
-                  Wildan Romiza
+                  Ario Bayu
                   <ChevronDoubleDownIcon
                     className="ml-2 -mr-1 h-5 w-5 text-white hover:text-violet-100"
                     aria-hidden="true"
