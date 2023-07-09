@@ -151,12 +151,12 @@ function RootLayout({ children  }) {
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
                                                         className: "rounded-full w-6 h-6 mx-2",
-                                                        src: "https://picsum.photos/id/237/400/400",
+                                                        src: "https://picsum.photos/id/231/400/400",
                                                         alt: "Picture of the author",
                                                         width: 32,
                                                         height: 32
                                                     }),
-                                                    "Wildan Romiza",
+                                                    "Ario Bayu",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_9__, {
                                                         className: "ml-2 -mr-1 h-5 w-5 text-white hover:text-violet-100",
                                                         "aria-hidden": "true"

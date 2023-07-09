@@ -460,15 +460,15 @@ function Detail() {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "mt-4 font-bold text-3xl ",
-                        children: "Website Hitung Otomatis"
+                        children: "Website Promosi International BAG for backpaker"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "font-medium text-sm mt-1",
-                        children: "By : Muhammad Wildan Romiza Fauwaz"
+                        children: "By : Ario Bayu"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "text-xs mt-1",
-                        children: "Categories : Academic "
+                        children: "Categories : Professional "
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                         className: "text-xs mt-1",
@@ -478,7 +478,7 @@ function Detail() {
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        src: "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc",
+                        src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
                         width: 900,
                         height: 600,
                         className: "w-1/2 object-cover mt-8"
@@ -490,11 +490,11 @@ function Detail() {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "text-xs mt-19",
-                        children: "at : 20 Februari 2023 "
+                        children: "at : 20 February 2023 "
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "text-justify ",
-                        children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec non finibus ligula. Quisque volutpat magna non mi auctor consequat. Aenean metus mi, fringilla vel varius eget, scelerisque nec sem. Praesent at ligula non neque pulvinar molestie non ut lacus. Vestibulum quis vulputate odio, at placerat risus. Nunc semper dolor sit amet neque volutpat sagittis. Maecenas eget est bibendum, lobortis arcu sed, cursus ipsum. Pellentesque vitae vehicula lacus. Morbi blandit libero eget turpis porta, sed dapibus velit iaculis. Integer imperdiet est vitae pellentesque dignissim. In hac habitasse platea dictumst. Nulla laoreet urna in est rhoncus, sit amet ornare neque egestas. Phasellus id viverra massa, eget posuere felis. Quisque eu nunc nec ipsum sodales sodales. Pellentesque non aliquet felis. Vestibulum lectus purus, pretium vel nulla ut, iaculis malesuada orci. Suspendisse potenti. Maecenas egestas faucibus dui, ut vestibulum nunc porta nec. Nunc interdum ante at turpis porta, convallis blandit ante dapibus."
+                        children: "Introducing AdventureGear.com - your ultimate destination for all your adventurous journeys! If you're a passionate explorer seeking high-quality backpacks and gear, look no further. Our website offers a wide range of adventure-friendly backpacks designed to accompany you on thrilling expeditions, hikes, and outdoor escapades. At AdventureGear.com, we understand the importance of durability and functionality when it comes to adventure gear. That's why we meticulously curate our collection to ensure every product meets the highest standards of quality. From rugged backpacks with ample storage space to waterproof designs that can withstand any weather conditions, we have the perfect companion for your next adventure. But that's not all - we go the extra mile to cater to your specific needs. Our website features detailed product descriptions, customer reviews, and expert guides to help you make an informed choice. We believe in providing exceptional customer service, so our friendly support team is always ready to assist you with any queries or concerns. AdventureGear.com also offers competitive prices without compromising on quality. We believe everyone should have access to reliable adventure gear, regardless of their budget. With our secure payment options and fast shipping, you can gear up and hit the trails in no time. Visit AdventureGear.com today and embark on unforgettable adventures with confidence. Your next thrilling expedition awaits!"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
                         src: "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc",
@@ -547,7 +547,7 @@ function Detail() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,499,45,449,560,421,772], () => (__webpack_exec__(2847)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,719,499,933,45,639,769,955,421,772], () => (__webpack_exec__(2847)));
 module.exports = __webpack_exports__;
 
 })();

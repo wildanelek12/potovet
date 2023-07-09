@@ -460,6 +460,10 @@ var next_link = __webpack_require__(1621);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
 var react_ = __webpack_require__(8038);
+// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/transitions/transition.js + 4 modules
+var transition = __webpack_require__(6235);
+// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/dialog/dialog.js + 21 modules
+var dialog = __webpack_require__(5990);
 // EXTERNAL MODULE: ./node_modules/react-icons/ai/index.esm.js
 var index_esm = __webpack_require__(9722);
 // EXTERNAL MODULE: ./node_modules/react-icons/bs/index.esm.js
@@ -469,78 +473,165 @@ var bs_index_esm = __webpack_require__(5484);
 
 
 
+
+
 function ProjectListCard({ status , src , title , desc , date  }) {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        class: "max-w-sm bg-white border border-gray-200 rounded-lg shadow",
+    let [isOpen, setIsOpen] = (0,react_.useState)(false);
+    function closeModal() {
+        setIsOpen(false);
+    }
+    function openModal() {
+        setIsOpen(true);
+    }
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                class: "relative",
+                class: "max-w-sm bg-white border border-gray-200 rounded-lg shadow",
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                        class: "rounded-t-lg",
-                        src: src,
-                        alt: ""
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiFillStar */.pHD, {
-                        class: `absolute top-2 right-3  
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        class: "relative",
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                class: "rounded-t-lg",
+                                src: src,
+                                alt: ""
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiFillStar */.pHD, {
+                                class: `absolute top-2 right-3  
           ${status === "edit" ? "text-red-500 drop-shadow-[0_5px_5px_rgba(255,0,0,0.6)]" : ""}
           ${status === "draft" ? "text-red-400 " : ""}
           ${status === "publish" ? "text-cyan-500 " : ""}
           
           `,
-                        size: 30
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                class: "p-5",
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        href: "#",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
-                            class: "mb-2 text-md font-bold tracking-tight text-gray-500",
-                            children: title
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        class: "mb-3 font-normal text-sm text-gray-700 dark:text-gray-400",
-                        children: desc
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "flex flex-row items-center",
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                                type: "button",
-                                class: "text-white bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 ",
-                                children: "Read More"
-                            }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "flex-1 flex flex-row justify-end ",
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        href: "/clientzone/project-list/1",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(bs_index_esm/* BsFillTrashFill */.AuQ, {
-                                            class: "w-5 h-5 mx-2 text-gray-400"
-                                        })
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        href: "/clientzone/project-list/1",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiOutlineEdit */.$iz, {
-                                            class: "w-5 h-5 mx-2 text-gray-400"
-                                        })
-                                    })
-                                ]
+                                size: 30
                             })
                         ]
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h5", {
-                        class: "mt-4 text-sm font-light tracking-tight text-gray-500",
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        class: "p-5",
                         children: [
-                            "at : ",
-                            date
+                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                href: "#",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                    class: "mb-2 text-md font-bold tracking-tight text-gray-500",
+                                    children: title
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                class: "mb-3 font-normal text-sm text-gray-700 dark:text-gray-400",
+                                children: desc
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                className: "flex flex-row items-center",
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                        href: "/project/2",
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                            type: "button",
+                                            class: "text-white bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 ",
+                                            children: "Read More"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        className: "flex-1 flex flex-row justify-end ",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(bs_index_esm/* BsFillTrashFill */.AuQ, {
+                                                class: "w-5 h-5 mx-2 text-gray-400",
+                                                onClick: openModal
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                href: "/clientzone/project-list/1",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiOutlineEdit */.$iz, {
+                                                    class: "w-5 h-5 mx-2 text-gray-400"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h5", {
+                                class: "mt-4 text-sm font-light tracking-tight text-gray-500",
+                                children: [
+                                    "at : ",
+                                    date
+                                ]
+                            })
                         ]
                     })
                 ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u, {
+                appear: true,
+                show: isOpen,
+                as: react_.Fragment,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V, {
+                    as: "div",
+                    className: "relative z-100",
+                    onClose: closeModal,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                            as: react_.Fragment,
+                            enter: "ease-out duration-300",
+                            enterFrom: "opacity-0",
+                            enterTo: "opacity-100",
+                            leave: "ease-in duration-200",
+                            leaveFrom: "opacity-100",
+                            leaveTo: "opacity-0",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "fixed inset-0 bg-black bg-opacity-25"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "fixed inset-0 overflow-y-auto",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "flex min-h-full items-center justify-center p-4 text-center",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                                    as: react_.Fragment,
+                                    enter: "ease-out duration-300",
+                                    enterFrom: "opacity-0 scale-95",
+                                    enterTo: "opacity-100 scale-100",
+                                    leave: "ease-in duration-200",
+                                    leaveFrom: "opacity-100 scale-100",
+                                    leaveTo: "opacity-0 scale-95",
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
+                                        className: "w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(dialog/* Dialog.Title */.V.Title, {
+                                                as: "h3",
+                                                className: "text-lg font-bold leading-6 text-gray-900",
+                                                children: "Warning!"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "mt-2",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: "text-sm text-gray-500",
+                                                    children: "Are you sure to delete this project"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                className: "mt-4 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                        type: "button",
+                                                        className: "inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
+                                                        onClick: closeModal,
+                                                        children: "Yes"
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                        type: "button",
+                                                        className: "inline-flex justify-center rounded-md border border-transparent bg-red-100 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
+                                                        onClick: closeModal,
+                                                        children: "No"
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                })
+                            })
+                        })
+                    ]
+                })
             })
         ]
     });
@@ -586,7 +677,7 @@ function Page() {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 className: "col-span-12 mt-8 font-bold text-xl flex-1 text-center",
-                children: "Edit Portofolio"
+                children: "Portofolio Journey"
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Card/* default */.Z, {
                 className: "col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
@@ -672,6 +763,20 @@ function Page() {
 }
 
 
+/***/ }),
+
+/***/ 9980:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "i": () => (/* binding */ n)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8038);
+/* harmony import */ var _utils_owner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1506);
+function n(...e){return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>(0,_utils_owner_js__WEBPACK_IMPORTED_MODULE_1__/* .getOwnerDocument */ .r)(...e),[...e])}
+
+
 /***/ })
 
 };
@@ -681,7 +786,7 @@ function Page() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,26,149,722,484,421,113,378,740,442], () => (__webpack_exec__(4758)));
+var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,26,149,722,484,990,421,113,378,740,442], () => (__webpack_exec__(4758)));
 module.exports = __webpack_exports__;
 
 })();
