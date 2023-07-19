@@ -3,7 +3,10 @@ import { Chart } from "../../Parts/Chart";
 import { AiFillAlert } from "react-icons/ai";
 import TopItemCard from "../../Parts/TopItemCard";
 import Image from "next/image";
-import {BsFillTrashFill} from 'react-icons/bs'
+import { BsFillTrashFill } from "react-icons/bs";
+import { AiOutlinePlus } from "react-icons/ai";
+import { FaDownload } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -14,12 +17,6 @@ export default function Page() {
       <Card className="col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <div className="p-8">
           <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-          <button
-              type="button"
-              class="text-white hover:text-white border  bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-2xl text-base font-medium px-5 py-2.5 text-center mr-3 mb-3"
-            >
-              + Image
-            </button>
             <button
               type="button"
               class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
@@ -58,11 +55,19 @@ export default function Page() {
                 src="https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"
                 alt=""
               />
-              <div className="absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2">
-                <BsFillTrashFill
-                  class="w-6 h-6 text-gray-400"
-                  color="#FE7263"
-                />
+              <div className="absolute  bottom-2 right-2 flex flex-row gap-x-3">
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <FaDownload
+                    class="w-6 h-6 text-gray-400 "
+                    color="#0CADB7"
+                  />
+                </div>
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <BsFillTrashFill
+                    class="w-6 h-6 text-gray-400 "
+                    color="#FE7263"
+                  />
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -71,11 +76,19 @@ export default function Page() {
                 src="https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png"
                 alt=""
               />
-              <div className="absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2">
-                <BsFillTrashFill
-                  class="w-6 h-6 text-gray-400"
-                  color="#FE7263"
-                />
+              <div className="absolute  bottom-2 right-2 flex flex-row gap-x-3">
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <FaDownload
+                    class="w-6 h-6 text-gray-400 "
+                    color="#0CADB7"
+                  />
+                </div>
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <BsFillTrashFill
+                    class="w-6 h-6 text-gray-400 "
+                    color="#FE7263"
+                  />
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -84,11 +97,19 @@ export default function Page() {
                 src="https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg"
                 alt=""
               />
-              <div className="absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2">
-                <BsFillTrashFill
-                  class="w-6 h-6 text-gray-400"
-                  color="#FE7263"
-                />
+              <div className="absolute  bottom-2 right-2 flex flex-row gap-x-3">
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <FaDownload
+                    class="w-6 h-6 text-gray-400 "
+                    color="#0CADB7"
+                  />
+                </div>
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <BsFillTrashFill
+                    class="w-6 h-6 text-gray-400 "
+                    color="#FE7263"
+                  />
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -97,11 +118,19 @@ export default function Page() {
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
                 alt=""
               />
-              <div className="absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2">
-                <BsFillTrashFill
-                  class="w-6 h-6 text-gray-400"
-                  color="#FE7263"
-                />
+              <div className="absolute  bottom-2 right-2 flex flex-row gap-x-3">
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <FaDownload
+                    class="w-6 h-6 text-gray-400 "
+                    color="#0CADB7"
+                  />
+                </div>
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <BsFillTrashFill
+                    class="w-6 h-6 text-gray-400 "
+                    color="#FE7263"
+                  />
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -110,14 +139,32 @@ export default function Page() {
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
                 alt=""
               />
-              <div className="absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2">
-                <BsFillTrashFill
-                  class="w-6 h-6 text-gray-400"
-                  color="#FE7263"
-                />
+              <div className="absolute  bottom-2 right-2 flex flex-row gap-x-3">
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <FaDownload
+                    class="w-6 h-6 text-gray-400 "
+                    color="#0CADB7"
+                  />
+                </div>
+                <div className="items-center shadow-lg justify-center bg-white rounded-full p-2">
+                  <BsFillTrashFill
+                    class="w-6 h-6 text-gray-400 "
+                    color="#FE7263"
+                  />
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="fixed bottom-10 right-10 flex flex-col">
+          <Link
+            className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full mb-2"
+            href={
+              "mailto:support@example.com?subject=SendMail&body=Description"
+            }
+          >
+            <AiOutlinePlus />
+          </Link>
         </div>
       </Card>
     </>
