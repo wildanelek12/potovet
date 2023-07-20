@@ -29,6 +29,7 @@ function DatePickerComponent({ asSingle , value , onChange  }) {
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "border-2 border-[C6C6C6] rounded-lg ",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_tailwindcss_datepicker__WEBPACK_IMPORTED_MODULE_2___default()), {
+                        inputClassName: "focus:outline-none focus:ring-0 focus:ring-offset-0 p-2",
                         asSingle: asSingle,
                         primaryColor: "teal",
                         value: value ?? "",

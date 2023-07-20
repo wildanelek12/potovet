@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDoubleDownIcon } from "@heroicons/react/20/solid";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { useRouter } from "next/navigation";
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,17 +16,21 @@ const montserrat = Montserrat({
 });
 
 export default function RootLayout({ children }) {
-  var user_data = JSON.parse(localStorage.getItem("user"));
-  var token = localStorage.getItem("token");
+  var user_data;
+  var token;
+  useEffect(() => {
+    // Perform localStorage action
+    user_data = JSON.parse(localStorage.getItem("user"));
+    token = localStorage.getItem("token");
+  }, []);
+
   const router = useRouter();
   const logout = async () => {
     var header = new Headers();
-    header.append(
-      "Authorization","Bearer "+localStorage.getItem('token')
-    );
+    header.append("Authorization", "Bearer " + localStorage.getItem("token"));
     var requestOptions = {
       method: "POST",
-      headers : header,
+      headers: header,
     };
 
     try {

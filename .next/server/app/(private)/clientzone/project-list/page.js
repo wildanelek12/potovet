@@ -566,7 +566,7 @@ function ProjectListCard({ status , src , title , desc , date  }) {
                 as: react_.Fragment,
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V, {
                     as: "div",
-                    className: "relative z-100",
+                    className: "relative z-50",
                     onClose: closeModal,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
@@ -578,7 +578,7 @@ function ProjectListCard({ status , src , title , desc , date  }) {
                             leaveFrom: "opacity-100",
                             leaveTo: "opacity-0",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "fixed inset-0 bg-black bg-opacity-25"
+                                className: "fixed h-screen w-screen inset-0 bg-black bg-opacity-25"
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -763,20 +763,6 @@ function Page() {
 }
 
 
-/***/ }),
-
-/***/ 9980:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "i": () => (/* binding */ n)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8038);
-/* harmony import */ var _utils_owner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1506);
-function n(...e){return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>(0,_utils_owner_js__WEBPACK_IMPORTED_MODULE_1__/* .getOwnerDocument */ .r)(...e),[...e])}
-
-
 /***/ })
 
 };
@@ -786,7 +772,7 @@ function n(...e){return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>(0,_u
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,26,149,722,484,990,421,113,378,740,442], () => (__webpack_exec__(4758)));
+var __webpack_exports__ = __webpack_require__.X(0, [732,421,804,929,921,568,990,149,484,722,927,113,378,740,442], () => (__webpack_exec__(4758)));
 module.exports = __webpack_exports__;
 
 })();

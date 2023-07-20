@@ -527,8 +527,15 @@ function Detail() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
                         href: "/clientzone/project-list/1",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                            className: " bg-primary text-white p-6 text-xl font-semibold rounded-full ",
+                            className: " bg-primary text-white p-6 text-xl mb-2 font-semibold rounded-full ",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_6__/* .AiOutlineEdit */ .$iz, {})
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
+                        href: "/clientzone/project-list/1",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                            className: " bg-primary text-white p-6 text-xl font-semibold rounded-full ",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsShareFill */ .Mp, {})
                         })
                     })
                 ]
@@ -547,7 +554,7 @@ function Detail() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,499,933,45,639,769,955,421,772], () => (__webpack_exec__(2847)));
+var __webpack_exports__ = __webpack_require__.X(0, [732,421,804,929,499,449,943,178,766,927,772], () => (__webpack_exec__(2847)));
 module.exports = __webpack_exports__;
 
 })();

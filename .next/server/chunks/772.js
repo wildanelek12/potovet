@@ -70,8 +70,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3605);
-/* harmony import */ var _next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3605);
+/* harmony import */ var _next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1338);
 /* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_globals_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _constants_fonts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8898);
@@ -80,12 +80,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8421);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1386);
-/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6235);
-/* harmony import */ var _heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(7664);
-/* harmony import */ var _heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1386);
+/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(6235);
+/* harmony import */ var _heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7664);
+/* harmony import */ var _heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9483);
+/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_navigation__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -97,6 +100,37 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function RootLayout({ children  }) {
+    var user_data;
+    var token;
+    (0,react__WEBPACK_IMPORTED_MODULE_6__.useEffect)(()=>{
+        // Perform localStorage action
+        user_data = JSON.parse(localStorage.getItem("user"));
+        token = localStorage.getItem("token");
+    }, []);
+    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_7__.useRouter)();
+    const logout = async ()=>{
+        var header = new Headers();
+        header.append("Authorization", "Bearer " + localStorage.getItem("token"));
+        var requestOptions = {
+            method: "POST",
+            headers: header
+        };
+        try {
+            const response = await fetch("http://127.0.0.1:8000/api/" + "logout", requestOptions);
+            if (response.status == 200) {
+                localStorage.removeItem("token");
+                localStorage.removeItem("user");
+                router.refresh();
+            } else {
+                var message = await response.json();
+                setErrorMessage(message.message);
+                setShowModalError(true);
+            }
+        // 👉️ 200
+        } catch (err) {
+            console.log(err);
+        }
+    };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("html", {
         lang: "en",
         children: [
@@ -108,15 +142,13 @@ function RootLayout({ children  }) {
                 ].join(" "),
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", {
-                        className: `${(_next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_7___default().variable)} font-sans py-6 px-16 shadow-md flex items-center bg-white text-white`,
+                        className: `${(_next_font_google_target_css_path_app_public_layout_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_display_fallback_variableName_montserrat___WEBPACK_IMPORTED_MODULE_8___default().variable)} font-sans py-6 px-16 shadow-md flex items-center bg-white text-white`,
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                 href: "/",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
-                                    src: "/logo.svg",
-                                    width: 1200,
-                                    height: 1200,
-                                    className: "w-32 object-contain self-center mr-8"
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
+                                    className: "font-bold text-primary text-2xl mr-8",
+                                    children: "POTOVET"
                                 })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -140,13 +172,13 @@ function RootLayout({ children  }) {
                                 ]
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "flex flex-row space-x-3",
-                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu */ .v, {
+                                className: "flex flex-row space-x-3 items-center",
+                                children: token ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu */ .v, {
                                     as: "div",
                                     className: "relative inline-block text-left",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu.Button */ .v.Button, {
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu.Button */ .v.Button, {
                                                 className: "inline-flex w-full justify-center items-center rounded-md bg-secondary px-2 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_5___default()), {
@@ -156,15 +188,15 @@ function RootLayout({ children  }) {
                                                         width: 32,
                                                         height: 32
                                                     }),
-                                                    "Ario Bayu",
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_9__, {
+                                                    user_data != null ? user_data.name : "-",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_20_solid__WEBPACK_IMPORTED_MODULE_10__, {
                                                         className: "ml-2 -mr-1 h-5 w-5 text-white hover:text-violet-100",
                                                         "aria-hidden": "true"
                                                     })
                                                 ]
                                             })
                                         }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_10__/* .Transition */ .u, {
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_11__/* .Transition */ .u, {
                                             as: react__WEBPACK_IMPORTED_MODULE_6__.Fragment,
                                             enter: "transition ease-out duration-100",
                                             enterFrom: "transform opacity-0 scale-95",
@@ -172,14 +204,14 @@ function RootLayout({ children  }) {
                                             leave: "transition ease-in duration-75",
                                             leaveFrom: "transform opacity-100 scale-100",
                                             leaveTo: "transform opacity-0 scale-95",
-                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu.Items */ .v.Items, {
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu.Items */ .v.Items, {
                                                 className: "absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "px-1 py-1",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                                             href: "/clientzone",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu.Item */ .v.Item, {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu.Item */ .v.Item, {
                                                                 children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                                         className: `${active ? "bg-violet-500 text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`,
                                                                         children: "Clientzone"
@@ -191,7 +223,7 @@ function RootLayout({ children  }) {
                                                         className: "px-1 py-1",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
                                                             href: "/project",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu.Item */ .v.Item, {
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu.Item */ .v.Item, {
                                                                 children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                                                         className: `${active ? "bg-violet-500 text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`,
                                                                         children: "Profil"
@@ -201,20 +233,25 @@ function RootLayout({ children  }) {
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "px-1 py-1",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                            href: "/clientzone/dashboard",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_8__/* .Menu.Item */ .v.Item, {
-                                                                children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                                        className: `${active ? "bg-violet-500 text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`,
-                                                                        children: "Logout"
-                                                                    })
-                                                            })
+                                                        onClick: logout,
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_9__/* .Menu.Item */ .v.Item, {
+                                                            children: ({ active  })=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                                    className: `${active ? "bg-violet-500 text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`,
+                                                                    children: "Logout"
+                                                                })
                                                         })
                                                     })
                                                 ]
                                             })
                                         })
                                     ]
+                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                    href: "/login",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-white bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 ",
+                                        children: "Login"
+                                    })
                                 })
                             })
                         ]
@@ -229,26 +266,6 @@ function RootLayout({ children  }) {
         ]
     });
 }
-
-
-/***/ }),
-
-/***/ 8898:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _next_font_google_target_css_path_constants_fonts_index_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_variableName_MontserratFont___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2324);
-/* harmony import */ var _next_font_google_target_css_path_constants_fonts_index_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_variableName_MontserratFont___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_next_font_google_target_css_path_constants_fonts_index_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_variableName_MontserratFont___WEBPACK_IMPORTED_MODULE_0__);
-
-const Fonts = {
-    className: [
-        (_next_font_google_target_css_path_constants_fonts_index_js_import_Montserrat_arguments_subsets_latin_variable_font_montserrat_variableName_MontserratFont___WEBPACK_IMPORTED_MODULE_0___default().variable)
-    ].join(" ")
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Fonts);
 
 
 /***/ })

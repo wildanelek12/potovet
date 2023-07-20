@@ -405,7 +405,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ 2806:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1376))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 255))
 
 /***/ }),
 
@@ -418,25 +418,173 @@ module.exports = createProxy("C:\\Users\\wildan\\Documents\\Web Project\\lioke-r
 
 /***/ }),
 
-/***/ 1376:
+/***/ 255:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Page)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8421);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1621);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_kategori_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(687);
-/* harmony import */ var _components_search_bar_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6983);
-/* harmony import */ var _components_recent_search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3924);
-/* harmony import */ var _components_filter_project__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(740);
-/* harmony import */ var _components_project__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6847);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ Page)
+});
+
+// EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(6786);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(8421);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1621);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+// EXTERNAL MODULE: external "next/dist/compiled/react"
+var react_ = __webpack_require__(8038);
+;// CONCATENATED MODULE: ./components/kategori-card/index.js
+
+
+function index(props) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: ` h-fit ${props.isActive ? "bg-white text-black" : "bg-[#0A0A0A] text-white text-med"}  px-8 py-2 font-medium rounded-full`,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+            className: `myClass`,
+            children: props.title
+        })
+    });
+}
+
+;// CONCATENATED MODULE: ./components/search-bar-home/index.js
+
+
+function SearchBoxHero() {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: "w-1/3 h-fit mt-8",
+        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+            className: "flex w-full",
+            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "flex border-2 w-full rounded-full",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                        className: "flex items-center justify-center px-4 border-r bg-white rounded-l-full",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                            className: "w-6 h-6 text-gray-600",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            viewBox: "0 0 24 24",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                                d: "M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("input", {
+                        type: "text",
+                        className: "px-4 w-full py-4 rounded-r-full border-transparent focus:outline-0",
+                        placeholder: "Search..."
+                    })
+                ]
+            })
+        })
+    });
+}
+
+;// CONCATENATED MODULE: ./components/recent-search/index.js
+
+
+function RecentSearch(props) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: ` h-fit  bg-transparent border-white border text-white text-med px-4 py-2 font-medium rounded-full`,
+        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+            className: `myClass`,
+            children: props.title
+        })
+    });
+}
+
+// EXTERNAL MODULE: ./components/filter-project/index.js
+var filter_project = __webpack_require__(740);
+// EXTERNAL MODULE: ./node_modules/react-icons/ai/index.esm.js
+var index_esm = __webpack_require__(9722);
+// EXTERNAL MODULE: ./node_modules/react-icons/fa/index.esm.js
+var fa_index_esm = __webpack_require__(6775);
+;// CONCATENATED MODULE: ./components/project/index.js
+
+
+
+
+
+
+function Project() {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        className: "flex flex-col",
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
+                href: "/project/2",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                        src: "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc",
+                        width: 1200,
+                        height: 1200,
+                        className: "rounded-lg w-fit h-fit object-cover mt-8"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "flex flex-row mt-2 items-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: "font-semibold",
+                            children: "Portofolio Website with elegan color "
+                        })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "flex flex-row mt-2 items-center",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        className: "basis-2/3 flex flex-row items-center",
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
+                            href: "/project",
+                            className: "flex flex-row items-center",
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                    src: "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
+                                    width: 1200,
+                                    height: 1200,
+                                    className: "rounded-full w-10 h-10 object-cover "
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    className: "text-black pl-3 text-sm",
+                                    children: "Wildan Romiza"
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: "basis-1/3 justify-end flex flex-row items-center mr-2",
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiFillStar */.pHD, {
+                                width: 8,
+                                height: 8
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                className: "mr-2",
+                                children: "6"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(fa_index_esm/* FaCommentAlt */.diV, {
+                                width: 4,
+                                height: 4,
+                                className: "mr-1"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                children: "6"
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    });
+}
+
+;// CONCATENATED MODULE: ./app/(public)/page.js
 
 
 
@@ -448,10 +596,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Page() {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: "",
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 id: "hero",
                 className: "flex flex-col bg-primary py-16 items-center ",
                 style: {
@@ -461,85 +609,85 @@ function Page() {
                     backgroundSize: "cover"
                 },
                 children: [
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         id: "category",
                         className: "flex flex-row space-x-4",
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_kategori_card__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(index, {
                                 title: "Mobile",
                                 isActive: true
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_kategori_card__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(index, {
                                 title: "Website"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_kategori_card__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(index, {
                                 title: "Design"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_kategori_card__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(index, {
                                 title: "Paper"
                             })
                         ]
                     }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                         className: "text-white text-4xl font-bold text-center tracking-wide mt-12 leading-snug",
                         children: [
                             "Explore the world’s leading ",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             " design portfolios"
                         ]
                     }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                         className: "text-white text-lg font-normal text-center tracking-wide mt-8 leading-snug",
                         children: [
                             "Millions of designers and agencies around the world showcase their portfolio work on ",
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             "Dribbble - the home to the world’s best design and creative professionals."
                         ]
                     }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_search_bar_home__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(SearchBoxHero, {
                         className: "mt-4"
                     }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "flex flex-row mt-8 space-x-4 items-center",
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                 className: "text-white",
                                 children: "Trending Search"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_recent_search__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(RecentSearch, {
                                 title: "Portofolio Page"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_recent_search__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(RecentSearch, {
                                 title: "Landing Page"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_recent_search__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(RecentSearch, {
                                 title: "Mobile Card"
                             }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_recent_search__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+                            /*#__PURE__*/ jsx_runtime_.jsx(RecentSearch, {
                                 title: "Mobile"
                             })
                         ]
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 id: "company",
                 className: "flex flex-col px-32 py-8",
                 children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "w-fit",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_filter_project__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {})
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(filter_project/* default */.Z, {})
                     }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-2",
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {}),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {})
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(Project, {})
                         ]
                     })
                 ]
@@ -558,7 +706,7 @@ function Page() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,719,568,149,499,722,45,775,421,772,740,344], () => (__webpack_exec__(6310)));
+var __webpack_exports__ = __webpack_require__.X(0, [732,421,804,929,568,499,149,722,943,201,927,772,740], () => (__webpack_exec__(6310)));
 module.exports = __webpack_exports__;
 
 })();

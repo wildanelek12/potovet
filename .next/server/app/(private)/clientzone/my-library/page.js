@@ -1,4 +1,3 @@
-"use strict";
 (() => {
 var exports = {};
 exports.id = 463;
@@ -8,6 +7,7 @@ exports.modules = {
 /***/ 8038:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/compiled/react");
 
 /***/ }),
@@ -15,6 +15,7 @@ module.exports = require("next/dist/compiled/react");
 /***/ 8704:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/compiled/react-dom/server-rendering-stub");
 
 /***/ }),
@@ -22,6 +23,7 @@ module.exports = require("next/dist/compiled/react-dom/server-rendering-stub");
 /***/ 7897:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/compiled/react-server-dom-webpack/client");
 
 /***/ }),
@@ -29,6 +31,7 @@ module.exports = require("next/dist/compiled/react-server-dom-webpack/client");
 /***/ 6786:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/compiled/react/jsx-runtime");
 
 /***/ }),
@@ -36,6 +39,7 @@ module.exports = require("next/dist/compiled/react/jsx-runtime");
 /***/ 3918:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/amp-context.js");
 
 /***/ }),
@@ -43,6 +47,7 @@ module.exports = require("next/dist/shared/lib/amp-context.js");
 /***/ 5732:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/amp-mode.js");
 
 /***/ }),
@@ -50,6 +55,7 @@ module.exports = require("next/dist/shared/lib/amp-mode.js");
 /***/ 3280:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/app-router-context.js");
 
 /***/ }),
@@ -57,6 +63,7 @@ module.exports = require("next/dist/shared/lib/app-router-context.js");
 /***/ 2796:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
@@ -64,6 +71,7 @@ module.exports = require("next/dist/shared/lib/head-manager-context.js");
 /***/ 9274:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/hooks-client-context.js");
 
 /***/ }),
@@ -71,6 +79,7 @@ module.exports = require("next/dist/shared/lib/hooks-client-context.js");
 /***/ 4014:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 
 /***/ }),
@@ -78,6 +87,7 @@ module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 /***/ 4486:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/image-blur-svg.js");
 
 /***/ }),
@@ -85,6 +95,7 @@ module.exports = require("next/dist/shared/lib/image-blur-svg.js");
 /***/ 744:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/image-config-context.js");
 
 /***/ }),
@@ -92,6 +103,7 @@ module.exports = require("next/dist/shared/lib/image-config-context.js");
 /***/ 5843:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/image-config.js");
 
 /***/ }),
@@ -99,6 +111,7 @@ module.exports = require("next/dist/shared/lib/image-config.js");
 /***/ 9552:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/image-loader");
 
 /***/ }),
@@ -106,6 +119,7 @@ module.exports = require("next/dist/shared/lib/image-loader");
 /***/ 8524:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
@@ -113,6 +127,7 @@ module.exports = require("next/dist/shared/lib/is-plain-object.js");
 /***/ 8020:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
@@ -120,6 +135,7 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 /***/ 7342:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/no-ssr-error.js");
 
 /***/ }),
@@ -127,6 +143,7 @@ module.exports = require("next/dist/shared/lib/no-ssr-error.js");
 /***/ 4406:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
 
 /***/ }),
@@ -134,6 +151,7 @@ module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.j
 /***/ 4964:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router-context.js");
 
 /***/ }),
@@ -141,6 +159,7 @@ module.exports = require("next/dist/shared/lib/router-context.js");
 /***/ 1751:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
 
 /***/ }),
@@ -148,6 +167,7 @@ module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js")
 /***/ 6220:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
 
 /***/ }),
@@ -155,6 +175,7 @@ module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
 /***/ 4053:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
 
 /***/ }),
@@ -162,6 +183,7 @@ module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname
 /***/ 3938:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 
 /***/ }),
@@ -169,6 +191,7 @@ module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
 /***/ 9565:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
 
 /***/ }),
@@ -176,6 +199,7 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 /***/ 5789:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
 
 /***/ }),
@@ -183,6 +207,7 @@ module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-in
 /***/ 1897:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
 
 /***/ }),
@@ -190,6 +215,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
 /***/ 1428:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 
 /***/ }),
@@ -197,6 +223,7 @@ module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
 /***/ 8854:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
 
 /***/ }),
@@ -204,6 +231,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
 /***/ 1292:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
 
 /***/ }),
@@ -211,6 +239,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 /***/ 4567:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
 
 /***/ }),
@@ -218,6 +247,7 @@ module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js")
 /***/ 979:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
 
 /***/ }),
@@ -225,6 +255,7 @@ module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
 /***/ 3297:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
 
 /***/ }),
@@ -232,6 +263,7 @@ module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slas
 /***/ 6052:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
 
 /***/ }),
@@ -239,6 +271,7 @@ module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js"
 /***/ 4226:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 
 /***/ }),
@@ -246,6 +279,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 /***/ 5052:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
@@ -253,6 +287,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 /***/ 3349:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/server-inserted-html.js");
 
 /***/ }),
@@ -260,6 +295,7 @@ module.exports = require("next/dist/shared/lib/server-inserted-html.js");
 /***/ 2470:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/side-effect.js");
 
 /***/ }),
@@ -267,6 +303,7 @@ module.exports = require("next/dist/shared/lib/side-effect.js");
 /***/ 9232:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
@@ -274,6 +311,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 /***/ 618:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
@@ -281,6 +319,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 /***/ 2206:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRouter": () => (/* reexport default from dynamic */ next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default.a),
@@ -378,9 +417,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ 9971:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9797, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2919, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3852))
+
+/***/ }),
+
 /***/ 9852:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Page)
@@ -392,7 +441,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5456);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(634);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7639);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7639);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9769);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1930);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2890);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
 
 
 
@@ -407,138 +463,203 @@ function Page() {
                 className: "col-span-12 mt-8 font-bold text-xl flex-1 text-center",
                 children: "My Library"
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
                 className: "col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "p-8",
-                    children: [
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            class: "flex items-center justify-center py-4 md:py-8 flex-wrap",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-white hover:text-white border bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-2xl text-base font-medium px-5 py-2.5 text-center mr-3 mb-3",
-                                    children: "+ Image"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800",
-                                    children: "All categories"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
-                                    children: "Academic"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
-                                    children: "Professional"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
-                                    children: "Research"
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                    type: "button",
-                                    class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
-                                    children: "Informal Trainings"
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            class: "grid grid-cols-2 md:grid-cols-3 gap-4",
-                            children: [
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            class: "h-auto max-w-full rounded-lg",
-                                            src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
-                                            alt: ""
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillTrashFill */ .AuQ, {
-                                                class: "w-6 h-6 text-gray-400",
-                                                color: "#FE7263"
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "p-8",
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                class: "flex items-center justify-center py-4 md:py-8 flex-wrap",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800",
+                                        children: "All categories"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        children: "Academic"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        children: "Professional"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        children: "Research"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                        type: "button",
+                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        children: "Informal Trainings"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                class: "grid grid-cols-2 md:grid-cols-3 gap-4",
+                                children: [
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                class: "h-auto max-w-full rounded-lg",
+                                                src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
+                                                alt: ""
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#0CADB7"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#FE7263"
+                                                        })
+                                                    })
+                                                ]
                                             })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            class: "h-auto max-w-full rounded-lg",
-                                            src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
-                                            alt: ""
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillTrashFill */ .AuQ, {
-                                                class: "w-6 h-6 text-gray-400",
-                                                color: "#FE7263"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                class: "h-auto max-w-full rounded-lg",
+                                                src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
+                                                alt: ""
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#0CADB7"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#FE7263"
+                                                        })
+                                                    })
+                                                ]
                                             })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            class: "h-auto max-w-full rounded-lg",
-                                            src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
-                                            alt: ""
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillTrashFill */ .AuQ, {
-                                                class: "w-6 h-6 text-gray-400",
-                                                color: "#FE7263"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                class: "h-auto max-w-full rounded-lg",
+                                                src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
+                                                alt: ""
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#0CADB7"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#FE7263"
+                                                        })
+                                                    })
+                                                ]
                                             })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            class: "h-auto max-w-full rounded-lg",
-                                            src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-                                            alt: ""
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillTrashFill */ .AuQ, {
-                                                class: "w-6 h-6 text-gray-400",
-                                                color: "#FE7263"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                class: "h-auto max-w-full rounded-lg",
+                                                src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+                                                alt: ""
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#0CADB7"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#FE7263"
+                                                        })
+                                                    })
+                                                ]
                                             })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                            class: "h-auto max-w-full rounded-lg",
-                                            src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-                                            alt: ""
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                            className: "absolute shadow-lg bottom-2 right-2 w-12 h-12 flex items-center justify-center bg-white rounded-full p-2",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillTrashFill */ .AuQ, {
-                                                class: "w-6 h-6 text-gray-400",
-                                                color: "#FE7263"
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                class: "h-auto max-w-full rounded-lg",
+                                                src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+                                                alt: ""
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#0CADB7"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
+                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            color: "#FE7263"
+                                                        })
+                                                    })
+                                                ]
                                             })
-                                        })
-                                    ]
-                                })
-                            ]
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "fixed bottom-10 right-10 flex flex-col",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            className: " bg-primary text-white p-6 text-xl font-semibold rounded-full mb-2",
+                            href: "mailto:support@example.com?subject=SendMail&body=Description",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_8__/* .AiOutlinePlus */ .Lfi, {})
                         })
-                    ]
-                })
+                    })
+                ]
             })
         ]
     });
@@ -554,7 +675,7 @@ function Page() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [225,26,499,933,639,522,421,113,832], () => (__webpack_exec__(2206)));
+var __webpack_exports__ = __webpack_require__.X(0, [732,421,921,499,449,178,522,930,927,113,438], () => (__webpack_exec__(2206)));
 module.exports = __webpack_exports__;
 
 })();
