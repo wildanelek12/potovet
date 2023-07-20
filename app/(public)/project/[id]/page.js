@@ -1,6 +1,6 @@
 import React from "react";
 import { Montserrat } from "@next/font/google";
-import { BsPrinter } from "react-icons/bs";
+import { BsPrinter,BsShareFill } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 import Image from "next/image";
@@ -113,8 +113,13 @@ export default function Detail() {
           <BsPrinter />
         </button>
         <Link href={"/clientzone/project-list/1"}>
-          <button className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full ">
+          <button className="  bg-primary  text-white p-6 text-xl mb-2 font-semibold rounded-full ">
             <AiOutlineEdit />
+          </button>
+        </Link>
+        <Link href={"/clientzone/project-list/1"}>
+          <button className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full ">
+            <BsShareFill />
           </button>
         </Link>
       </div>
