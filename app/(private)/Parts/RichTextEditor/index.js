@@ -26,7 +26,7 @@ const editorConfiguration = {
   //   height: "50px",
 };
 
-export default function RichTextEditor({ value, onChange, label }) {
+export default function RichTextEditor({ value, onChange, label,isTextArea }) {
   const editorRef = useRef();
   const [rendered, setRendered] = useState(false);
   const [count, setCount] = useState(0);
@@ -76,7 +76,7 @@ export default function RichTextEditor({ value, onChange, label }) {
           <CKEditor
             editor={Editor}
             data={value}
-            config={editorConfiguration}
+            config={!isTextArea && editorConfiguration}
             onChange={(_, editor) => onChange(handleChange(editor))}
           />
         )}
