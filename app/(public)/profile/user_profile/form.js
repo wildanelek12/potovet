@@ -1,51 +1,14 @@
-"use client";
+'use client'
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect,useState } from "react";
 import Input from "../Parts/Input";
 import RichTextEditor from "@/app/(private)/Parts/RichTextEditor";
+import { useRecoilValue } from "recoil";
+import { atomFormUserProfile } from "@/recoil/atom";
 
 export default function UserProfile() {
-  const [userProfile, setUserProfile] = useState({
-    id: "",
-    name: "",
-    job: "",
-    summary: "",
-  });
-  const [tes,setTes] = useState("");
-
-  useEffect(() => {
-    getUserData();
-  }, []);
-  async function getUserData() {
-    var header = new Headers();
-    header.append("Authorization", "Bearer " + localStorage.getItem("token"));
-    var requestOptions = {
-      method: "GET",
-      headers: header,
-    };
-    try {
-      const response = await fetch(
-        process.env.NEXT_PUBLIC_BASE_URL + "user",
-        requestOptions
-      );
-      if (response.status == 200) {
-        var data = await response.json();
-   
-        setTes(1);
-        console.log(tes);
-        // setUserProfile({ ...userProfile, id: data.data.id});
-        // console.log(userProfile);
-      } else {
-        var message = await response.json();
-        setErrorMessage(message.message);
-        setShowModalError(true);
-      }
-      // 👉️ 200
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  const userData = useRecoilValue(atomFormUserProfile) 
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center gap-x-4">
@@ -71,8 +34,8 @@ export default function UserProfile() {
           id="name"
           label="Name"
           type="text"
-          value={userProfile.name}
-          onChange={(e) => setUserProfile({ ...userProfile, name: e })}
+          value={userData.name}
+          // onChange={(e) => setUserProfile({ ...userProfile, name: e })}
         />
       </div>
       <div className="mt-4">
@@ -80,16 +43,16 @@ export default function UserProfile() {
           id="job"
           label="Job"
           type="text"
-          value={userProfile.job}
-          onChange={(e) => setUserProfile({ ...userProfile, job: e })}
+          // value={userProfile.job}
+          // onChange={(e) => setUserProfile({ ...userProfile, job: e })}
         />
       </div>
       <div className="mt-4">
         <RichTextEditor
           label="Summary"
-          value={userProfile.method}
+          // value={userProfile.method}
           isTextArea={true}
-          onChange={(e) => setUserProfile({ ...userProfile, summary: e })}
+          // onChange={(e) => setUserProfile({ ...userProfile, summary: e })}
         />
       </div>
       <div className="mt-4">

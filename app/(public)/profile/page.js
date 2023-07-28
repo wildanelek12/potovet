@@ -2,13 +2,52 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import UserProfile from "./user_profile/form";
+import { useRecoilState } from "recoil";
+import { atomFormUserProfile, atomToken } from "@/recoil/atom";
 
 export default function page() {
   const [rendered, setRendered] = useState(false);
+  const [userData, setUserData] = useRecoilState(atomFormUserProfile);
+  const [token, setToken] = useRecoilState(atomToken);
+
+  async function getUserData() {
+    console.log(token);
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer "+token);
+
+    var requestOptions = {
+      method: "GET",
+      headers : myHeaders
+    };
+
+    try {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_BASE_URL + "user",
+        requestOptions
+      );
+      if (response.status == 200) {
+        var data = await response.json();
+        console.log(data);
+      } else {
+        var message = await response.json();
+        setErrorMessage(message.message);
+      }
+      // 👉️ 200
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   useEffect(() => {
-    setRendered(true)
-  }, [])
-  
+    setRendered(true);
+    const user = JSON.parse(localStorage.getItem("user"));
+    const local_token = localStorage.getItem("token");
+    if (local_token) {
+      setToken(local_token);
+      console.log(token);
+      getUserData();
+    }
+  }, []);
   return (
     <div className="flex w-1/2 flex-col  mt-20 mx-auto  ">
       <div className="flex flex-row gap-x-8">
@@ -71,9 +110,7 @@ export default function page() {
             </a>
           </div>
         </div>
-        <div className=" basis-2/3 ">
-          {rendered && <UserProfile />}
-        </div>
+        <div className=" basis-2/3 ">{rendered && <UserProfile />}</div>
       </div>
     </div>
   );

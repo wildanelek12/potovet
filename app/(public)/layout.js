@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
   const [rendered, setRendered] = useState(false);
   const [token, setToken] = useState("");
   const [userData, setUserData] = useState([]);
-  var user_data;
   useEffect(() => {
     // Perform localStorage action
     setUserData(JSON.parse(localStorage.getItem("user")));

@@ -70,3 +70,18 @@ export const atomFormProject = atom({
     challenging_impact: "",
   },
 });
+
+export const atomFormUserProfile = atom({
+  key: "atomFormUserProfile",
+  default: {
+    id: "",
+    name: "",
+    job: "",
+    summary: "",
+  },
+});
+
+export const atomToken = atom({
+  key: "atomToken",
+  default: "",
+});
