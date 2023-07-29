@@ -13,7 +13,6 @@
     "@ckeditor/ckeditor5-word-count": "^37.1.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
-    "@next/font": "13.1.6",
     "@reduxjs/toolkit": "^1.9.3",
     "chart.js": "^4.2.1",
     "ckeditor5-custom-build": "file:./public/js/ckeditor5/",

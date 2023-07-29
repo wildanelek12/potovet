@@ -1,5 +1,5 @@
 import React from "react";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 import { BsPrinter,BsShareFill } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";

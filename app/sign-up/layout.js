@@ -2,7 +2,7 @@
 import "../globals.css";
 import Fonts from "@/constants/fonts";
 import { RecoilRoot } from "recoil";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",

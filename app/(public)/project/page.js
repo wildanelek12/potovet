@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 import { FaBeer } from "react-icons/fa";
 import Link from "next/link";
 import IconButtonDescription from "@/components/icon-project-desc";
