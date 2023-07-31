@@ -14,10 +14,11 @@
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
     "@reduxjs/toolkit": "^1.9.3",
+    "axios": "^1.4.0",
     "chart.js": "^4.2.1",
     "ckeditor5-custom-build": "file:./public/js/ckeditor5/",
     "dayjs": "^1.11.7",
-    "eslint": "8.33.0",
+    "eslint": "8.46.0",
     "eslint-config-next": "^13.4.12",
     "flowbite": "^1.7.0",
     "flowbite-datepicker": "^1.2.2",
@@ -32,11 +33,10 @@
     "react-quill": "^2.0.0",
     "react-redux": "^8.0.5",
     "react-tailwindcss-datepicker": "^1.6.1",
-    "recoil": "^0.7.7"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "recoil": "^0.7.7",
+    "sharp": "^0.32.4",
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.3",
+    "postcss": "^8.4.27"
   }
 }

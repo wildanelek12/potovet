@@ -1,49 +1,39 @@
-"use client";
-import { useState, useEffect } from "react";
-import React from "react";
-import { useRouter } from "next/navigation";
-import AlertDialog from "@/components/alert-dialog";
-import Link from "next/link";
+"use client"
+
+import { useState, useEffect } from "react"
+import React from "react"
+import { useRouter } from "next/navigation"
+import AlertDialog from "@/components/alert-dialog"
+import Link from "next/link"
+import { useLoginMutation } from "@/redux/services/authApi"
 
 export default function Page() {
-  const router = useRouter();
+  const router = useRouter()
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-  });
-  const [showModalError, setShowModalError] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  })
 
-  const login = async () => {
-    var convertedData = new FormData();
-    convertedData.append("email", formData.email);
-    convertedData.append("password", formData.password);
+  const [showModalError, setShowModalError] = useState(false)
+  const [errorMessage, setErrorMessage] = useState("")
 
-    var requestOptions = {
-      method: "POST",
-      body: convertedData,
-    };
+  const [login] = useLoginMutation()
 
-    try {
-      const response = await fetch(
-        process.env.NEXT_PUBLIC_BASE_URL + "login",
-        requestOptions
-      );
-      if (response.status == 200) {
-        var data = await response.json();
-        localStorage.setItem("token", data.data.token);
-        localStorage.setItem("user", JSON.stringify(data.data.user));
-        router.push("/");
+  const handleOnClick = () => {
+    login({data: formData}).then(({data, error}) => {
+      if (!error) {
+        const { user, token } = data?.data
+
+        localStorage.setItem("token", token)
+        localStorage.setItem("user", JSON.stringify(user))
+        router.push("/")
       } else {
-        var message = await response.json();
-        setErrorMessage(message.message);
-        setShowModalError(true);
+        setErrorMessage(error?.data?.message)
+        setShowModalError(true)
       }
-      // 👉️ 200
-    } catch (err) {
-      console.log(err);
-    }
-  };
+    })
+  }
 
   return (
     <>
@@ -54,15 +44,16 @@ export default function Page() {
           showModalError={showModalError}
         />
       )}
+
       <div className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
             className="flex items-center mb-6 text-2xl font-semibold text-gray-900 "
           >
-            <h1 className="font-bold text-primary text-4xl mr-8">POTOVET</h1>
+            <h1 className="mr-8 text-4xl font-bold text-primary">POTOVET</h1>
           </a>
-          <div className="w-full bg-white rounded-lg shadow-2xl  md:mt-0 sm:max-w-md xl:p-0 ">
+          <div className="w-full bg-white rounded-lg shadow-2xl md:mt-0 sm:max-w-md xl:p-0 ">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-primary md:text-2xl ">
                 Sign In
@@ -106,7 +97,8 @@ export default function Page() {
                 />
               </div>
               <button
-                onClick={login}
+                onClick={handleOnClick}
+                type="button"
                 className="w-full text-white bg-primary hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
               >
                 Sign In
@@ -125,5 +117,5 @@ export default function Page() {
         </div>
       </div>
     </>
-  );
+  )
 }

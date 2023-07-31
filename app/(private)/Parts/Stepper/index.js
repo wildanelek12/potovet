@@ -5,9 +5,10 @@ export default function Stepper({ items, activeIndex }) {
     console.log(activeIndex);
   }, [activeIndex]);
   return (
-    <ol class="flex items-center w-full text-sm font-medium text-center  sm:text-base mb-4">
+    <ol className="flex items-center w-full text-sm font-medium text-center  sm:text-base mb-4">
       {items.map((item, index) => (
         <li
+          key={index}
           className={
             index == items.length - 1
               ? "flex items-center text-base " +
@@ -26,7 +27,7 @@ export default function Stepper({ items, activeIndex }) {
               <>
                 <svg
                   aria-hidden="true"
-                  class="w-4 h-4 mr-2 sm:w-5 sm:h-5"
+                  className="w-4 h-4 mr-2 sm:w-5 sm:h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,20 +43,20 @@ export default function Stepper({ items, activeIndex }) {
               ""
             )}
 
-            <span class="mr-2">{index + 1}</span>
+            <span className="mr-2">{index + 1}</span>
             {item}
           </span>
         </li>
       ))}
 
-      {/* <li class="flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">
-        <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500">
-          <span class="mr-2">2</span>
+      {/* <li className="flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">
+        <span className="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500">
+          <span className="mr-2">2</span>
           Process
         </span>
       </li>
-      <li class="flex items-center">
-        <span class="mr-2">3</span>
+      <li className="flex items-center">
+        <span className="mr-2">3</span>
         Result
       </li> */}
     </ol>

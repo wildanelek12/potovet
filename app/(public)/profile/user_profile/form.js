@@ -16,14 +16,15 @@ export default function UserProfile() {
           src={
             "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
           }
+          alt=""
           width={600}
           height={600}
-          className="rounded-full w-16 h-16 object-cover "
+          className="object-cover w-16 h-16 rounded-full "
         />
         <Link href={"/login"}>
           <button
             type="button"
-            class="text-primary border border-primary   hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 "
+            className="text-primary border border-primary   hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 "
           >
             Upload New Picture
           </button>
@@ -58,7 +59,7 @@ export default function UserProfile() {
       <div className="mt-4">
         <button
           type="button"
-          class="text-white bg-primary   hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 "
+          className="text-white bg-primary   hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 "
         >
           Save Changes
         </button>

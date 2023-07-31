@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
 
 import { FaBeer } from "react-icons/fa";
@@ -15,7 +14,7 @@ export default function Page() {
     <div className="">
       <div
         id="hero"
-        className="flex flex-col bg-primary py-16 items-center "
+        className="flex flex-col items-center py-16 bg-primary "
         style={{
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.3)),url("/bg-profile.jpg")`,
           height: "fit-content",
@@ -29,17 +28,17 @@ export default function Page() {
           <Kategori title="Design" />
           <Kategori title="Paper" />
         </div>
-        <p className="text-white text-4xl font-bold text-center tracking-wide mt-12 leading-snug">
+        <p className="mt-12 text-4xl font-bold leading-snug tracking-wide text-center text-white">
           Explore the world’s leading <br /> design portfolios
         </p>
-        <p className="text-white text-lg font-normal text-center tracking-wide mt-8 leading-snug">
+        <p className="mt-8 text-lg font-normal leading-snug tracking-wide text-center text-white">
           Millions of designers and agencies around the world showcase their
           portfolio work on <br />
           Dribbble - the home to the world’s best design and creative
           professionals.
         </p>
         <SearchBoxHero className="mt-4" />
-        <div className="flex flex-row mt-8 space-x-4  items-center">
+        <div className="flex flex-row items-center mt-8 space-x-4">
           <p className="text-white">Trending Search</p>
           <RecentSearch title={"Portofolio Page"} />
           <RecentSearch title={"Landing Page"} />
@@ -51,7 +50,7 @@ export default function Page() {
         <div className="w-fit">
           <FilterProject />
         </div>
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-2">
+        <div className="grid gap-5 mt-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2">
           <Project />
           <Project />
           <Project />

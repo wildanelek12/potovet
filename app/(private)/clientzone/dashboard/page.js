@@ -13,23 +13,23 @@ export default function Page() {
         </p>
 
         <div
-          class="inline-flex rounded-md shadow-sm justify-self-end"
+          className="inline-flex rounded-md shadow-sm justify-self-end"
           role="group"
         >
           <p
-            class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
           >
             Academic
           </p>
           <button
             type="button"
-            class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
           >
             {"<"}
           </button>
           <button
             type="button"
-            class="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
+            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
           >
             {">"}
           </button>
@@ -37,8 +37,8 @@ export default function Page() {
       </div>
 
       <Card className="col-span-full lg:col-span-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
-        <div class="flex h-full">
-          <div class="flex-1 flex flex-col pt-4 ">
+        <div className="flex h-full">
+          <div className="flex-1 flex flex-col pt-4 ">
             <p className="ml-8 font-semibold text-primary">
               Portofolio Summary
             </p>
@@ -61,7 +61,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div class="flex-1 p-8 ">
+          <div className="flex-1 p-8 ">
             <div className="grid gap-2 text-center place-items-center">
               <div className="justify-center">
                 <AiFillAlert size={48} color="#E6846E" />
@@ -88,11 +88,11 @@ export default function Page() {
       <Card className="col-span-full h-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <p className="font-semibold text-primary">Viewer Activity</p>
 
-        <ol class="relative border-l border-gray-200 dark:border-gray-700 mt-8">
-          <li class="ml-6">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <ol className="relative border-l border-gray-200 dark:border-gray-700 mt-8">
+          <li className="ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <Image
-                class="rounded-full shadow-lg"
+                className="rounded-full shadow-lg"
                 src={
                   "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
                 }
@@ -101,19 +101,19 @@ export default function Page() {
                 height={120}
               />
             </span>
-            <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
-              <time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
+            <div className="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
+              <time className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
                 1 day ago
               </time>
-              <div class="text-sm font-normal text-gray-500 lex dark:text-gray-300">
+              <div className="text-sm font-normal text-gray-500 lex dark:text-gray-300">
                 Noval has comment in your project
               </div>
             </div>
           </li>
-          <li class="ml-6 mt-4">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+          <li className="ml-6 mt-4">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <Image
-                class="rounded-full shadow-lg"
+                className="rounded-full shadow-lg"
                 src={
                   "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
                 }
@@ -122,11 +122,11 @@ export default function Page() {
                 height={120}
               />
             </span>
-            <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
-              <time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
+            <div className="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
+              <time className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
                 1 day ago
               </time>
-              <div class="text-sm font-normal text-gray-500 lex dark:text-gray-300">
+              <div className="text-sm font-normal text-gray-500 lex dark:text-gray-300">
                 Noval has Liked your project
               </div>
             </div>
