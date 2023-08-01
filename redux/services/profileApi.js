@@ -2,14 +2,16 @@ import { baseApi } from "./baseApi"
 
 export const profileApi = baseApi.injectEndpoints({
 	endpoints: (builder) => ({
-        getProfile: builder.query({
-			query: ({ headers }) => ({
+		getProfile: builder.query({
+			query: () => ({
 				url: "/api/profile",
 				method: "GET",
-                headers
 			}),
-            providesTags: ["Profile"]
-		})
+			providesTags: ["Profile"],
+		}),
+		updateProfile: builder.mutation({
+			query: ({ data }) => ({}),
+		}),
 	}),
 })
 

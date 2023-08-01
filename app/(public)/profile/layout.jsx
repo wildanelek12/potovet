@@ -1,20 +1,14 @@
 "use client"
 
+import { useGetProfileQuery } from "@/redux/services/profileApi"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useEffect, useState } from "react"
 
 export default function Layout({ children }) {
-	const [user, setUser] = useState(null)
 	const pathname = usePathname()
 
-	useEffect(() => {
-		const user = JSON.parse(localStorage.getItem("user"))
-
-		setUser(user)
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	const { data: user } = useGetProfileQuery()
 
 	return (
 		<div className="grid w-1/2 gap-8 mx-auto mt-20">
@@ -31,7 +25,7 @@ export default function Layout({ children }) {
 					</div>
 				</div>
 				<div className="flex flex-col justify-center basis-2/3">
-					<p className="text-xl font-bold tracking-wide text-black">{user?.name}</p>
+					<p className="text-xl font-bold tracking-wide text-black">{user?.data?.name}</p>
 					<p className="text-sm font-normal tracking-wide text-black">Set up your POTOVET Account</p>
 				</div>
 			</div>
