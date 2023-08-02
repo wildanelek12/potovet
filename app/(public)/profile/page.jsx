@@ -33,6 +33,11 @@ export default function Page() {
 	return (
 		<div className="grid gap-6">
 			<div className="grid gap-2">
+				<div className="flex items-center justify-between bg-primary" style={{ borderTopLeftRadius: "0.5rem", borderTopRightRadius: "0.5rem" }}>
+					<p className="px-3 py-3 text-white" style={{ fontWeight: 500 }}>
+						User Profile
+					</p>
+				</div>
 				<Input id="name" label="Nama" type="text" onChange={setName} value={name} />
 				<Input id="job" label="Pekerjaan" type="text" onChange={setJobs} value={jobs} />
 				<TextArea id="descriptions" label="Deskripsi" onChange={setDescriptions} value={descriptions} rows={4} />

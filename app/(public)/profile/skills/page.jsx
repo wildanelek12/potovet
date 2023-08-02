@@ -1,6 +1,6 @@
 "use client"
 
-import { useGetProfileQuery } from "@/redux/services/profileApi"
+import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/profileApi"
 import Button from "../components/Button"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
@@ -10,15 +10,14 @@ export default function Page() {
 	const [skills, setSkills] = useState([""])
 
 	const { data: user } = useGetProfileQuery()
+	const [update, { isLoading }] = useUpdateProfileMutation()
 
 	useEffect(() => {
 		if (user?.data?.detail_user) {
 			const { skills } = user.data.detail_user
 
-			if (skils) {
-				const parse_skills = JSON.parse(skills)
-
-				setSkills(parse_skills)
+			if (skills?.length > 0) {
+				setSkills(skills)
 			}
 		}
 	}, [user])
@@ -32,12 +31,16 @@ export default function Page() {
 	}
 
 	const handleOnDelete = (index) => {
-		if (index > 0) {
+		if (skills.length > 0) {
 			setSkills([...skills.filter((v, i) => i !== index)])
 		}
 	}
 
-	const handleOnSave = () => {}
+	const handleOnSave = () => {
+		if (!isLoading) {
+			update({ data: { skills: JSON.stringify(skills) } })
+		}
+	}
 
 	return (
 		<div className="grid gap-6">
@@ -63,7 +66,7 @@ export default function Page() {
 				))}
 			</div>
 
-			<Button onClick={() => console.log("click!")} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" />
 		</div>
 	)
 }
