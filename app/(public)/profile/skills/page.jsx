@@ -32,13 +32,20 @@ export default function Page() {
 
 	const handleOnDelete = (index) => {
 		if (skills.length > 0) {
-			setSkills([...skills.filter((v, i) => i !== index)])
+			setSkills([...skills.filter((_v, i) => i !== index)])
 		}
 	}
 
 	const handleOnSave = () => {
 		if (!isLoading) {
-			update({ data: { skills: JSON.stringify(skills) } })
+			update({ data: { skills: JSON.stringify(skills) } }).then(({ data }) => {
+				if (data) {
+					Toast.fire({
+						icon: "success",
+						title: data?.message,
+					})
+				}
+			})
 		}
 	}
 
@@ -66,7 +73,7 @@ export default function Page() {
 				))}
 			</div>
 
-			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
 		</div>
 	)
 }

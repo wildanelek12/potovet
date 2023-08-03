@@ -1,10 +1,11 @@
 "use client"
 
-import { useGetProfileQuery } from "@/redux/services/profileApi"
+import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/profileApi"
 import Input from "./components/Input"
 import { useEffect, useState } from "react"
 import TextArea from "./components/TextArea"
 import Button from "./components/Button"
+import { Toast } from "@/utils/SweetAlert"
 
 export default function Page() {
 	const [name, setName] = useState("")
@@ -13,6 +14,7 @@ export default function Page() {
 	const [summary, setSummary] = useState("")
 
 	const { data: user } = useGetProfileQuery()
+	const [update, { isLoading }] = useUpdateProfileMutation()
 
 	useEffect(() => {
 		if (user?.data) {
@@ -30,6 +32,19 @@ export default function Page() {
 		}
 	}, [user])
 
+	const handleOnSave = () => {
+		if (!isLoading) {
+			update({ data: { name, jobs, descriptions, summary } }).then(({ data }) => {
+				if (data) {
+					Toast.fire({
+						icon: "success",
+						title: data?.message,
+					})
+				}
+			})
+		}
+	}
+
 	return (
 		<div className="grid gap-6">
 			<div className="grid gap-2">
@@ -44,7 +59,7 @@ export default function Page() {
 				<TextArea id="summary" label="Summary" onChange={setSummary} value={summary} rows={4} />
 			</div>
 
-			<Button onClick={() => console.log("click!")} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
 		</div>
 	)
 }

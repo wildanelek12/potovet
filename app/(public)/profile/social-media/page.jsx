@@ -1,6 +1,6 @@
 "use client"
 
-import { useGetProfileQuery } from "@/redux/services/profileApi"
+import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/profileApi"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
 import Button from "../components/Button"
@@ -11,6 +11,7 @@ export default function Page() {
 	const [facebook, setFacebook] = useState("")
 
 	const { data: user } = useGetProfileQuery()
+	const [update, { isLoading }] = useUpdateProfileMutation()
 
 	useEffect(() => {
 		if (user?.data?.detail_user) {
@@ -21,6 +22,19 @@ export default function Page() {
 			setFacebook(facebook)
 		}
 	}, [user])
+
+	const handleOnSave = () => {
+		if (!isLoading) {
+			update({ data: { instagram, linkedin, facebook } }).then(({ data }) => {
+				if (data) {
+					Toast.fire({
+						icon: "success",
+						title: data?.message,
+					})
+				}
+			})
+		}
+	}
 
 	return (
 		<div className="grid gap-6">
@@ -35,7 +49,7 @@ export default function Page() {
 				<Input id="facebook" label="Facebook" type="text" onChange={setFacebook} value={facebook} />
 			</div>
 
-			<Button onClick={() => console.log("click!")} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
 		</div>
 	)
 }

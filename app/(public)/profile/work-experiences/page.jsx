@@ -1,6 +1,6 @@
 "use client"
 
-import { useGetProfileQuery } from "@/redux/services/profileApi"
+import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/profileApi"
 import Button from "../components/Button"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
@@ -19,29 +19,20 @@ export default function Page() {
 	])
 
 	const { data: user } = useGetProfileQuery()
+	const [update, { isLoading }] = useUpdateProfileMutation()
 
 	useEffect(() => {
 		if (user?.data?.detail_user) {
 			const { work_experiences } = user.data.detail_user
 
-			if (work_experiences) {
-				const parse_work_experiences = JSON.parse(work_experiences)
-
-				setWorkExperiences(parse_work_experiences)
+			if (work_experiences?.length > 0) {
+				setWorkExperiences(work_experiences)
 			}
 		}
 	}, [user])
 
 	const handleOnChange = (value, index, key) => {
-		setWorkExperiences([
-			...workExperiences.map((v, i) => {
-				if (i === index) {
-					v[key] = value
-				}
-
-				return v
-			}),
-		])
+		setWorkExperiences([...workExperiences.map((v, i) => (i === index ? { ...v, [key]: value } : v))])
 	}
 
 	const handleOnAdd = () => {
@@ -58,11 +49,22 @@ export default function Page() {
 
 	const handleOnDelete = (index) => {
 		if (workExperiences.length > 1) {
-			setWorkExperiences([...workExperiences.filter((v, i) => i !== index)])
+			setWorkExperiences([...workExperiences.filter((_v, i) => i !== index)])
 		}
 	}
 
-	const handleOnSave = () => {}
+	const handleOnSave = () => {
+		if (!isLoading) {
+			update({ data: { work_experiences: JSON.stringify(workExperiences) } }).then(({ data }) => {
+				if (data) {
+					Toast.fire({
+						icon: "success",
+						title: data?.message,
+					})
+				}
+			})
+		}
+	}
 
 	return (
 		<div className="grid gap-6">
@@ -120,7 +122,7 @@ export default function Page() {
 				))}
 			</div>
 
-			<Button onClick={() => console.log("click!")} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
 		</div>
 	)
 }

@@ -1,6 +1,7 @@
 /** @format */
 
 import axios from "axios"
+import { Toast, ToastLoading } from "../SweetAlert"
 
 export const axiosBaseQuery =
 	({ baseUrl } = { baseUrl: "" }) =>
@@ -8,6 +9,16 @@ export const axiosBaseQuery =
 		const token = localStorage.getItem("token")
 
 		try {
+			const isVisible = Toast.isVisible()
+			if (!isVisible) {
+				ToastLoading.fire({
+					title: "Loading...",
+					didOpen: () => {
+						ToastLoading.showLoading()
+					},
+				})
+			}
+
 			const res = await axios({
 				url: baseUrl + url,
 				method,
@@ -19,8 +30,17 @@ export const axiosBaseQuery =
 				},
 			})
 
+			if (!isVisible) {
+				ToastLoading.close()
+			}
+
 			return { data: res.data }
 		} catch (err) {
+			Toast.fire({
+				icon: "error",
+				title: err?.response.data.message,
+			})
+
 			return {
 				error: {
 					status: err.response?.status,

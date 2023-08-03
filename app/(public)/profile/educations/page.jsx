@@ -1,6 +1,6 @@
 "use client"
 
-import { useGetProfileQuery } from "@/redux/services/profileApi"
+import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/profileApi"
 import Button from "../components/Button"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
@@ -17,29 +17,20 @@ export default function Page() {
 	])
 
 	const { data: user } = useGetProfileQuery()
+	const [update, { isLoading }] = useUpdateProfileMutation()
 
 	useEffect(() => {
 		if (user?.data?.detail_user) {
 			const { educations } = user.data.detail_user
 
-			if (work_experiences) {
-				const parse_educations = JSON.parse(educations)
-
-				setEducations(parse_educations)
+			if (educations.length > 0) {
+				setEducations(educations)
 			}
 		}
 	}, [user])
 
 	const handleOnChange = (value, index, key) => {
-		setEducations([
-			...educations.map((v, i) => {
-				if (i === index) {
-					v[key] = value
-				}
-
-				return v
-			}),
-		])
+		setEducations([...educations.map((v, i) => (i === index ? { ...v, [key]: value } : v))])
 	}
 
 	const handleOnAdd = () => {
@@ -55,11 +46,22 @@ export default function Page() {
 
 	const handleOnDelete = (index) => {
 		if (educations.length > 1) {
-			setEducations([...educations.filter((v, i) => i !== index)])
+			setEducations([...educations.filter((_v, i) => i !== index)])
 		}
 	}
 
-	const handleOnSave = () => {}
+	const handleOnSave = () => {
+		if (!isLoading) {
+			update({ data: { educations: JSON.stringify(educations) } }).then(({ data }) => {
+				if (data) {
+					Toast.fire({
+						icon: "success",
+						title: data?.message,
+					})
+				}
+			})
+		}
+	}
 
 	return (
 		<div className="grid gap-6">
@@ -105,7 +107,7 @@ export default function Page() {
 				))}
 			</div>
 
-			<Button onClick={() => console.log("click!")} label="Simpan" className="px-8 mx-auto w-fit" />
+			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
 		</div>
 	)
 }
