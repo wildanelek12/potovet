@@ -36,321 +36,310 @@ module.exports = require("next/dist/compiled/react/jsx-runtime");
 
 /***/ }),
 
-/***/ 3918:
+/***/ 5868:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-context.js");
+module.exports = require("next/dist/server/app-render/app-render");
 
 /***/ }),
 
-/***/ 5732:
+/***/ 1844:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-mode.js");
+module.exports = require("next/dist/server/app-render/get-segment-param");
 
 /***/ }),
 
-/***/ 3280:
+/***/ 6624:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/app-router-context.js");
+module.exports = require("next/dist/server/future/helpers/interception-routes");
 
 /***/ }),
 
-/***/ 2796:
+/***/ 5281:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/head-manager-context.js");
+module.exports = require("next/dist/server/future/route-modules/route-module");
 
 /***/ }),
 
-/***/ 9274:
+/***/ 7085:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/hooks-client-context.js");
+module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
-/***/ 4014:
+/***/ 1830:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+module.exports = require("next/dist/shared/lib/get-img-props");
 
 /***/ }),
 
-/***/ 4486:
+/***/ 633:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-blur-svg.js");
+module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 744:
+/***/ 6864:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config-context.js");
+module.exports = require("next/dist/shared/lib/head");
 
 /***/ }),
 
-/***/ 5843:
+/***/ 9569:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config.js");
+module.exports = require("next/dist/shared/lib/hooks-client-context");
 
 /***/ }),
 
-/***/ 9552:
+/***/ 2210:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-loader");
+module.exports = require("next/dist/shared/lib/image-config");
 
 /***/ }),
 
-/***/ 8524:
+/***/ 5359:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/is-plain-object.js");
+module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
-/***/ 8020:
+/***/ 7160:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/mitt.js");
+module.exports = require("next/dist/shared/lib/router-context");
 
 /***/ }),
 
-/***/ 7342:
+/***/ 893:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/no-ssr-error.js");
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix");
 
 /***/ }),
 
-/***/ 4406:
+/***/ 2336:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 4964:
+/***/ 7887:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router-context.js");
+module.exports = require("next/dist/shared/lib/router/utils/handle-smooth-scroll");
 
 /***/ }),
 
-/***/ 1751:
+/***/ 8735:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-bot");
 
 /***/ }),
 
-/***/ 6220:
+/***/ 120:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-local-url");
 
 /***/ }),
 
-/***/ 4053:
+/***/ 8231:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-/***/ 3938:
+/***/ 3750:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash");
 
 /***/ }),
 
-/***/ 9565:
+/***/ 982:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+module.exports = require("next/dist/shared/lib/router/utils/resolve-href");
 
 /***/ }),
 
-/***/ 5789:
+/***/ 9618:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 1897:
+/***/ 8423:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
+module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 1428:
+/***/ 8658:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 8854:
+/***/ 9491:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+module.exports = require("assert");
 
 /***/ }),
 
-/***/ 1292:
+/***/ 2361:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+module.exports = require("events");
 
 /***/ }),
 
-/***/ 4567:
+/***/ 7147:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+module.exports = require("fs");
 
 /***/ }),
 
-/***/ 979:
+/***/ 3685:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+module.exports = require("http");
 
 /***/ }),
 
-/***/ 3297:
+/***/ 5687:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
+module.exports = require("https");
 
 /***/ }),
 
-/***/ 6052:
+/***/ 2037:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+module.exports = require("os");
 
 /***/ }),
 
-/***/ 4226:
+/***/ 1017:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
+module.exports = require("path");
 
 /***/ }),
 
-/***/ 5052:
+/***/ 2781:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
+module.exports = require("stream");
 
 /***/ }),
 
-/***/ 3349:
+/***/ 6224:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/server-inserted-html.js");
+module.exports = require("tty");
 
 /***/ }),
 
-/***/ 2470:
+/***/ 7310:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/side-effect.js");
+module.exports = require("url");
 
 /***/ }),
 
-/***/ 9232:
+/***/ 3837:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/utils.js");
+module.exports = require("util");
 
 /***/ }),
 
-/***/ 618:
+/***/ 9796:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 2206:
+/***/ 2909:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppRouter": () => (/* reexport default from dynamic */ next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default.a),
-/* harmony export */   "GlobalError": () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default.a),
-/* harmony export */   "LayoutRouter": () => (/* reexport default from dynamic */ next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default.a),
-/* harmony export */   "RenderFromTemplateContext": () => (/* reexport default from dynamic */ next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default.a),
-/* harmony export */   "__next_app_webpack_require__": () => (/* binding */ __next_app_webpack_require__),
-/* harmony export */   "metadata": () => (/* binding */ metadata),
-/* harmony export */   "pages": () => (/* binding */ pages),
-/* harmony export */   "renderToReadableStream": () => (/* reexport safe */ next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__.renderToReadableStream),
-/* harmony export */   "requestAsyncStorage": () => (/* reexport safe */ next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__.requestAsyncStorage),
-/* harmony export */   "serverHooks": () => (/* reexport module object */ next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "staticGenerationAsyncStorage": () => (/* reexport safe */ next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__.staticGenerationAsyncStorage),
-/* harmony export */   "tree": () => (/* binding */ tree)
+/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
+/* harmony export */   __next_app__: () => (/* binding */ __next_app__),
+/* harmony export */   originalPathname: () => (/* binding */ originalPathname),
+/* harmony export */   pages: () => (/* binding */ pages),
+/* harmony export */   routeModule: () => (/* binding */ routeModule),
+/* harmony export */   tree: () => (/* binding */ tree)
 /* harmony export */ });
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2315);
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2333);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2885);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9505);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(683);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3269);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5746);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8208);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+
+    
 
     const tree = {
         children: [
@@ -365,68 +354,70 @@ __webpack_require__.r(__webpack_exports__);
         children: [
         'my-library',
         {
-        children: ['', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9852)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\my-library\\page.js"]}]
+        children: ['__PAGE__', {}, {
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9374)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\my-library\\page.js"],
+          
+        }]
       },
         {
+          
           
         }
       ]
       },
         {
           
+          
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6846, 23)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 278)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js"],
+          
         }
       ]
       },
         {
+          
           
         }
       ]
       }.children;
-    const metadata = [{
-          type: 'layout',
-          layer: 1,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6846, 23)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js",
-        },{
-          type: 'page',
-          layer: 3,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9852)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\my-library\\page.js",
-        },];
     const pages = ["C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\my-library\\page.js"];
 
     
-    
-    
-    
+
+    const originalPathname = "/(private)/clientzone/my-library/page"
+    const __next_app__ = {
+      require: __webpack_require__,
+      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
+      loadChunk: () => Promise.resolve()
+    }
 
     
-    
 
-    
-
-    
-    const __next_app_webpack_require__ = __webpack_require__
+    // Create and export the route module that will be consumed.
+    const options = {"definition":{"kind":"APP_PAGE","page":"/(private)/clientzone/my-library/page","pathname":"/clientzone/my-library","bundlePath":"app/(private)/clientzone/my-library/page","filename":"","appPaths":[]}}
+    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
+      ...options,
+      userland: {
+        loaderTree: tree,
+      },
+    })
   
 
 /***/ }),
 
-/***/ 9971:
+/***/ 487:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9797, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2919, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3852))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 954, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3423))
 
 /***/ }),
 
-/***/ 9852:
+/***/ 9374:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -434,17 +425,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Page)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8499);
-/* harmony import */ var _Parts_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3853);
-/* harmony import */ var _Parts_Chart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6875);
-/* harmony import */ var _Parts_Chart__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Parts_Chart__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5456);
-/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(634);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Parts_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2356);
+/* harmony import */ var _Parts_Chart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2631);
+/* harmony import */ var _Parts_TopItemCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5677);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4178);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7639);
-/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9769);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1930);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2890);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8976);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1436);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2215);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5124);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
 
 
@@ -460,7 +451,7 @@ function Page() {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                className: "col-span-12 mt-8 font-bold text-xl flex-1 text-center",
+                className: "flex-1 col-span-12 mt-8 text-xl font-bold text-center",
                 children: "My Library"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
@@ -470,60 +461,60 @@ function Page() {
                         className: "p-8",
                         children: [
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                class: "flex items-center justify-center py-4 md:py-8 flex-wrap",
+                                className: "flex items-center justify-center py-4 md:py-8 flex-wrap",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         type: "button",
-                                        class: "text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800",
+                                        className: "text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800",
                                         children: "All categories"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         type: "button",
-                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        className: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
                                         children: "Academic"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         type: "button",
-                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        className: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
                                         children: "Professional"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         type: "button",
-                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        className: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
                                         children: "Research"
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                         type: "button",
-                                        class: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
+                                        className: "text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-gray-800",
                                         children: "Informal Trainings"
                                     })
                                 ]
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                class: "grid grid-cols-2 md:grid-cols-3 gap-4",
+                                className: "grid grid-cols-2 md:grid-cols-3 gap-4",
                                 children: [
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "relative",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                class: "h-auto max-w-full rounded-lg",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                className: "h-auto max-w-full rounded-lg",
                                                 src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
                                                 alt: ""
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#0CADB7"
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#FE7263"
                                                         })
                                                     })
@@ -534,25 +525,25 @@ function Page() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "relative",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                class: "h-auto max-w-full rounded-lg",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                className: "h-auto max-w-full rounded-lg",
                                                 src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
                                                 alt: ""
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#0CADB7"
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#FE7263"
                                                         })
                                                     })
@@ -563,25 +554,25 @@ function Page() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "relative",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                class: "h-auto max-w-full rounded-lg",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                className: "h-auto max-w-full rounded-lg",
                                                 src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
                                                 alt: ""
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#0CADB7"
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#FE7263"
                                                         })
                                                     })
@@ -592,25 +583,25 @@ function Page() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "relative",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                class: "h-auto max-w-full rounded-lg",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                className: "h-auto max-w-full rounded-lg",
                                                 src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
                                                 alt: ""
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#0CADB7"
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#FE7263"
                                                         })
                                                     })
@@ -621,25 +612,25 @@ function Page() {
                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                         className: "relative",
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                class: "h-auto max-w-full rounded-lg",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                                className: "h-auto max-w-full rounded-lg",
                                                 src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
                                                 alt: ""
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute bottom-2 right-2 flex flex-row gap-x-3",
+                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#0CADB7"
                                                         })
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center shadow-lg justify-center bg-white rounded-full p-2",
+                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
                                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            class: "w-6 h-6 text-gray-400 ",
+                                                            className: "w-6 h-6 text-gray-400 ",
                                                             color: "#FE7263"
                                                         })
                                                     })
@@ -652,9 +643,9 @@ function Page() {
                         ]
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "fixed bottom-10 right-10 flex flex-col",
+                        className: "fixed flex flex-col bottom-10 right-10",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
-                            className: " bg-primary text-white p-6 text-xl font-semibold rounded-full mb-2",
+                            className: "p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary",
                             href: "mailto:support@example.com?subject=SendMail&body=Description",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_8__/* .AiOutlinePlus */ .Lfi, {})
                         })
@@ -675,7 +666,7 @@ function Page() {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [732,421,921,499,449,178,522,930,927,113,438], () => (__webpack_exec__(2206)));
+var __webpack_exports__ = __webpack_require__.X(0, [6986,2451,8000,4629,1233,3223,2215,8305,8280,6972], () => (__webpack_exec__(2909)));
 module.exports = __webpack_exports__;
 
 })();

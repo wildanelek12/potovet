@@ -1,12 +1,18 @@
 {
-  "/(private)/clientzone/add-project/page": "/clientzone/add-project",
-  "/(private)/clientzone/dashboard/page": "/clientzone/dashboard",
-  "/(private)/clientzone/my-library/page": "/clientzone/my-library",
-  "/(private)/clientzone/project-list/[id]/page": "/clientzone/project-list/[id]",
-  "/(private)/clientzone/project-list/page": "/clientzone/project-list",
   "/(public)/page": "/",
-  "/(public)/project/[id]/page": "/project/[id]",
-  "/(public)/project/page": "/project",
   "/login/page": "/login",
-  "/sign-up/page": "/sign-up"
+  "/sign-up/page": "/sign-up",
+  "/(public)/project/page": "/project",
+  "/(private)/clientzone/add-project/page": "/clientzone/add-project",
+  "/(private)/clientzone/my-library/page": "/clientzone/my-library",
+  "/(private)/clientzone/dashboard/page": "/clientzone/dashboard",
+  "/(private)/clientzone/project-list/page": "/clientzone/project-list",
+  "/(public)/profile/page": "/profile",
+  "/(public)/project/[id]/page": "/project/[id]",
+  "/(public)/profile/educations/page": "/profile/educations",
+  "/(private)/clientzone/project-list/[id]/page": "/clientzone/project-list/[id]",
+  "/(public)/profile/interests/page": "/profile/interests",
+  "/(public)/profile/skills/page": "/profile/skills",
+  "/(public)/profile/social-media/page": "/profile/social-media",
+  "/(public)/profile/work-experiences/page": "/profile/work-experiences"
 }

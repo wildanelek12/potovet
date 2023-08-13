@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
-exports.id = 103;
-exports.ids = [103];
+exports.id = 4103;
+exports.ids = [4103];
 exports.modules = {
 
 /***/ 8038:
@@ -36,321 +36,310 @@ module.exports = require("next/dist/compiled/react/jsx-runtime");
 
 /***/ }),
 
-/***/ 3918:
+/***/ 5868:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-context.js");
+module.exports = require("next/dist/server/app-render/app-render");
 
 /***/ }),
 
-/***/ 5732:
+/***/ 1844:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-mode.js");
+module.exports = require("next/dist/server/app-render/get-segment-param");
 
 /***/ }),
 
-/***/ 3280:
+/***/ 6624:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/app-router-context.js");
+module.exports = require("next/dist/server/future/helpers/interception-routes");
 
 /***/ }),
 
-/***/ 2796:
+/***/ 5281:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/head-manager-context.js");
+module.exports = require("next/dist/server/future/route-modules/route-module");
 
 /***/ }),
 
-/***/ 9274:
+/***/ 7085:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/hooks-client-context.js");
+module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
-/***/ 4014:
+/***/ 1830:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+module.exports = require("next/dist/shared/lib/get-img-props");
 
 /***/ }),
 
-/***/ 4486:
+/***/ 633:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-blur-svg.js");
+module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 744:
+/***/ 6864:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config-context.js");
+module.exports = require("next/dist/shared/lib/head");
 
 /***/ }),
 
-/***/ 5843:
+/***/ 9569:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config.js");
+module.exports = require("next/dist/shared/lib/hooks-client-context");
 
 /***/ }),
 
-/***/ 9552:
+/***/ 2210:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-loader");
+module.exports = require("next/dist/shared/lib/image-config");
 
 /***/ }),
 
-/***/ 8524:
+/***/ 5359:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/is-plain-object.js");
+module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
-/***/ 8020:
+/***/ 7160:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/mitt.js");
+module.exports = require("next/dist/shared/lib/router-context");
 
 /***/ }),
 
-/***/ 7342:
+/***/ 893:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/no-ssr-error.js");
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix");
 
 /***/ }),
 
-/***/ 4406:
+/***/ 2336:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 4964:
+/***/ 7887:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router-context.js");
+module.exports = require("next/dist/shared/lib/router/utils/handle-smooth-scroll");
 
 /***/ }),
 
-/***/ 1751:
+/***/ 8735:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-bot");
 
 /***/ }),
 
-/***/ 6220:
+/***/ 120:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-local-url");
 
 /***/ }),
 
-/***/ 4053:
+/***/ 8231:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-/***/ 3938:
+/***/ 3750:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash");
 
 /***/ }),
 
-/***/ 9565:
+/***/ 982:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+module.exports = require("next/dist/shared/lib/router/utils/resolve-href");
 
 /***/ }),
 
-/***/ 5789:
+/***/ 9618:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 1897:
+/***/ 8423:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
+module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 1428:
+/***/ 8658:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 8854:
+/***/ 9491:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+module.exports = require("assert");
 
 /***/ }),
 
-/***/ 1292:
+/***/ 2361:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+module.exports = require("events");
 
 /***/ }),
 
-/***/ 4567:
+/***/ 7147:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+module.exports = require("fs");
 
 /***/ }),
 
-/***/ 979:
+/***/ 3685:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+module.exports = require("http");
 
 /***/ }),
 
-/***/ 3297:
+/***/ 5687:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
+module.exports = require("https");
 
 /***/ }),
 
-/***/ 6052:
+/***/ 2037:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+module.exports = require("os");
 
 /***/ }),
 
-/***/ 4226:
+/***/ 1017:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
+module.exports = require("path");
 
 /***/ }),
 
-/***/ 5052:
+/***/ 2781:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
+module.exports = require("stream");
 
 /***/ }),
 
-/***/ 3349:
+/***/ 6224:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/server-inserted-html.js");
+module.exports = require("tty");
 
 /***/ }),
 
-/***/ 2470:
+/***/ 7310:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/side-effect.js");
+module.exports = require("url");
 
 /***/ }),
 
-/***/ 9232:
+/***/ 3837:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/utils.js");
+module.exports = require("util");
 
 /***/ }),
 
-/***/ 618:
+/***/ 9796:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 9554:
+/***/ 2474:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppRouter": () => (/* reexport default from dynamic */ next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default.a),
-/* harmony export */   "GlobalError": () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default.a),
-/* harmony export */   "LayoutRouter": () => (/* reexport default from dynamic */ next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default.a),
-/* harmony export */   "RenderFromTemplateContext": () => (/* reexport default from dynamic */ next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default.a),
-/* harmony export */   "__next_app_webpack_require__": () => (/* binding */ __next_app_webpack_require__),
-/* harmony export */   "metadata": () => (/* binding */ metadata),
-/* harmony export */   "pages": () => (/* binding */ pages),
-/* harmony export */   "renderToReadableStream": () => (/* reexport safe */ next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__.renderToReadableStream),
-/* harmony export */   "requestAsyncStorage": () => (/* reexport safe */ next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__.requestAsyncStorage),
-/* harmony export */   "serverHooks": () => (/* reexport module object */ next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "staticGenerationAsyncStorage": () => (/* reexport safe */ next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__.staticGenerationAsyncStorage),
-/* harmony export */   "tree": () => (/* binding */ tree)
+/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
+/* harmony export */   __next_app__: () => (/* binding */ __next_app__),
+/* harmony export */   originalPathname: () => (/* binding */ originalPathname),
+/* harmony export */   pages: () => (/* binding */ pages),
+/* harmony export */   routeModule: () => (/* binding */ routeModule),
+/* harmony export */   tree: () => (/* binding */ tree)
 /* harmony export */ });
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2315);
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2333);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2885);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9505);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(683);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3269);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5746);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8208);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+
+    
 
     const tree = {
         children: [
@@ -362,71 +351,73 @@ __webpack_require__.r(__webpack_exports__);
         children: [
         'project',
         {
-        children: ['', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9909, 23)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\project\\page.js"]}]
+        children: ['__PAGE__', {}, {
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 397)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\project\\page.js"],
+          
+        }]
       },
         {
+          
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6271, 23)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\layout.js"],
-'head': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2339)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\head.js"],
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4644)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\layout.js"],
+          
         }
       ]
       },
         {
+          
           
         }
       ]
       }.children;
-    const metadata = [{
-          type: 'layout',
-          layer: 1,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6271, 23)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\layout.js",
-        },{
-          type: 'page',
-          layer: 2,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9909, 23)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\project\\page.js",
-        },];
     const pages = ["C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\project\\page.js"];
 
     
-    
-    
-    
+
+    const originalPathname = "/(public)/project/page"
+    const __next_app__ = {
+      require: __webpack_require__,
+      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
+      loadChunk: () => Promise.resolve()
+    }
 
     
-    
 
-    
-
-    
-    const __next_app_webpack_require__ = __webpack_require__
+    // Create and export the route module that will be consumed.
+    const options = {"definition":{"kind":"APP_PAGE","page":"/(public)/project/page","pathname":"/project","bundlePath":"app/(public)/project/page","filename":"","appPaths":[]}}
+    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
+      ...options,
+      userland: {
+        loaderTree: tree,
+      },
+    })
   
 
 /***/ }),
 
-/***/ 4868:
+/***/ 2693:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6315))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5874))
 
 /***/ }),
 
-/***/ 9909:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ 4318:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-/* __next_internal_client_entry_do_not_use__ */ const { createProxy  } = __webpack_require__(4353);
-module.exports = createProxy("C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(public)\\project\\page.js");
-
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9571, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23))
 
 /***/ }),
 
-/***/ 6315:
+/***/ 5874:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -441,10 +432,8 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(6786);
 // EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(8421);
+var next_image = __webpack_require__(2451);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(1621);
 // EXTERNAL MODULE: external "next/dist/compiled/react"
 var react_ = __webpack_require__(8038);
 ;// CONCATENATED MODULE: ./components/icon-project-desc/index.js
@@ -453,74 +442,44 @@ var react_ = __webpack_require__(8038);
 
 function IconButtonDescription(props) {
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "bg-primary p-2 rounded-lg",
+        className: "p-2 rounded-lg bg-primary",
         children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
             src: `${props.src}`,
             width: 32,
             height: 32,
-            className: "w-8 h-8"
+            className: "w-8 h-8",
+            alt: ""
         })
     });
 }
 
-;// CONCATENATED MODULE: ./components/select-category-project/index.js
-
-
-function index() {
-    return /*#__PURE__*/ _jsxs(_Fragment, {
-        children: [
-            /*#__PURE__*/ _jsxs("div", {
-                className: "flex space-x-8 mt-16 flex-row px-16 font-medium ",
-                children: [
-                    /*#__PURE__*/ _jsx("p", {
-                        className: "font-extrabold",
-                        children: "All"
-                    }),
-                    /*#__PURE__*/ _jsx("p", {
-                        children: "Web"
-                    }),
-                    /*#__PURE__*/ _jsx("p", {
-                        children: "Mobile"
-                    }),
-                    /*#__PURE__*/ _jsx("p", {
-                        children: "Paper"
-                    })
-                ]
-            }),
-            /*#__PURE__*/ _jsx("div", {
-                className: "flex h-0.5 mt-4 bg-gray-200 w-auto mx-16"
-            })
-        ]
-    });
-}
-
 // EXTERNAL MODULE: ./components/project-card/index.js
-var project_card = __webpack_require__(442);
+var project_card = __webpack_require__(6382);
 // EXTERNAL MODULE: ./recoil/atom.js
-var atom = __webpack_require__(6464);
+var atom = __webpack_require__(4905);
 // EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/transitions/transition.js + 4 modules
-var transition = __webpack_require__(6235);
-// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/dialog/dialog.js + 21 modules
-var dialog = __webpack_require__(5990);
+var transition = __webpack_require__(2596);
+// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/dialog/dialog.js + 23 modules
+var dialog = __webpack_require__(3489);
 // EXTERNAL MODULE: ./node_modules/recoil/cjs/index.js
-var cjs = __webpack_require__(6779);
+var cjs = __webpack_require__(5291);
 ;// CONCATENATED MODULE: ./components/modal-desc/modal-skill/list-skill/index.js
 
 
-function ListSkill() {
+function ListSkill(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("span", {
-                class: "flex items-center text-lg font-regular text-gray-900 dark:text-white",
+                className: "flex items-center text-lg text-gray-900 font-regular dark:text-white",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                        class: "flex w-3 h-3 bg-secondary rounded-full mr-1.5 flex-shrink-0"
+                        className: "flex w-3 h-3 bg-secondary rounded-full mr-1.5 flex-shrink-0"
                     }),
-                    "Laravel"
+                    props?.label
                 ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-                class: " my-4 bg-secondary border-1 border-secondary rounded "
+                className: "my-4 rounded bg-secondary border-1 border-secondary"
             })
         ]
     });
@@ -545,7 +504,7 @@ function ModalSkill(props) {
             className: "relative z-10",
             onClose: ()=>setIsOpen(false),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                     as: react_.Fragment,
                     enter: "ease-out duration-300",
                     enterFrom: "opacity-0",
@@ -560,8 +519,8 @@ function ModalSkill(props) {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "fixed inset-0 overflow-y-auto",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex min-h-full items-center justify-center p-4 text-center",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                        className: "flex items-center justify-center min-h-full p-4 text-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                             as: react_.Fragment,
                             enter: "ease-out duration-300",
                             enterFrom: "opacity-0 scale-95",
@@ -569,34 +528,37 @@ function ModalSkill(props) {
                             leave: "ease-in duration-200",
                             leaveFrom: "opacity-100 scale-100",
                             leaveTo: "opacity-0 scale-95",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
-                                className: "w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                className: "w-full max-w-sm p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Title */.V.Title, {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Title, {
                                         as: "h3",
-                                        className: "leading-6 text-gray-900 flex flex-row items-center justify-center",
+                                        className: "flex flex-row items-center justify-center leading-6 text-gray-900",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 width: 36,
                                                 height: 36,
-                                                src: "/modal-desc/skill-modal.svg"
+                                                src: "/modal-desc/skill-modal.svg",
+                                                alt: ""
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "font-semibold text-xl text-secondary ml-2",
+                                                className: "ml-2 text-xl font-semibold text-secondary",
                                                 children: "SKILLS"
                                             })
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "mt-2",
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(ListSkill, {})
+                                        children: props?.data?.map((skill, index)=>/*#__PURE__*/ jsx_runtime_.jsx(ListSkill, {
+                                                label: skill
+                                            }, index))
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "mt-8 flex justify-center",
+                                        className: "flex justify-center mt-8",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             type: "button",
                                             onClick: ()=>setIsOpen(false),
-                                            className: "inline-flex justify-center rounded-md border border-transparent bg-secondary/50 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
+                                            className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
                                             children: "Got it, thanks!"
                                         })
                                     })
@@ -610,27 +572,35 @@ function ModalSkill(props) {
     });
 }
 
+// EXTERNAL MODULE: ./node_modules/moment/moment.js
+var moment = __webpack_require__(4731);
+var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
 ;// CONCATENATED MODULE: ./components/modal-desc/modal-work/list-work/index.js
 
 
-function ListWork() {
+
+function ListWork(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-        class: "mb-10 ml-4",
+        className: "mb-10 ml-4",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                class: "absolute w-3 h-3 bg-secondary rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                className: "absolute w-3 h-3 bg-secondary rounded-full  -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                class: "text-lg font-semibold text-gray-900 dark:text-white",
-                children: "Application UI code in Tailwind CSS"
+                className: "text-lg font-semibold text-gray-900 dark:text-white",
+                children: props?.data?.title
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("time", {
-                class: "mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500",
-                children: "February 2022"
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("time", {
+                className: "mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500",
+                children: [
+                    moment_default()(props?.data?.start_date).format("DD MMMM"),
+                    " - ",
+                    moment_default()(props?.data?.end_date).format("DD MMMM")
+                ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                class: "mb-4 text-base font-normal text-gray-500 dark:text-gray-400",
-                children: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages."
+                className: "mb-4 text-base font-normal text-gray-500 dark:text-gray-400",
+                children: props?.data?.description
             })
         ]
     });
@@ -644,7 +614,7 @@ function ListWork() {
 
 
 
-function ModalWork() {
+function ModalWork(props) {
     let [isOpen, setIsOpen] = (0,cjs/* useRecoilState */.FV)(atom/* showModalWork */.sD);
     return /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u, {
         appear: true,
@@ -655,7 +625,7 @@ function ModalWork() {
             className: "relative z-10",
             onClose: ()=>setIsOpen(false),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                     as: react_.Fragment,
                     enter: "ease-out duration-300",
                     enterFrom: "opacity-0",
@@ -670,8 +640,8 @@ function ModalWork() {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "fixed inset-0 overflow-y-auto",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex min-h-full items-center justify-center p-4 text-center",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                        className: "flex items-center justify-center min-h-full p-4 text-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                             as: react_.Fragment,
                             enter: "ease-out duration-300",
                             enterFrom: "opacity-0 scale-95",
@@ -679,41 +649,40 @@ function ModalWork() {
                             leave: "ease-in duration-200",
                             leaveFrom: "opacity-100 scale-100",
                             leaveTo: "opacity-0 scale-95",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
-                                className: "w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                className: "w-full max-w-lg p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Title */.V.Title, {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Title, {
                                         as: "h3",
-                                        className: "leading-6 text-gray-900 flex flex-row items-center justify-center",
+                                        className: "flex flex-row items-center justify-center leading-6 text-gray-900",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 width: 36,
                                                 height: 36,
-                                                src: "/modal-desc/work-modal.svg"
+                                                src: "/modal-desc/work-modal.svg",
+                                                alt: ""
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "font-semibold text-xl text-secondary ml-2",
-                                                children: "Work Experience"
+                                                className: "ml-2 text-xl font-semibold text-secondary",
+                                                children: "Work Experiences"
                                             })
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "mt-8",
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
-                                            class: "relative border-l border-secondary dark:border-gray-700",
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListWork, {}),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListWork, {}),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListWork, {})
-                                            ]
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("ol", {
+                                            className: "relative border-l border-secondary dark:border-gray-700",
+                                            children: props?.data?.map((data, index)=>/*#__PURE__*/ jsx_runtime_.jsx(ListWork, {
+                                                    data: data
+                                                }, index))
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "mt-8 flex justify-center",
+                                        className: "flex justify-center mt-8",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             type: "button",
                                             onClick: ()=>setIsOpen(false),
-                                            className: "inline-flex justify-center rounded-md border border-transparent bg-secondary/50 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
+                                            className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
                                             children: "Got it, thanks!"
                                         })
                                     })
@@ -730,20 +699,25 @@ function ModalWork() {
 ;// CONCATENATED MODULE: ./components/modal-desc/modal-education/list-education/index.js
 
 
-function ListEducation() {
+
+function ListEducation(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("li", {
-        class: "mb-4 ml-4",
+        className: "mb-4 ml-4",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                class: "absolute w-3 h-3 bg-secondary rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                className: "absolute w-3 h-3 bg-secondary rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                class: "text-base font-semibold text-gray-900 dark:text-white",
-                children: "Mi Miftahul Huda"
+                className: "text-base font-semibold text-gray-900 dark:text-white",
+                children: props?.data?.title
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                class: "mb-4 text-xs font-normal text-gray-500 dark:text-gray-400",
-                children: "2021-2022"
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                className: "mb-4 text-xs font-normal text-gray-500 dark:text-gray-400",
+                children: [
+                    moment_default()(props?.data?.start_date).format("YYYY"),
+                    " - ",
+                    moment_default()(props?.data?.end_date).format("YYYY")
+                ]
             })
         ]
     });
@@ -768,7 +742,7 @@ function ModalEducation(props) {
             className: "relative z-10",
             onClose: ()=>setIsOpen(false),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                     as: react_.Fragment,
                     enter: "ease-out duration-300",
                     enterFrom: "opacity-0",
@@ -783,8 +757,8 @@ function ModalEducation(props) {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "fixed inset-0 overflow-y-auto",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex min-h-full items-center justify-center p-4 text-center",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                        className: "flex items-center justify-center min-h-full p-4 text-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                             as: react_.Fragment,
                             enter: "ease-out duration-300",
                             enterFrom: "opacity-0 scale-95",
@@ -792,41 +766,40 @@ function ModalEducation(props) {
                             leave: "ease-in duration-200",
                             leaveFrom: "opacity-100 scale-100",
                             leaveTo: "opacity-0 scale-95",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
-                                className: "w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                className: "w-full max-w-sm p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Title */.V.Title, {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Title, {
                                         as: "h3",
-                                        className: "leading-6 text-gray-900 flex flex-row items-center justify-center",
+                                        className: "flex flex-row items-center justify-center leading-6 text-gray-900",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 width: 36,
                                                 height: 36,
-                                                src: "/modal-desc/education-modal.svg"
+                                                src: "/modal-desc/education-modal.svg",
+                                                alt: ""
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "font-semibold text-xl text-secondary ml-2",
-                                                children: "Education"
+                                                className: "ml-2 text-xl font-semibold text-secondary",
+                                                children: "Educations"
                                             })
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         className: "mt-8",
-                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ol", {
-                                            class: "relative border-l border-secondary dark:border-gray-700",
-                                            children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListEducation, {}),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListEducation, {}),
-                                                /*#__PURE__*/ jsx_runtime_.jsx(ListEducation, {})
-                                            ]
+                                        children: /*#__PURE__*/ jsx_runtime_.jsx("ol", {
+                                            className: "relative border-l border-secondary dark:border-gray-700",
+                                            children: props?.data?.map((value, index)=>/*#__PURE__*/ jsx_runtime_.jsx(ListEducation, {
+                                                    data: value
+                                                }, index))
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "mt-8 flex justify-center",
+                                        className: "flex justify-center mt-8",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             type: "button",
                                             onClick: ()=>setIsOpen(false),
-                                            className: "inline-flex justify-center rounded-md border border-transparent bg-secondary/50 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
+                                            className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
                                             children: "Got it, thanks!"
                                         })
                                     })
@@ -858,7 +831,7 @@ function ModalInterest(props) {
             className: "relative z-10",
             onClose: ()=>setIsOpen(false),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                     as: react_.Fragment,
                     enter: "ease-out duration-300",
                     enterFrom: "opacity-0",
@@ -873,8 +846,8 @@ function ModalInterest(props) {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "fixed inset-0 overflow-y-auto",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex min-h-full items-center justify-center p-4 text-center",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                        className: "flex items-center justify-center min-h-full p-4 text-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                             as: react_.Fragment,
                             enter: "ease-out duration-300",
                             enterFrom: "opacity-0 scale-95",
@@ -882,63 +855,38 @@ function ModalInterest(props) {
                             leave: "ease-in duration-200",
                             leaveFrom: "opacity-100 scale-100",
                             leaveTo: "opacity-0 scale-95",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
-                                className: "w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                className: "w-full max-w-lg p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Title */.V.Title, {
+                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Title, {
                                         as: "h3",
-                                        className: "leading-6 text-gray-900 flex flex-row items-center justify-center",
+                                        className: "flex flex-row items-center justify-center leading-6 text-gray-900",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                 width: 36,
                                                 height: 36,
-                                                src: "/modal-desc/education-modal.svg"
+                                                src: "/modal-desc/interest-modal.svg",
+                                                alt: ""
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "font-semibold text-xl text-secondary ml-2",
-                                                children: "Education"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                        className: "mt-8 grid grid-cols-3 gap-2 ",
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "Art"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "React Native"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "Laravel"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center ",
-                                                children: "Android"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "PHP"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "Machine Learning"
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                class: "bg-secondary text-white text-xs font-medium px-3 py-2 rounded text-center self-center",
-                                                children: "Art"
+                                                className: "ml-2 text-xl font-semibold text-secondary",
+                                                children: "Interests"
                                             })
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "mt-8 flex justify-center",
+                                        className: "grid grid-cols-3 gap-2 mt-8 ",
+                                        children: props?.data?.map((value, index)=>/*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                className: "self-center px-3 py-2 text-xs font-medium text-center text-white rounded bg-secondary",
+                                                children: value
+                                            }, index))
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        className: "flex justify-center mt-8",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             type: "button",
                                             onClick: ()=>setIsOpen(false),
-                                            className: "inline-flex justify-center rounded-md border border-transparent bg-secondary/50 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
+                                            className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
                                             children: "Got it, thanks!"
                                         })
                                     })
@@ -959,7 +907,6 @@ function ModalInterest(props) {
 
 
 
-
 function ModalSosmed(props) {
     let [isOpen, setIsOpen] = (0,cjs/* useRecoilState */.FV)(atom/* showModalSocialMedia */.o7);
     return /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u, {
@@ -971,7 +918,7 @@ function ModalSosmed(props) {
             className: "relative z-10",
             onClose: ()=>setIsOpen(false),
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                     as: react_.Fragment,
                     enter: "ease-out duration-300",
                     enterFrom: "opacity-0",
@@ -986,8 +933,8 @@ function ModalSosmed(props) {
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: "fixed inset-0 overflow-y-auto",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "flex min-h-full items-center justify-center p-4 text-center",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition.Child */.u.Child, {
+                        className: "flex items-center justify-center min-h-full p-4 text-center",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
                             as: react_.Fragment,
                             enter: "ease-out duration-300",
                             enterFrom: "opacity-0 scale-95",
@@ -995,29 +942,30 @@ function ModalSosmed(props) {
                             leave: "ease-in duration-200",
                             leaveFrom: "opacity-100 scale-100",
                             leaveTo: "opacity-0 scale-95",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Panel */.V.Panel, {
-                                className: "w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                className: "w-full max-w-lg p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
                                 children: [
                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                         className: "flex flex-row ",
                                         children: [
-                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog.Title */.V.Title, {
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Title, {
                                                 as: "h3",
-                                                className: "leading-6 basis-1/2 text-gray-900 flex flex-col items-center justify-center ",
+                                                className: "flex flex-col items-center justify-center leading-6 text-gray-900 basis-1/2 ",
                                                 children: [
                                                     /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                         width: 100,
                                                         height: 100,
-                                                        src: "/modal-desc/sosmed-modal.svg"
+                                                        src: "/modal-desc/sosmed-modal.svg",
+                                                        alt: ""
                                                     }),
                                                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                        className: "mt-8 font-semibold text-xl text-secondary ml-2",
-                                                        children: "Education"
+                                                        className: "mt-8 ml-2 text-xl font-semibold text-secondary",
+                                                        children: "Social Media"
                                                     })
                                                 ]
                                             }),
                                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                className: "basis-1/2 flex flex-col gap-y-4",
+                                                className: "flex flex-col basis-1/2 gap-y-4",
                                                 children: [
                                                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                                         className: "flex flex-row place-items-center",
@@ -1025,11 +973,12 @@ function ModalSosmed(props) {
                                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                                 width: 30,
                                                                 height: 30,
-                                                                src: "/logo-sosmed/instagram.svg"
+                                                                src: "/logo-sosmed/instagram.svg",
+                                                                alt: ""
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                                className: " font-medium text-sm ml-2",
-                                                                children: "@wildan.rmza"
+                                                                className: "ml-2 text-sm font-medium",
+                                                                children: props?.data?.instagram
                                                             })
                                                         ]
                                                     }),
@@ -1039,11 +988,12 @@ function ModalSosmed(props) {
                                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                                 width: 30,
                                                                 height: 30,
-                                                                src: "/logo-sosmed/linkedin.svg"
+                                                                src: "/logo-sosmed/linkedin.svg",
+                                                                alt: ""
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                                className: " font-medium text-sm ml-2",
-                                                                children: "wildan romiza"
+                                                                className: "ml-2 text-sm font-medium",
+                                                                children: props?.data?.linkedin
                                                             })
                                                         ]
                                                     }),
@@ -1053,11 +1003,12 @@ function ModalSosmed(props) {
                                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                                 width: 30,
                                                                 height: 30,
-                                                                src: "/logo-sosmed/facebook.svg"
+                                                                src: "/logo-sosmed/facebook.svg",
+                                                                alt: ""
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                                className: " font-medium text-sm ml-2",
-                                                                children: "wildan romiza"
+                                                                className: "ml-2 text-sm font-medium",
+                                                                children: props?.data?.facebook
                                                             })
                                                         ]
                                                     }),
@@ -1067,11 +1018,12 @@ function ModalSosmed(props) {
                                                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                                                 width: 30,
                                                                 height: 30,
-                                                                src: "/logo-sosmed/email.svg"
+                                                                src: "/logo-sosmed/email.svg",
+                                                                alt: ""
                                                             }),
                                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                                className: " font-medium text-sm ml-2",
-                                                                children: "wildan.romiza@gmail.com"
+                                                                className: "ml-2 text-sm font-medium",
+                                                                children: props?.data?.email
                                                             })
                                                         ]
                                                     })
@@ -1080,11 +1032,11 @@ function ModalSosmed(props) {
                                         ]
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "mt-8 flex justify-center ",
+                                        className: "flex justify-center mt-8 ",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
                                             type: "button",
                                             onClick: ()=>setIsOpen(false),
-                                            className: "inline-flex justify-center rounded-md border border-transparent bg-secondary/50 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
+                                            className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2",
                                             children: "Got it, thanks!"
                                         })
                                     })
@@ -1098,6 +1050,8 @@ function ModalSosmed(props) {
     });
 }
 
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1440);
 ;// CONCATENATED MODULE: ./components/year-card/index.js
 
 
@@ -1110,7 +1064,7 @@ function CardYear() {
     const setIsShowYear = (0,cjs/* useSetRecoilState */.Zl)(atom/* showYearContent */.Ud);
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: "flex flex-row rounded-lg px-8 py-6",
+            className: "flex flex-row px-8 py-6 rounded-lg",
             style: {
                 backgroundImage: `linear-gradient(90deg, rgba(12, 173, 183, 0.7),rgba(230, 132, 110, 0.9)),url("/bg-profile.jpg")`,
                 height: "fit-content",
@@ -1119,25 +1073,26 @@ function CardYear() {
             },
             children: [
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "basis-2/3 flex flex-col",
+                    className: "flex flex-col basis-2/3",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                             width: 50,
                             height: 51,
-                            src: "/calendar-card.svg"
+                            src: "/calendar-card.svg",
+                            alt: ""
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: "font-bold text-6xl mt-4 text-white",
+                            className: "mt-4 text-6xl font-bold text-white",
                             children: "2023"
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: "font-normal text-2xl mt-2 text-white",
+                            className: "mt-2 text-2xl font-normal text-white",
                             children: "3 Project"
                         })
                     ]
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: "flex basis-1/3 items-center justify-center",
+                    className: "flex items-center justify-center basis-1/3",
                     children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                         width: 50,
                         height: 51,
@@ -1145,60 +1100,8 @@ function CardYear() {
                         onClick: ()=>{
                             setIsShowMonth(true);
                             setIsShowYear(false);
-                        }
-                    })
-                })
-            ]
-        })
-    });
-}
-
-;// CONCATENATED MODULE: ./components/month-card/index.js
-
-
-
-
-
-
-function CardMonth() {
-    const setIsShowMonth = (0,cjs/* useSetRecoilState */.Zl)(atom/* showMonthContent */.qm);
-    const setIsShowProject = (0,cjs/* useSetRecoilState */.Zl)(atom/* showProjectContent */.kp);
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-            className: "flex flex-col rounded-lg px-8 py-6 bg-primary w-fit",
-            style: {
-                backgroundImage: `linear-gradient(180deg, rgba(12, 173, 183, 0.95),rgba(230, 132, 110, 0.9)),url("/bg-profile.jpg")`,
-                height: "fit-content",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain,cover"
-            },
-            children: [
-                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "basis-1/2 flex flex-col justify-center items-center",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: "font-bold text-4xl mt-4 text-white",
-                            children: "January"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: "font-normal text-2xl mt-2 text-white",
-                            children: "3 Project"
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("hr", {
-                    className: "my-4"
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                    className: "flex basis-1/2 items-center justify-center",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                        width: 50,
-                        height: 51,
-                        src: "/arrow.svg",
-                        onClick: ()=>{
-                            setIsShowMonth(false);
-                            setIsShowProject(true);
-                        }
+                        },
+                        alt: ""
                     })
                 })
             ]
@@ -1221,25 +1124,78 @@ function SelectYear() {
     });
 }
 
+;// CONCATENATED MODULE: ./components/month-card/index.js
+
+
+
+
+
+
+function CardMonth() {
+    const setIsShowMonth = (0,cjs/* useSetRecoilState */.Zl)(atom/* showMonthContent */.qm);
+    const setIsShowProject = (0,cjs/* useSetRecoilState */.Zl)(atom/* showProjectContent */.kp);
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            className: "flex flex-col px-8 py-6 rounded-lg bg-primary w-full",
+            style: {
+                backgroundImage: `linear-gradient(180deg, rgba(12, 173, 183, 0.95),rgba(230, 132, 110, 0.9)),url("/bg-profile.jpg")`,
+                height: "fit-content",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain,cover"
+            },
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    className: "flex flex-col items-center justify-center basis-1/2",
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: "mt-4 text-4xl font-bold text-white uppercase",
+                            children: "January"
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                            className: "mt-2 text-2xl font-normal text-white",
+                            children: "3 Project"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("hr", {
+                    className: "my-4"
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    className: "flex items-center justify-center basis-1/2",
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                        width: 50,
+                        height: 51,
+                        src: "/arrow.svg",
+                        onClick: ()=>{
+                            setIsShowMonth(false);
+                            setIsShowProject(true);
+                        },
+                        alt: ""
+                    })
+                })
+            ]
+        })
+    });
+}
+
 ;// CONCATENATED MODULE: ./components/select-step-project/select-month/index.js
 
 
 
 function SelectMonth() {
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "flex-1 w-full mt-4 grid grid-cols-5 gap-8 px-16",
-        children: /*#__PURE__*/ jsx_runtime_.jsx(CardMonth, {})
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        className: "flex-1  justify-items-center  w-full mt-4 grid grid-cols-4 gap-x-8 gap-y-8 px-16",
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(CardMonth, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx(CardMonth, {})
+        ]
     });
 }
 
+// EXTERNAL MODULE: ./redux/services/profileApi.js
+var profileApi = __webpack_require__(8013);
 ;// CONCATENATED MODULE: ./app/(public)/project/page.js
-
-
-
-
-
-
-
+/* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
@@ -1262,15 +1218,21 @@ function Home() {
     const [isShowMonthContent, setShowMonthContent] = (0,cjs/* useRecoilState */.FV)(atom/* showMonthContent */.qm);
     const [isShowYearContent, setShowYearContent] = (0,cjs/* useRecoilState */.FV)(atom/* showYearContent */.Ud);
     const [isShowProjectContent, setIsShowProject] = (0,cjs/* useRecoilState */.FV)(atom/* showProjectContent */.kp);
+    const { data: user } = (0,profileApi/* useGetProfileQuery */.Mx)();
     const renderSelectContent = ()=>{
         if (isShowYearContent) {
             return /*#__PURE__*/ jsx_runtime_.jsx(SelectYear, {});
         } else if (isShowMonthContent) {
             return /*#__PURE__*/ jsx_runtime_.jsx(SelectMonth, {});
         } else if (isShowProjectContent) {
-            return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "grid lg:grid-cols-5 mx-8 md:grid-cols-3 sm:grid-cols-1",
-                children: /*#__PURE__*/ jsx_runtime_.jsx(project_card/* default */.Z, {})
+            return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "grid mx-16 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-x-4",
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx(project_card/* default */.Z, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(project_card/* default */.Z, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(project_card/* default */.Z, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(project_card/* default */.Z, {})
+                ]
             });
         }
     };
@@ -1280,7 +1242,7 @@ function Home() {
                 className: ` h-auto flex font-sans  flex-col flex-1 mb-8`,
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                        className: "flex flex-col justify-center items-center flex-1 py-16",
+                        className: "flex flex-col items-center justify-center flex-1 py-16",
                         style: {
                             backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.3)),url("/bg-profile.jpg")`,
                             height: "fit-content",
@@ -1288,29 +1250,30 @@ function Home() {
                             backgroundSize: "contain,cover"
                         },
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                src: "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
-                                width: 1200,
-                                height: 1200,
-                                className: "rounded-full w-36 h-36 object-cover "
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "relative overflow-hidden rounded-full w-36 h-36",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                    src: user?.data?.photo ?? "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
+                                    alt: "photo-profile",
+                                    className: "absolute object-cover",
+                                    sizes: "100%",
+                                    fill: true
+                                })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "mt-4 font-bold text-4xl text-white tracking-wide",
-                                children: "M Wildan Romiza"
+                                className: "mt-4 text-4xl font-bold tracking-wide text-white",
+                                children: user?.data?.name
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                className: "font-semibold text-sm text-white ",
-                                children: "Programmer"
+                                className: "text-sm font-semibold text-white ",
+                                children: user?.data?.detail_user?.jobs
                             }),
-                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                className: "font-normal text-normal text-white w-1/4 text-center mt-4",
-                                children: [
-                                    "I am a front-end programmer who is experienced and skilled in using Next.js technology. I enjoy creating attractive and easy-to-use user interfaces using a combination of HTML, CSS, and JavaScript.",
-                                    " "
-                                ]
+                            /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                className: "w-1/4 mt-4 font-normal text-center text-white text-normal",
+                                children: user?.data?.detail_user?.descriptions
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "flex flex-row space-x-4 mt-4 ",
+                                className: "flex flex-row mt-4 space-x-4 ",
                                 children: [
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                         onClick: ()=>setSkillOpen(true),
@@ -1347,9 +1310,9 @@ function Home() {
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "font-medium text-center mt-8",
+                        className: "mt-8 font-medium text-center",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            className: "font-extrabold text-xl",
+                            className: "text-xl font-extrabold",
                             children: "Portofolio's"
                         })
                     }),
@@ -1361,15 +1324,56 @@ function Home() {
                     })
                 ]
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(ModalSkill, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(ModalWork, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(ModalEducation, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(ModalInterest, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(ModalSosmed, {})
+            /*#__PURE__*/ jsx_runtime_.jsx(ModalSkill, {
+                data: user?.data?.detail_user?.skills
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(ModalWork, {
+                data: user?.data?.detail_user?.work_experiences
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(ModalEducation, {
+                data: user?.data?.detail_user?.educations
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(ModalInterest, {
+                data: user?.data?.detail_user?.interests
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(ModalSosmed, {
+                data: {
+                    email: user?.data?.email,
+                    instagram: user?.data?.detail_user?.instagram,
+                    linkedin: user?.data?.detail_user?.linkedin,
+                    facebook: user?.data?.detail_user?.facebook
+                }
+            })
         ]
     });
 }
 
+
+/***/ }),
+
+/***/ 397:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\wildan\Documents\Web Project\lioke-rebrand\app\(public)\project\page.js`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
 /***/ })
 
@@ -1380,7 +1384,7 @@ function Home() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [732,421,804,929,568,499,990,722,943,927,772,464,442], () => (__webpack_exec__(9554)));
+var __webpack_exports__ = __webpack_require__.X(0, [6986,2201,2451,1618,7088,6974,3489,5816,4731,8305,5071,4905,6382], () => (__webpack_exec__(2474)));
 module.exports = __webpack_exports__;
 
 })();

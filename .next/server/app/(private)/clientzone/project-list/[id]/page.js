@@ -1,7 +1,7 @@
 (() => {
 var exports = {};
-exports.id = 538;
-exports.ids = [538];
+exports.id = 3538;
+exports.ids = [3538];
 exports.modules = {
 
 /***/ 8038:
@@ -36,283 +36,243 @@ module.exports = require("next/dist/compiled/react/jsx-runtime");
 
 /***/ }),
 
-/***/ 3918:
+/***/ 5868:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-context.js");
+module.exports = require("next/dist/server/app-render/app-render");
 
 /***/ }),
 
-/***/ 5732:
+/***/ 1844:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/amp-mode.js");
+module.exports = require("next/dist/server/app-render/get-segment-param");
 
 /***/ }),
 
-/***/ 3280:
+/***/ 6624:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/app-router-context.js");
+module.exports = require("next/dist/server/future/helpers/interception-routes");
 
 /***/ }),
 
-/***/ 2796:
+/***/ 5281:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/head-manager-context.js");
+module.exports = require("next/dist/server/future/route-modules/route-module");
 
 /***/ }),
 
-/***/ 9274:
+/***/ 7085:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/hooks-client-context.js");
+module.exports = require("next/dist/shared/lib/app-router-context");
 
 /***/ }),
 
-/***/ 4014:
+/***/ 1830:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+module.exports = require("next/dist/shared/lib/get-img-props");
 
 /***/ }),
 
-/***/ 4486:
+/***/ 633:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-blur-svg.js");
+module.exports = require("next/dist/shared/lib/hash");
 
 /***/ }),
 
-/***/ 744:
+/***/ 6864:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config-context.js");
+module.exports = require("next/dist/shared/lib/head");
 
 /***/ }),
 
-/***/ 5843:
+/***/ 9569:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-config.js");
+module.exports = require("next/dist/shared/lib/hooks-client-context");
 
 /***/ }),
 
-/***/ 9552:
+/***/ 2210:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/image-loader");
+module.exports = require("next/dist/shared/lib/image-config");
 
 /***/ }),
 
-/***/ 8524:
+/***/ 5359:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/is-plain-object.js");
+module.exports = require("next/dist/shared/lib/image-config-context");
 
 /***/ }),
 
-/***/ 8020:
+/***/ 7160:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/mitt.js");
+module.exports = require("next/dist/shared/lib/router-context");
 
 /***/ }),
 
-/***/ 7342:
+/***/ 893:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/no-ssr-error.js");
+module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix");
 
 /***/ }),
 
-/***/ 4406:
+/***/ 2336:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+module.exports = require("next/dist/shared/lib/router/utils/format-url");
 
 /***/ }),
 
-/***/ 4964:
+/***/ 7887:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router-context.js");
+module.exports = require("next/dist/shared/lib/router/utils/handle-smooth-scroll");
 
 /***/ }),
 
-/***/ 1751:
+/***/ 8735:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/add-path-prefix.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-bot");
 
 /***/ }),
 
-/***/ 6220:
+/***/ 120:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/compare-states.js");
+module.exports = require("next/dist/shared/lib/router/utils/is-local-url");
 
 /***/ }),
 
-/***/ 4053:
+/***/ 8231:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-/***/ 3938:
+/***/ 3750:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash");
 
 /***/ }),
 
-/***/ 9565:
+/***/ 982:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+module.exports = require("next/dist/shared/lib/router/utils/resolve-href");
 
 /***/ }),
 
-/***/ 5789:
+/***/ 9618:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/get-next-pathname-info.js");
+module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 1897:
+/***/ 8423:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-bot.js");
+module.exports = require("next/dist/shared/lib/utils");
 
 /***/ }),
 
-/***/ 1428:
+/***/ 8658:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+module.exports = require("next/dist/shared/lib/utils/warn-once");
 
 /***/ }),
 
-/***/ 8854:
+/***/ 9491:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-path.js");
+module.exports = require("assert");
 
 /***/ }),
 
-/***/ 1292:
+/***/ 2361:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+module.exports = require("events");
 
 /***/ }),
 
-/***/ 4567:
+/***/ 7147:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix.js");
+module.exports = require("fs");
 
 /***/ }),
 
-/***/ 979:
+/***/ 3685:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+module.exports = require("http");
 
 /***/ }),
 
-/***/ 3297:
+/***/ 5687:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/remove-trailing-slash.js");
+module.exports = require("https");
 
 /***/ }),
 
-/***/ 6052:
+/***/ 2037:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+module.exports = require("os");
 
 /***/ }),
 
-/***/ 4226:
+/***/ 1017:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
-
-/***/ }),
-
-/***/ 5052:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
-
-/***/ }),
-
-/***/ 3349:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/server-inserted-html.js");
-
-/***/ }),
-
-/***/ 2470:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/side-effect.js");
-
-/***/ }),
-
-/***/ 9232:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/utils.js");
-
-/***/ }),
-
-/***/ 618:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+module.exports = require("path");
 
 /***/ }),
 
@@ -324,41 +284,62 @@ module.exports = require("stream");
 
 /***/ }),
 
-/***/ 4795:
+/***/ 6224:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ 7310:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ 3837:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ 9796:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
+/***/ }),
+
+/***/ 8184:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "AppRouter": () => (/* reexport default from dynamic */ next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default.a),
-/* harmony export */   "GlobalError": () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default.a),
-/* harmony export */   "LayoutRouter": () => (/* reexport default from dynamic */ next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default.a),
-/* harmony export */   "RenderFromTemplateContext": () => (/* reexport default from dynamic */ next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default.a),
-/* harmony export */   "__next_app_webpack_require__": () => (/* binding */ __next_app_webpack_require__),
-/* harmony export */   "metadata": () => (/* binding */ metadata),
-/* harmony export */   "pages": () => (/* binding */ pages),
-/* harmony export */   "renderToReadableStream": () => (/* reexport safe */ next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__.renderToReadableStream),
-/* harmony export */   "requestAsyncStorage": () => (/* reexport safe */ next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__.requestAsyncStorage),
-/* harmony export */   "serverHooks": () => (/* reexport module object */ next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__),
-/* harmony export */   "staticGenerationAsyncStorage": () => (/* reexport safe */ next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__.staticGenerationAsyncStorage),
-/* harmony export */   "tree": () => (/* binding */ tree)
+/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
+/* harmony export */   __next_app__: () => (/* binding */ __next_app__),
+/* harmony export */   originalPathname: () => (/* binding */ originalPathname),
+/* harmony export */   pages: () => (/* binding */ pages),
+/* harmony export */   routeModule: () => (/* binding */ routeModule),
+/* harmony export */   tree: () => (/* binding */ tree)
 /* harmony export */ });
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2315);
-/* harmony import */ var next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_app_router__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2333);
-/* harmony import */ var next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_layout_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2885);
-/* harmony import */ var next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_render_from_template_context__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9505);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(683);
-/* harmony import */ var next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_static_generation_async_storage__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3269);
-/* harmony import */ var next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_request_async_storage__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5746);
-/* harmony import */ var next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_hooks_server_context__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8208);
-/* harmony import */ var next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_dist_compiled_react_server_dom_webpack_server_browser__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
+/* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+
+    
 
     const tree = {
         children: [
@@ -376,80 +357,74 @@ __webpack_require__.r(__webpack_exports__);
         children: [
         '[id]',
         {
-        children: ['', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6802, 23)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\project-list\\[id]\\page.js"]}]
+        children: ['__PAGE__', {}, {
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1236)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\project-list\\[id]\\page.js"],
+          
+        }]
       },
         {
+          
           
         }
       ]
       },
         {
           
-        }
-      ]
-      },
-        {
           
         }
       ]
       },
         {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6846, 23)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js"],
+          
+          
         }
       ]
       },
         {
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 278)), "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js"],
+          
+        }
+      ]
+      },
+        {
+          
           
         }
       ]
       }.children;
-    const metadata = [{
-          type: 'layout',
-          layer: 1,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6846, 23)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\layout.js",
-        },{
-          type: 'page',
-          layer: 4,
-          mod: () => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6802, 23)),
-          path: "C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\project-list\\[id]\\page.js",
-        },];
     const pages = ["C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\project-list\\[id]\\page.js"];
 
     
-    
-    
-    
+
+    const originalPathname = "/(private)/clientzone/project-list/[id]/page"
+    const __next_app__ = {
+      require: __webpack_require__,
+      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
+      loadChunk: () => Promise.resolve()
+    }
 
     
-    
 
-    
-
-    
-    const __next_app_webpack_require__ = __webpack_require__
+    // Create and export the route module that will be consumed.
+    const options = {"definition":{"kind":"APP_PAGE","page":"/(private)/clientzone/project-list/[id]/page","pathname":"/clientzone/project-list/[id]","bundlePath":"app/(private)/clientzone/project-list/[id]/page","filename":"","appPaths":[]}}
+    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
+      ...options,
+      userland: {
+        loaderTree: tree,
+      },
+    })
   
 
 /***/ }),
 
-/***/ 1678:
+/***/ 7966:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2662))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8045))
 
 /***/ }),
 
-/***/ 6802:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/* __next_internal_client_entry_do_not_use__ */ const { createProxy  } = __webpack_require__(4353);
-module.exports = createProxy("C:\\Users\\wildan\\Documents\\Web Project\\lioke-rebrand\\app\\(private)\\clientzone\\project-list\\[id]\\page.js");
-
-
-/***/ }),
-
-/***/ 2662:
+/***/ 8045:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -461,10 +436,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Parts_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(533);
-/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9313);
-/* harmony import */ var _add_project_project_overview_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7716);
-
+/* harmony import */ var _Parts_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6645);
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2589);
+/* harmony import */ var _add_project_project_overview_form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2093);
+/* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
@@ -493,16 +468,16 @@ function Page() {
                 className: "col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ol", {
-                        class: "flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base mb-4",
+                        className: "flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base mb-4",
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                class: "flex md:w-full items-center text-blue-600 dark:text-blue-500 sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700",
+                                className: "flex md:w-full items-center text-blue-600 dark:text-blue-500 sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                    class: "flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500",
+                                    className: "flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
                                             "aria-hidden": "true",
-                                            class: "w-4 h-4 mr-2 sm:w-5 sm:h-5",
+                                            className: "w-4 h-4 mr-2 sm:w-5 sm:h-5",
                                             fill: "currentColor",
                                             viewBox: "0 0 20 20",
                                             xmlns: "http://www.w3.org/2000/svg",
@@ -513,7 +488,7 @@ function Page() {
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            class: "mr-2",
+                                            className: "mr-2",
                                             children: "1"
                                         }),
                                         "Overview"
@@ -521,12 +496,12 @@ function Page() {
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
-                                class: "flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700",
+                                className: "flex md:w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700",
                                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                    class: "flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500",
+                                    className: "flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            class: "mr-2",
+                                            className: "mr-2",
                                             children: "2"
                                         }),
                                         "Process"
@@ -534,10 +509,10 @@ function Page() {
                                 })
                             }),
                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                class: "flex items-center",
+                                className: "flex items-center",
                                 children: [
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        class: "mr-2",
+                                        className: "mr-2",
                                         children: "3"
                                     }),
                                     "Result"
@@ -576,6 +551,32 @@ function Page() {
 }
 
 
+/***/ }),
+
+/***/ 1236:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1363);
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`C:\Users\wildan\Documents\Web Project\lioke-rebrand\app\(private)\clientzone\project-list\[id]\page.js`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
+
 /***/ })
 
 };
@@ -585,7 +586,7 @@ function Page() {
 var __webpack_require__ = require("../../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [732,421,804,929,921,568,149,484,960,927,113,378,464,716], () => (__webpack_exec__(4795)));
+var __webpack_exports__ = __webpack_require__.X(0, [6986,2201,2451,1618,8000,6974,2205,7160,930,8481,8305,8280,2707,4905,2093], () => (__webpack_exec__(8184)));
 module.exports = __webpack_exports__;
 
 })();
