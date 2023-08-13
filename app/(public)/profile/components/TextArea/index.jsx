@@ -1,4 +1,12 @@
-function TextArea({ id, inputClassName, onChange, value, placeholder, disabled, label, labelClassName, beforeElement, className, afterElement, rows }) {
+import { useState } from "react";
+
+function TextArea({ id, inputClassName, onChange, value, placeholder, disabled, label, labelClassName, beforeElement, className, afterElement, rows, maxlength }) {
+	const [textLength, setTextLength] = useState(value ? value.length : 0);
+
+	const handleInputChange = (newValue) => {
+		onChange(newValue);
+		setTextLength(newValue.length);
+	};
 	return (
 		<div className="grid w-full gap-1 text-sm">
 			{label && (
@@ -12,13 +20,17 @@ function TextArea({ id, inputClassName, onChange, value, placeholder, disabled, 
 					id={id}
 					className={["w-full bg-white outline-none border-none rounded-md", inputClassName].join(" ")}
 					style={{ boxShadow: "none", fontSize: "14px" }}
-					onChange={(e) => onChange(e.target.value)}
+					onChange={(e) => handleInputChange(e.target.value)}
 					value={value ?? ""}
 					placeholder={placeholder}
 					rows={rows}
+					maxLength={maxlength}
 					disabled={disabled}
 				/>
 				{afterElement && <span className="select-none">{afterElement}</span>}
+			</div>
+			<div className="text-gray-500 text-xs mt-1">
+				Length: {textLength}/{maxlength}
 			</div>
 		</div>
 	)

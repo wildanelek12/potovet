@@ -5,6 +5,7 @@ import Button from "../components/Button"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
 import { TrashIcon } from "@heroicons/react/20/solid"
+import { Toast } from "@/utils/SweetAlert"
 
 export default function Page() {
 	const [skills, setSkills] = useState([""])

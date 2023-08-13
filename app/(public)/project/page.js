@@ -43,7 +43,10 @@ export default function Home() {
 			return <SelectMonth></SelectMonth>
 		} else if (isShowProjectContent) {
 			return (
-				<div className="grid mx-8 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1">
+				<div className="grid mx-16 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-x-4">
+					<ProjectCard></ProjectCard>
+					<ProjectCard></ProjectCard>
+					<ProjectCard></ProjectCard>
 					<ProjectCard></ProjectCard>
 				</div>
 			)

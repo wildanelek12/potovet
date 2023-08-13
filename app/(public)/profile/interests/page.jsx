@@ -5,6 +5,7 @@ import Button from "../components/Button"
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
 import { TrashIcon } from "@heroicons/react/20/solid"
+import { Toast } from "@/utils/SweetAlert"
 
 export default function Page() {
 	const [interests, setInterests] = useState([""])
@@ -57,7 +58,7 @@ export default function Page() {
 						Interests
 					</p>
 					<p className="px-3 py-3 text-white cursor-pointer select-none" style={{ borderLeft: "2px solid white" }} onClick={handleOnAdd}>
-						ADD
+						+
 					</p>
 				</div>
 

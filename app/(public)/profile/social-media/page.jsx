@@ -4,6 +4,7 @@ import { useGetProfileQuery, useUpdateProfileMutation } from "@/redux/services/p
 import { useEffect, useState } from "react"
 import Input from "../components/Input"
 import Button from "../components/Button"
+import { Toast } from "@/utils/SweetAlert"
 
 export default function Page() {
 	const [instagram, setInstagram] = useState("")

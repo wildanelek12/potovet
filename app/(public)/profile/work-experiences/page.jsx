@@ -7,7 +7,7 @@ import Input from "../components/Input"
 import { TrashIcon } from "@heroicons/react/20/solid"
 import TextArea from "../components/TextArea"
 import Datepicker from "react-tailwindcss-datepicker"
-
+import { Toast } from "@/utils/SweetAlert"
 export default function Page() {
 	const [workExperiences, setWorkExperiences] = useState([
 		{
@@ -74,7 +74,7 @@ export default function Page() {
 						Work Experiences
 					</p>
 					<p className="px-3 py-3 text-white cursor-pointer select-none" style={{ borderLeft: "2px solid white" }} onClick={handleOnAdd}>
-						ADD
+						+
 					</p>
 				</div>
 

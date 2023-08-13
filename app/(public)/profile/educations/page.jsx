@@ -71,7 +71,7 @@ export default function Page() {
 						Educations
 					</p>
 					<p className="px-3 py-3 text-white cursor-pointer select-none" style={{ borderLeft: "2px solid white" }} onClick={handleOnAdd}>
-						ADD
+						+
 					</p>
 				</div>
 

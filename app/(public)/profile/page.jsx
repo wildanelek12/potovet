@@ -55,8 +55,8 @@ export default function Page() {
 				</div>
 				<Input id="name" label="Nama" type="text" onChange={setName} value={name} />
 				<Input id="job" label="Pekerjaan" type="text" onChange={setJobs} value={jobs} />
-				<TextArea id="descriptions" label="Deskripsi" onChange={setDescriptions} value={descriptions} rows={4} />
-				<TextArea id="summary" label="Summary" onChange={setSummary} value={summary} rows={4} />
+				<TextArea id="descriptions" label="Deskripsi" onChange={setDescriptions} value={descriptions} rows={4} maxlength={250} />
+				<TextArea id="summary" label="Summary" onChange={setSummary} value={summary} rows={4} maxlength={500} />
 			</div>
 
 			<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-auto w-fit" disabled={isLoading} />
