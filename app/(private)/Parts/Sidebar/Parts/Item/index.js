@@ -16,7 +16,7 @@ export default function Item({ id, label, href }) {
     const content = (
         <div className={["relative flex flex-row justify-items-center items-center py-4 px-10 gap-3 select-none cursor-pointer"].join(' ')}>
             <h3 className={["capitalize z-10 text-xs transition-all", active ? 'font-semibold' : 'font-normal'].join(' ')}>{label} 
-                 {active ?<span class="ml-2 bg-green-400 text-white text-xs font-bold mr-2 px-2.5 py-0.5 rounded dark:bg-green dark:text-green-300">1</span>:"" } 
+                 {active ?<span className="ml-2 bg-green-400 text-white text-xs font-bold mr-2 px-2.5 py-0.5 rounded dark:bg-green dark:text-green-300">1</span>:"" } 
             </h3>
             {active && (
                 <motion.div className={["absolute flex items-center justify-center w-full h-full right-0"].join(' ')}>

@@ -9,19 +9,19 @@ export default function CardMonth() {
     const setIsShowProject = useSetRecoilState(showProjectContent);
     return (
         <>
-            <div className='flex flex-col rounded-lg px-8 py-6 bg-primary w-fit' style={{
+            <div className='flex flex-col px-8 py-6 rounded-lg bg-primary w-full' style={{
                 backgroundImage: `linear-gradient(180deg, rgba(12, 173, 183, 0.95),rgba(230, 132, 110, 0.9)),url("/bg-profile.jpg")`,
                 height: 'fit-content',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'contain,cover',
             }}>
-                <div className='basis-1/2 flex flex-col justify-center items-center'>
-                    <p className='font-bold text-4xl mt-4 text-white'>January</p>
-                    <p className='font-normal text-2xl mt-2 text-white'>3 Project</p>
+                <div className='flex flex-col items-center justify-center basis-1/2'>
+                    <p className='mt-4 text-4xl font-bold text-white uppercase'>January</p>
+                    <p className='mt-2 text-2xl font-normal text-white'>3 Project</p>
                 </div>
                 <hr className='my-4' />
-                <div className='flex basis-1/2 items-center justify-center'>
-                    <Image width={50} height={51} src={'/arrow.svg'} onClick={() => { setIsShowMonth(false); setIsShowProject(true) }} />
+                <div className='flex items-center justify-center basis-1/2'>
+                    <Image width={50} height={51} src={'/arrow.svg'} onClick={() => { setIsShowMonth(false); setIsShowProject(true) }} alt='' />
                 </div>
             </div>
         </>

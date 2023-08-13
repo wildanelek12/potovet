@@ -1,5 +1,5 @@
 import React from "react";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 import { BsPrinter,BsShareFill } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
@@ -12,29 +12,30 @@ const montserrat = Montserrat({
 export default function Detail() {
   return (
     <div className={` h-auto flex font-sans px-16 py-2 flex-col flex-1`}>
-      <div className="flex flex-col justify-center items-center flex-1 ">
-        <p className="mt-4 font-bold text-3xl ">
+      <div className="flex flex-col items-center justify-center flex-1 ">
+        <p className="mt-4 text-3xl font-bold ">
           Website Promosi International BAG for backpaker
         </p>
-        <p className="font-medium text-sm mt-1">By : Ario Bayu</p>
-        <p className="text-xs mt-1">Categories : Professional </p>
-        <p className="text-xs mt-1">
+        <p className="mt-1 text-sm font-medium">By : Ario Bayu</p>
+        <p className="mt-1 text-xs">Categories : Professional </p>
+        <p className="mt-1 text-xs">
           Project Time Elapsed : 20 Februari 2023 - 20 December 2023{" "}
         </p>
         <Image
           src={
             "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"
           }
+          alt=""
           width={900}
           height={600}
-          className="w-1/2 object-cover  mt-8"
+          className="object-cover w-1/2 mt-8"
         />
       </div>
 
       <div className="flex flex-col items-start flex-1 p-32">
         <p className="text-xs mt-19">at : 20 February 2023 </p>
         <p className="text-justify ">
-          Introducing AdventureGear.com - your ultimate destination for all your
+          {`Introducing AdventureGear.com - your ultimate destination for all your
           adventurous journeys! If you're a passionate explorer seeking
           high-quality backpacks and gear, look no further. Our website offers a
           wide range of adventure-friendly backpacks designed to accompany you
@@ -55,17 +56,18 @@ export default function Detail() {
           adventure gear, regardless of their budget. With our secure payment
           options and fast shipping, you can gear up and hit the trails in no
           time. Visit AdventureGear.com today and embark on unforgettable
-          adventures with confidence. Your next thrilling expedition awaits!
+          adventures with confidence. Your next thrilling expedition awaits!`}
         </p>
         <Image
           src={
             "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc"
           }
+          alt=""
           width={900}
           height={600}
-          className="w-1/2 object-cover  mt-8 self-center"
+          className="self-center object-cover w-1/2 mt-8"
         />
-        <p className="text-justify mt-2">
+        <p className="mt-2 text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
           ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec non
           finibus ligula. Quisque volutpat magna non mi auctor consequat. Aenean
@@ -83,7 +85,7 @@ export default function Detail() {
           potenti. Maecenas egestas faucibus dui, ut vestibulum nunc porta nec.
           Nunc interdum ante at turpis porta, convallis blandit ante dapibus.
         </p>
-        <p className="text-justify mt-2">
+        <p className="mt-2 text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
           ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec non
           finibus ligula. Quisque volutpat magna non mi auctor consequat. Aenean
@@ -102,23 +104,23 @@ export default function Detail() {
           Nunc interdum ante at turpis porta, convallis blandit ante dapibus.
         </p>
       </div>
-      <div className="fixed bottom-10 right-10 flex flex-col">
+      <div className="fixed flex flex-col bottom-10 right-10">
         <Link
-          className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full mb-2"
+          className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
           href={"mailto:support@example.com?subject=SendMail&body=Description"}
         >
           <MdOutlineEmail />
         </Link>
-        <button className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full mb-2">
+        <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
           <BsPrinter />
         </button>
         <Link href={"/clientzone/project-list/1"}>
-          <button className="  bg-primary  text-white p-6 text-xl mb-2 font-semibold rounded-full ">
+          <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
             <AiOutlineEdit />
           </button>
         </Link>
         <Link href={"/clientzone/project-list/1"}>
-          <button className="  bg-primary  text-white p-6 text-xl font-semibold rounded-full ">
+          <button className="p-6 text-xl font-semibold text-white rounded-full bg-primary">
             <BsShareFill />
           </button>
         </Link>
