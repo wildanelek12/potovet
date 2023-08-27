@@ -36,7 +36,7 @@ export default function Page() {
         </div>
       </div>
 
-      <Card className="col-span-full lg:col-span-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
+      <Card className="col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <div className="flex h-full">
           <div className="flex-1 flex flex-col pt-4 ">
             <p className="ml-8 font-semibold text-primary">
@@ -74,7 +74,7 @@ export default function Page() {
           </div>
         </div>
       </Card>
-      <Card className="col-span-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
+      <Card className="col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <Chart />
       </Card>
       <Card className="col-span-full h-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">

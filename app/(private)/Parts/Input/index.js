@@ -12,6 +12,7 @@ export default function Input({
   inputClassName,
   labelClassName,
   disabled,
+  isHaveTemplate
 }) {
   return (
     <div className="grid gap-1 font-work-sans">
@@ -46,6 +47,7 @@ export default function Input({
         {afterElement && <span className="select-none">{afterElement}</span>}
         {value ? <BsCheckCircleFill color="#64CCC5" /> : ""}
       </div>
+      
     </div>
   );
 }
