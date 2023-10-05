@@ -19,7 +19,7 @@ export default function ProjectListCard({ status, src, title, desc, date }) {
     <>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
         <div className="relative">
-          <Image className="rounded-t-lg" src={src} alt="" />
+          <Image className="rounded-t-lg w-full h-full" src={src} alt="" width={500} height={500}/>
           <AiFillStar
             className={`absolute top-2 right-3  
           ${

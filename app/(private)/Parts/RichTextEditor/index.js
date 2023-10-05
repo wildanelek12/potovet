@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import { BsFillPlusCircleFill } from "react-icons/bs"; 
 const editorConfiguration = {
   toolbar: [
     "heading",
@@ -61,6 +61,11 @@ export default function RichTextEditor({ value, onChange, label,isTextArea }) {
 
   }
 
+  function insertTemplate() {
+    const template = "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
+    onChange(template); // Update the content using the onChange function
+  }
+
   // useEffect(() => {
   //   var text = value;
   //   const count = text.replace(/(<([^>]+)>)/gi, "").length;
@@ -69,9 +74,17 @@ export default function RichTextEditor({ value, onChange, label,isTextArea }) {
   //   setCount(count);
   // }, [value]);
   return (
-    <div className="grid">
-      {label && <label className="capitalize font-semibold">{label}</label>}
-      <div className="py-1 h-fit">
+    <div className="grid mt-4">
+         <div className="flex items-center">
+        {label && <label className="capitalize font-semibold">{label}</label>}
+        {/* Rounded button */}
+        <button className="rounded-md bg-blue-500 text-white text-sm font-bold px-3 py-1 ml-2 flex items-center" onClick={insertTemplate}>
+          <BsFillPlusCircleFill className="mr-2" /> {/* Icon component */}
+          Copy Template
+        </button>
+      </div>
+      
+      <div className="py-1 h-fit mt-2">
         {rendered && (
           <CKEditor
             editor={Editor}
