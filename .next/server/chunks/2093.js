@@ -187,7 +187,7 @@ function FileInput({ label, className, onChange, value, types, multiple, preview
 /* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(930);
 
 
-function Input({ id, label, type, onChange, value, placeholder, beforeElement, afterElement, className, inputClassName, labelClassName, disabled }) {
+function Input({ id, label, type, onChange, value, placeholder, beforeElement, afterElement, className, inputClassName, labelClassName, disabled, isHaveTemplate }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "grid gap-1 font-work-sans",
         children: [
@@ -249,6 +249,8 @@ function Input({ id, label, type, onChange, value, placeholder, beforeElement, a
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(930);
+
 
 
 const editorConfiguration = {
@@ -306,6 +308,10 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
             return editor.getData();
         }
     }
+    function insertTemplate() {
+        const template = "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
+        onChange(template); // Update the content using the onChange function
+    }
     // useEffect(() => {
     //   var text = value;
     //   const count = text.replace(/(<([^>]+)>)/gi, "").length;
@@ -313,14 +319,30 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
     //   setCount(count);
     // }, [value]);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "grid",
+        className: "grid mt-4",
         children: [
-            label && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
-                className: "capitalize font-semibold",
-                children: label
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "flex items-center",
+                children: [
+                    label && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+                        className: "capitalize font-semibold",
+                        children: label
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
+                        className: "rounded-md bg-blue-500 text-white text-sm font-bold px-3 py-1 ml-2 flex items-center",
+                        onClick: insertTemplate,
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__/* .BsFillPlusCircleFill */ .Y_C, {
+                                className: "mr-2"
+                            }),
+                            " ",
+                            "Copy Template"
+                        ]
+                    })
+                ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "py-1 h-fit",
+                className: "py-1 h-fit mt-2",
                 children: rendered && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(CKEditor, {
                     editor: Editor,
                     data: value,

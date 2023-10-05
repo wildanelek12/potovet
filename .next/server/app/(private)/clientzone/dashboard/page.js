@@ -471,7 +471,7 @@ function Page() {
                 ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                className: "col-span-full lg:col-span-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                className: "col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "flex h-full",
                     children: [
@@ -564,7 +564,7 @@ function Page() {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-                className: "col-span-full lg:col-span-4 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
+                className: "col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Parts_Chart__WEBPACK_IMPORTED_MODULE_2__/* .Chart */ .kL, {})
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Parts_Card__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {

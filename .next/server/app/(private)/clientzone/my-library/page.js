@@ -497,38 +497,11 @@ function Page() {
                                         className: "relative",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                className: "h-auto max-w-full rounded-lg",
-                                                src: "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg",
-                                                alt: ""
-                                            }),
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
-                                                children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaDownload */ .aBF, {
-                                                            className: "w-6 h-6 text-gray-400 ",
-                                                            color: "#0CADB7"
-                                                        })
-                                                    }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                        className: "items-center justify-center p-2 bg-white rounded-full shadow-lg",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_7__/* .BsFillTrashFill */ .AuQ, {
-                                                            className: "w-6 h-6 text-gray-400 ",
-                                                            color: "#FE7263"
-                                                        })
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: "relative",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                className: "h-auto max-w-full rounded-lg",
+                                                className: "h-full max-w-full rounded-lg object-cover",
                                                 src: "https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png",
-                                                alt: ""
+                                                alt: "",
+                                                width: 500,
+                                                height: 500
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
@@ -555,9 +528,11 @@ function Page() {
                                         className: "relative",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                className: "h-auto max-w-full rounded-lg",
+                                                className: "h-full max-w-full rounded-lg object-cover",
                                                 src: "https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg",
-                                                alt: ""
+                                                alt: "",
+                                                width: 500,
+                                                height: 800
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
@@ -584,9 +559,11 @@ function Page() {
                                         className: "relative",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                className: "h-auto max-w-full rounded-lg",
+                                                className: "h-full max-w-full rounded-lg",
                                                 src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-                                                alt: ""
+                                                alt: "",
+                                                width: 500,
+                                                height: 500
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: "absolute flex flex-row bottom-2 right-2 gap-x-3",
@@ -613,9 +590,11 @@ function Page() {
                                         className: "relative",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                                className: "h-auto max-w-full rounded-lg",
+                                                className: "h-full max-w-full rounded-lg object-cover",
                                                 src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-                                                alt: ""
+                                                alt: "",
+                                                width: 500,
+                                                height: 500
                                             }),
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 className: "absolute flex flex-row bottom-2 right-2 gap-x-3",

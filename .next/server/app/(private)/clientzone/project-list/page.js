@@ -478,9 +478,11 @@ function ProjectListCard({ status, src, title, desc, date }) {
                         className: "relative",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                className: "rounded-t-lg",
+                                className: "rounded-t-lg w-full h-full",
                                 src: src,
-                                alt: ""
+                                alt: "",
+                                width: 500,
+                                height: 500
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* AiFillStar */.pHD, {
                                 className: `absolute top-2 right-3  
