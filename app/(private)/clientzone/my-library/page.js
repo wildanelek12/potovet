@@ -51,30 +51,11 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="relative">
               <Image
-                className="h-auto max-w-full rounded-lg"
-                src="https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"
-                alt=""
-              />
-              <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
-                <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <FaDownload
-                    className="w-6 h-6 text-gray-400 "
-                    color="#0CADB7"
-                  />
-                </div>
-                <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <BsFillTrashFill
-                    className="w-6 h-6 text-gray-400 "
-                    color="#FE7263"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <Image
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full rounded-lg object-cover"
                 src="https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png"
                 alt=""
+                width={500}
+                height={500}
               />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
@@ -93,9 +74,11 @@ export default function Page() {
             </div>
             <div className="relative">
               <Image
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full rounded-lg object-cover"
                 src="https://img.freepik.com/free-vector/gradient-texture-travel-agency-landing-page_23-2149342695.jpg"
                 alt=""
+                width={500}
+                height={800}
               />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
@@ -114,9 +97,11 @@ export default function Page() {
             </div>
             <div className="relative">
               <Image
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
                 alt=""
+                width={500}
+                height={500}
               />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
@@ -135,9 +120,11 @@ export default function Page() {
             </div>
             <div className="relative">
               <Image
-                className="h-auto max-w-full rounded-lg"
+                className="h-full max-w-full rounded-lg object-cover"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
                 alt=""
+                width={500}
+                height={500}
               />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
