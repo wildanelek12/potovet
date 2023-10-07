@@ -298,7 +298,7 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
         var replaced_text = data.replace(/(<([^>]+)>)/gi, "");
         const count = replaced_text.length;
         setCount(count);
-        if (count > 500) {
+        if (count > 2000) {
             var old_data = value;
             console.log("here");
             editor.setData(old_data);
@@ -354,7 +354,7 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
                 className: "font-normal text-xs",
                 children: [
                     count,
-                    " / 500 Character"
+                    " / 2000 Character"
                 ]
             })
         ]

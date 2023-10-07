@@ -1,7 +1,7 @@
 {
   "/(public)/page": "app/(public)/page.js",
-  "/login/page": "app/login/page.js",
   "/sign-up/page": "app/sign-up/page.js",
+  "/login/page": "app/login/page.js",
   "/(public)/project/page": "app/(public)/project/page.js",
   "/(private)/clientzone/add-project/page": "app/(private)/clientzone/add-project/page.js",
   "/(private)/clientzone/dashboard/page": "app/(private)/clientzone/dashboard/page.js",
@@ -9,10 +9,10 @@
   "/(private)/clientzone/project-list/page": "app/(private)/clientzone/project-list/page.js",
   "/(public)/profile/page": "app/(public)/profile/page.js",
   "/(public)/project/[id]/page": "app/(public)/project/[id]/page.js",
-  "/(public)/profile/educations/page": "app/(public)/profile/educations/page.js",
-  "/(public)/profile/interests/page": "app/(public)/profile/interests/page.js",
   "/(private)/clientzone/project-list/[id]/page": "app/(private)/clientzone/project-list/[id]/page.js",
+  "/(public)/profile/educations/page": "app/(public)/profile/educations/page.js",
+  "/(public)/profile/skills/page": "app/(public)/profile/skills/page.js",
   "/(public)/profile/social-media/page": "app/(public)/profile/social-media/page.js",
-  "/(public)/profile/work-experiences/page": "app/(public)/profile/work-experiences/page.js",
-  "/(public)/profile/skills/page": "app/(public)/profile/skills/page.js"
+  "/(public)/profile/interests/page": "app/(public)/profile/interests/page.js",
+  "/(public)/profile/work-experiences/page": "app/(public)/profile/work-experiences/page.js"
 }
