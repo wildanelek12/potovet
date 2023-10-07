@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { BsFillPlusCircleFill } from "react-icons/bs"; 
+import { BsFillPlusCircleFill } from "react-icons/bs";
 const editorConfiguration = {
   toolbar: [
     "heading",
@@ -26,7 +26,7 @@ const editorConfiguration = {
   //   height: "50px",
 };
 
-export default function RichTextEditor({ value, onChange, label,isTextArea }) {
+export default function RichTextEditor({ value, onChange, label, isTextArea }) {
   const editorRef = useRef();
   const [rendered, setRendered] = useState(false);
   const [count, setCount] = useState(0);
@@ -41,28 +41,25 @@ export default function RichTextEditor({ value, onChange, label,isTextArea }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
   function handleChange(editor) {
- 
- 
     var data = editor.getData();
     var replaced_text = data.replace(/(<([^>]+)>)/gi, "");
     const count = replaced_text.length;
     setCount(count);
-    if(count > 500){
+    if (count > 2000) {
       var old_data = value;
       console.log("here");
-      editor.setData(old_data)
+      editor.setData(old_data);
       return old_data;
-    }else{
+    } else {
       console.log("else");
       return editor.getData();
     }
-
   }
 
   function insertTemplate() {
-    const template = "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
+    const template =
+      "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
     onChange(template); // Update the content using the onChange function
   }
 
@@ -75,15 +72,18 @@ export default function RichTextEditor({ value, onChange, label,isTextArea }) {
   // }, [value]);
   return (
     <div className="grid mt-4">
-         <div className="flex items-center">
+      <div className="flex items-center">
         {label && <label className="capitalize font-semibold">{label}</label>}
         {/* Rounded button */}
-        <button className="rounded-md bg-blue-500 text-white text-sm font-bold px-3 py-1 ml-2 flex items-center" onClick={insertTemplate}>
+        <button
+          className="rounded-md bg-blue-500 text-white text-sm font-bold px-3 py-1 ml-2 flex items-center"
+          onClick={insertTemplate}
+        >
           <BsFillPlusCircleFill className="mr-2" /> {/* Icon component */}
           Copy Template
         </button>
       </div>
-      
+
       <div className="py-1 h-fit mt-2">
         {rendered && (
           <CKEditor
@@ -94,7 +94,7 @@ export default function RichTextEditor({ value, onChange, label,isTextArea }) {
           />
         )}
       </div>
-      <p className="font-normal text-xs">{count} / 500 Character</p>
+      <p className="font-normal text-xs">{count} / 2000 Character</p>
     </div>
   );
 }
