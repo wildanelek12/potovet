@@ -29,7 +29,7 @@ function DatePickerComponent({ asSingle, value, onChange }) {
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "border-2 border-[C6C6C6] rounded-lg ",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((react_tailwindcss_datepicker__WEBPACK_IMPORTED_MODULE_2___default()), {
-                        inputClassName: "focus:outline-none focus:ring-0 focus:ring-offset-0 p-2",
+                        inputClassName: "focus:outline-none focus:ring-0 focus:ring-offset-0 p-2 w-full border-none",
                         asSingle: asSingle,
                         primaryColor: "teal",
                         value: value ?? "",
@@ -201,7 +201,7 @@ function Input({ id, label, type, onChange, value, placeholder, beforeElement, a
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: [
-                    "flex gap-4 justify-between items-center border-2 border-[C6C6C6] p-3 rounded-md bg-white",
+                    "flex gap-4 justify-between items-center border-2 border-[C6C6C6] pe-2 rounded-md bg-white",
                     className
                 ].join(" "),
                 children: [
@@ -213,7 +213,7 @@ function Input({ id, label, type, onChange, value, placeholder, beforeElement, a
                         id: id,
                         type: type,
                         className: [
-                            "w-full bg-white focus:outline-none",
+                            "w-full bg-white focus:outline-none focus:border-none border-none",
                             inputClassName
                         ].join(" "),
                         onChange: (e)=>onChange(e.target.value),

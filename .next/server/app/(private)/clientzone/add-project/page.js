@@ -642,8 +642,13 @@ function Result() {
     });
 }
 
+// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/transitions/transition.js + 4 modules
+var transition = __webpack_require__(2596);
+// EXTERNAL MODULE: ./node_modules/@headlessui/react/dist/components/dialog/dialog.js + 23 modules
+var dialog = __webpack_require__(3489);
 ;// CONCATENATED MODULE: ./app/(private)/clientzone/add-project/page.js
 /* __next_internal_client_entry_do_not_use__ default auto */ 
+
 
 
 
@@ -660,6 +665,7 @@ function Page() {
     const [rendered, setRendered] = (0,react_.useState)(false);
     const [descProblemStatement, setDescProblemStatement] = (0,react_.useState)(defaultProblemStatement);
     const [descRolesAndResponsibilities, setRolesAndResponsibilities] = (0,react_.useState)(defaultRolesAndResponsibilities);
+    let [isOpen, setIsOpen] = (0,react_.useState)(false);
     var [index, setIndex] = (0,react_.useState)(0);
     const listComponent = [
         /*#__PURE__*/ jsx_runtime_.jsx(project_overview_form/* default */.Z, {}, 1),
@@ -678,6 +684,31 @@ function Page() {
     (0,react_.useEffect)(()=>{
         setRendered(true);
     }, []);
+    const submitData = (currIndex)=>{
+        if (currIndex == 0) {
+            if (project.name_project && project.categories && project.time_elapsed && project.description) {
+                setIndex(currIndex + 1);
+            } else {
+                setIsOpen(true);
+            }
+        } else if (currIndex == 1) {
+            if (project.method && project.research_results && project.wireframing && project.prototype && project.prototype_url) {
+                setIndex(currIndex + 1);
+            } else {
+                setIsOpen(true);
+            }
+        } else if (currIndex == 2) {
+            if (project.lesson_learn && project.challenging_impact) {} else {
+                setIsOpen(true);
+            }
+        }
+    };
+    function closeModal() {
+        setIsOpen(false);
+    }
+    function openModal() {
+        setIsOpen(true);
+    }
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -712,7 +743,7 @@ function Page() {
                             /*#__PURE__*/ jsx_runtime_.jsx(Button/* default */.Z, {
                                 type: "button",
                                 onClick: ()=>{
-                                    setIndex(index + 1);
+                                    submitData(index);
                                 },
                                 className: "px-10 text-white transition-all bg-black hover:bg-black/80 rounded-xl w-fit",
                                 label: index == listComponent ? "Publish" : "Submit"
@@ -720,6 +751,71 @@ function Page() {
                         ]
                     })
                 ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u, {
+                appear: true,
+                show: isOpen,
+                as: react_.Fragment,
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V, {
+                    as: "div",
+                    className: "relative z-50",
+                    onClose: closeModal,
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
+                            as: react_.Fragment,
+                            enter: "ease-out duration-300",
+                            enterFrom: "opacity-0",
+                            enterTo: "opacity-100",
+                            leave: "ease-in duration-200",
+                            leaveFrom: "opacity-100",
+                            leaveTo: "opacity-0",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "fixed inset-0 w-screen h-screen bg-black bg-opacity-25"
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "fixed inset-0 overflow-y-auto",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "flex items-center justify-center min-h-full p-4 text-center",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(transition/* Transition */.u.Child, {
+                                    as: react_.Fragment,
+                                    enter: "ease-out duration-300",
+                                    enterFrom: "opacity-0 scale-95",
+                                    enterTo: "opacity-100 scale-100",
+                                    leave: "ease-in duration-200",
+                                    leaveFrom: "opacity-100 scale-100",
+                                    leaveTo: "opacity-0 scale-95",
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(dialog/* Dialog */.V.Panel, {
+                                        className: "w-full max-w-md p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl",
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(dialog/* Dialog */.V.Title, {
+                                                as: "h3",
+                                                className: "text-lg font-bold leading-6 text-gray-900",
+                                                children: "Perhatian"
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "mt-2",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: "text-sm text-gray-500",
+                                                    children: "Data belum lengkap, silahkan lengkapi data anda"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                                className: "flex flex-row mt-4 gap-x-3",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
+                                                    type: "button",
+                                                    className: "inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
+                                                    onClick: closeModal,
+                                                    children: "Tutup"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            })
+                        })
+                    ]
+                })
             })
         ]
     });
@@ -752,6 +848,20 @@ const __default__ = proxy.default;
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
+/***/ }),
+
+/***/ 1258:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   i: () => (/* binding */ n)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8038);
+/* harmony import */ var _utils_owner_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7515);
+function n(...e){return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>(0,_utils_owner_js__WEBPACK_IMPORTED_MODULE_1__/* .getOwnerDocument */ .r)(...e),[...e])}
+
+
 /***/ })
 
 };
@@ -761,7 +871,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [6986,2201,2451,1618,8000,6974,2205,7160,930,8481,6737,8533,2707,4905,2093], () => (__webpack_exec__(9847)));
+var __webpack_exports__ = __webpack_require__.X(0, [6986,2201,2451,1618,8000,3489,4407,2205,7160,930,8481,6737,8533,2707,4905,2093], () => (__webpack_exec__(9847)));
 module.exports = __webpack_exports__;
 
 })();

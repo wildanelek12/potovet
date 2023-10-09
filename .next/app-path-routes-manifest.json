@@ -3,16 +3,16 @@
   "/sign-up/page": "/sign-up",
   "/login/page": "/login",
   "/(public)/project/page": "/project",
-  "/(private)/clientzone/add-project/page": "/clientzone/add-project",
   "/(private)/clientzone/dashboard/page": "/clientzone/dashboard",
   "/(private)/clientzone/my-library/page": "/clientzone/my-library",
   "/(private)/clientzone/project-list/page": "/clientzone/project-list",
+  "/(private)/clientzone/add-project/page": "/clientzone/add-project",
   "/(public)/profile/page": "/profile",
   "/(public)/project/[id]/page": "/project/[id]",
-  "/(private)/clientzone/project-list/[id]/page": "/clientzone/project-list/[id]",
   "/(public)/profile/educations/page": "/profile/educations",
   "/(public)/profile/skills/page": "/profile/skills",
   "/(public)/profile/social-media/page": "/profile/social-media",
-  "/(public)/profile/interests/page": "/profile/interests",
-  "/(public)/profile/work-experiences/page": "/profile/work-experiences"
+  "/(public)/profile/work-experiences/page": "/profile/work-experiences",
+  "/(private)/clientzone/project-list/[id]/page": "/clientzone/project-list/[id]",
+  "/(public)/profile/interests/page": "/profile/interests"
 }
