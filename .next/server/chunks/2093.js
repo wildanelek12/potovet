@@ -249,7 +249,13 @@ function Input({ id, label, type, onChange, value, placeholder, beforeElement, a
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(930);
+/* harmony import */ var react_icons_bs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(930);
+/* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5816);
+/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2596);
+/* harmony import */ var _headlessui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3489);
+
+
+
 
 
 
@@ -285,6 +291,13 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
         CKEditor: (__webpack_require__(2838).CKEditor),
         Editor: __webpack_require__(9001)
     };
+    let [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+    function closeModal() {
+        setIsOpen(false);
+    }
+    function openModal() {
+        setIsOpen(true);
+    }
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         editorRef.current = {
             CKEditor,
@@ -322,17 +335,101 @@ function RichTextEditor({ value, onChange, label, isTextArea }) {
         className: "grid mt-4",
         children: [
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "flex items-center",
+                className: "flex items-center  ",
                 children: [
                     label && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
                         className: "capitalize font-semibold",
                         children: label
                     }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_ai__WEBPACK_IMPORTED_MODULE_2__/* .AiFillInfoCircle */ .kA6, {
+                        color: "blue",
+                        className: "ml-1",
+                        size: 24,
+                        onMouseEnter: ()=>setIsOpen(true)
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__/* .Transition */ .u, {
+                            appear: true,
+                            show: isOpen,
+                            as: react__WEBPACK_IMPORTED_MODULE_1__.Fragment,
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_4__/* .Dialog */ .V, {
+                                as: "div",
+                                className: "relative z-50",
+                                onClose: closeModal,
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__/* .Transition */ .u.Child, {
+                                        as: react__WEBPACK_IMPORTED_MODULE_1__.Fragment,
+                                        enter: "ease-out duration-300",
+                                        enterFrom: "opacity-0",
+                                        enterTo: "opacity-100",
+                                        leave: "ease-in duration-200",
+                                        leaveFrom: "opacity-100",
+                                        leaveTo: "opacity-0",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "fixed inset-0 bg-black/25"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        className: "fixed inset-0 overflow-y-auto",
+                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "flex min-h-full items-center justify-center p-4 text-center",
+                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__/* .Transition */ .u.Child, {
+                                                as: react__WEBPACK_IMPORTED_MODULE_1__.Fragment,
+                                                enter: "ease-out duration-300",
+                                                enterFrom: "opacity-0 scale-95",
+                                                enterTo: "opacity-100 scale-100",
+                                                leave: "ease-in duration-200",
+                                                leaveFrom: "opacity-100 scale-100",
+                                                leaveTo: "opacity-0 scale-95",
+                                                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_4__/* .Dialog */ .V.Panel, {
+                                                    className: "w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all",
+                                                    children: [
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_headlessui_react__WEBPACK_IMPORTED_MODULE_4__/* .Dialog */ .V.Title, {
+                                                            as: "h3",
+                                                            className: "text-lg font-medium leading-6 text-gray-900",
+                                                            children: "Information"
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "mt-2",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                className: "text-sm text-gray-500",
+                                                                children: "Please fill this as a description of your project, bla bla bla bla"
+                                                            })
+                                                        }),
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            className: "mt-4",
+                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                                                                type: "button",
+                                                                className: "inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
+                                                                onClick: closeModal,
+                                                                children: "Got it, thanks!"
+                                                            })
+                                                        })
+                                                    ]
+                                                })
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
-                        className: "rounded-md bg-blue-500 text-white text-sm font-bold px-3 py-1 ml-2 flex items-center",
+                        className: "rounded-md ml-2 bg-red-500 text-white text-sm font-bold px-3 py-1  flex items-center",
                         onClick: insertTemplate,
                         children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_2__/* .BsFillPlusCircleFill */ .Y_C, {
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsTrash */ .yvY, {
+                                className: "mr-2"
+                            }),
+                            " ",
+                            "Clear Text"
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("button", {
+                        className: "rounded-md ml-auto bg-blue-500 text-white text-sm font-bold px-3 py-1  flex items-center",
+                        onClick: insertTemplate,
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_bs__WEBPACK_IMPORTED_MODULE_5__/* .BsFillPlusCircleFill */ .Y_C, {
                                 className: "mr-2"
                             }),
                             " ",
