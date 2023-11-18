@@ -4407,6 +4407,11 @@ react-quill@^2.0.0:
     react-is "^18.0.0"
     use-sync-external-store "^1.0.0"
 
+react-stars@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npmjs.org/react-stars/-/react-stars-2.2.5.tgz"
+  integrity sha512-O//KS6Z9RZnUOU/r+3+wxCzNalVn/wEWIcbAQFRV3dw8WbV+ys/kgcpBPijqTiNpHGrcwZdtb/7wF/UVem20CQ==
+
 react-tailwindcss-datepicker@^1.6.1:
   version "1.6.1"
   resolved "https://registry.npmjs.org/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.6.1.tgz"

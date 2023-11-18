@@ -1,10 +1,32 @@
 import { Tooltip } from "chart.js";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { BsFillPlusCircleFill, BsTrash } from "react-icons/bs";
-import { AiFillInfoCircle } from "react-icons/ai";
+import { AiFillQuestionCircle } from "react-icons/ai";
+import { FiRefreshCcw } from "react-icons/fi";
 import { Dialog, Transition } from "@headlessui/react";
 const editorConfiguration = {
-  toolbar: ["heading", "|", "bold", "italic", "|", "link", "|", "outdent", "indent", "|", "bulletedList", "numberedList", "|", "insertTable", "|", "uploadImage", "blockQuote", "|", "undo", "redo"],
+  toolbar: [
+    "heading",
+    "|",
+    "bold",
+    "italic",
+    "|",
+    "link",
+    "|",
+    "outdent",
+    "indent",
+    "|",
+    "bulletedList",
+    "numberedList",
+    "|",
+    "insertTable",
+    "|",
+    "uploadImage",
+    "blockQuote",
+    "|",
+    "undo",
+    "redo",
+  ],
   //   height: "50px",
 };
 
@@ -50,7 +72,8 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
   }
 
   function insertTemplate() {
-    const template = "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
+    const template =
+      "<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>"; // Define your template HTML
     onChange(template); // Update the content using the onChange function
   }
 
@@ -66,12 +89,25 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
       <div className="flex items-center  ">
         {label && <label className="capitalize font-semibold">{label}</label>}
         {/* Rounded button */}
-        <AiFillInfoCircle color="blue" className="ml-1" size={24} onMouseEnter={() => setIsOpen(true)} />
+        <AiFillQuestionCircle
+          color="orange"
+          className="ml-1"
+          size={24}
+          onMouseEnter={() => setIsOpen(true)}
+        />
 
         <>
           <Transition appear show={isOpen} as={Fragment}>
             <Dialog as="div" className="relative z-50" onClose={closeModal}>
-              <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
                 <div className="fixed inset-0 bg-black/25" />
               </Transition.Child>
 
@@ -87,11 +123,17 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
                     leaveTo="opacity-0 scale-95"
                   >
                     <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                      <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                      <Dialog.Title
+                        as="h3"
+                        className="text-lg font-medium leading-6 text-gray-900"
+                      >
                         Information
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">Please fill this as a description of your project, bla bla bla bla</p>
+                        <p className="text-sm text-gray-500">
+                          Please fill this as a description of your project, bla
+                          bla bla bla
+                        </p>
                       </div>
 
                       <div className="mt-4">
@@ -111,18 +153,31 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
           </Transition>
         </>
 
-        <button className="rounded-md ml-2 bg-red-500 text-white text-sm font-bold px-3 py-1  flex items-center" onClick={insertTemplate}>
-          <BsTrash className="mr-2" /> {/* Icon component */}
-          Clear Text
-        </button>
-        <button className="rounded-md ml-auto bg-blue-500 text-white text-sm font-bold px-3 py-1  flex items-center" onClick={insertTemplate}>
+        <button
+          className="rounded-md ml-auto bg-green-500 text-white text-sm font-bold px-3 py-1  flex items-center"
+          onClick={insertTemplate}
+        >
           <BsFillPlusCircleFill className="mr-2" /> {/* Icon component */}
           Copy Template
+        </button>
+        <button
+          className="rounded-md ml-2 px-2 py-2 bg-blue-500 text-white text-sm font-bold px-3 py-1  flex items-center"
+          onClick={insertTemplate}
+        >
+          <FiRefreshCcw className="" />
+      
         </button>
       </div>
 
       <div className="py-1 h-fit mt-2">
-        {rendered && <CKEditor editor={Editor} data={value} config={!isTextArea && editorConfiguration} onChange={(_, editor) => onChange(handleChange(editor))} />}
+        {rendered && (
+          <CKEditor
+            editor={Editor}
+            data={value}
+            config={!isTextArea && editorConfiguration}
+            onChange={(_, editor) => onChange(handleChange(editor))}
+          />
+        )}
       </div>
       <p className="font-normal text-xs">{count} / 2000 Character</p>
     </div>

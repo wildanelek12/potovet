@@ -80,6 +80,7 @@ export default function Page() {
             desc={
               "Find the best adventure bag for mountain expeditions and exploring nature tough and functional."
             }
+            privacy={"public"}
           />
           <ProjectListCard
             status={"edit"}
@@ -91,6 +92,7 @@ export default function Page() {
             desc={
               "Explore the best culinary delights and enjoy delicious dishes and refreshing drinks at the restaurant kam"
             }
+            privacy={"private"}
           />
           <ProjectListCard
             status={"publish"}
@@ -102,6 +104,7 @@ export default function Page() {
             desc={
               "Enjoy an unforgettable vacation with a choice of attractive destinations, comfortable lodging, and exciting experiences with us"
             }
+            privacy={"public"}
           />
         </div>
       </Card>

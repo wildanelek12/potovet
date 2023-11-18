@@ -2,10 +2,19 @@ import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import { AiOutlineEdit, AiFillStar, Tras } from "react-icons/ai";
+import { AiOutlineEdit, AiFillStar } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
 
-export default function ProjectListCard({ status, src, title, desc, date }) {
+import { FaLock, FaUnlock } from "react-icons/fa";
+
+export default function ProjectListCard({
+  status,
+  src,
+  title,
+  desc,
+  date,
+  privacy,
+}) {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -19,7 +28,13 @@ export default function ProjectListCard({ status, src, title, desc, date }) {
     <>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
         <div className="relative">
-          <Image className="rounded-t-lg w-full h-full" src={src} alt="" width={500} height={500}/>
+          <Image
+            className="rounded-t-lg w-full h-full"
+            src={src}
+            alt=""
+            width={500}
+            height={500}
+          />
           <AiFillStar
             className={`absolute top-2 right-3  
           ${
@@ -53,6 +68,23 @@ export default function ProjectListCard({ status, src, title, desc, date }) {
               </button>
             </Link>
             <div className="flex flex-row justify-end flex-1 ">
+              {privacy === "public" ? (
+                <>
+                  <FaUnlock
+                    className="w-5 h-5  mx-2 text-green-400"
+                    onClick={openModal}
+                  />
+                  {/* Render the unlock icon if privacy is public */}
+                </>
+              ) : (
+                <>
+                  <FaLock
+                    className="w-5 h-5  mx-2 text-red-400"
+                    onClick={openModal}
+                  />
+                  {/* Render the lock icon if privacy is private */}
+                </>
+              )}
               <BsFillTrashFill
                 className="w-5 h-5  mx-2 text-gray-400"
                 onClick={openModal}

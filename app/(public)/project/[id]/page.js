@@ -3,10 +3,15 @@ import React, { useState } from "react";
 import { Montserrat } from "next/font/google";
 import { BsPrinter, BsShareFill } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
-import { MdOutlineEmail, MdCopyAll } from "react-icons/md";
+import { MdOutlineEmail, MdCopyAll,MdComment } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import Modal from "@/components/modal";
+import { FaPlus } from "react-icons/fa";
+import AlertDialog from "@/components/alert-dialog";
+import CommentsDialog from "./comments";
+import Rating from "./rating";
+import ReactStars from "react-stars";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -14,27 +19,54 @@ const montserrat = Montserrat({
 export default function Detail() {
   const [isOpenShare, setIsOpenShare] = useState(false);
 
-  const openModal = () => {
+  const openModalShare = () => {
     setIsOpenShare(true);
   };
 
-  const closeModal = () => {
+  const closeModalShare = () => {
     setIsOpenShare(false);
   };
-  return (
-    <div className={` h-auto flex font-sans px-16 py-2 flex-col flex-1`}>
-      <div className="flex flex-col items-center justify-center flex-1 ">
-        <p className="mt-4 text-3xl font-bold ">Website Promosi International BAG for backpaker</p>
-        <p className="mt-1 text-sm font-medium">By : Ario Bayu</p>
-        <p className="mt-1 text-xs">Categories : Professional </p>
-        <p className="mt-1 text-xs">Project Time Elapsed : 20 Februari 2023 - 20 December 2023 </p>
-        <Image src={"https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"} alt="" width={900} height={600} className="object-cover w-1/2 mt-8" />
-      </div>
+  const [isShowButton, setIsShowButton] = useState(false);
+  const onClickCta = () => {
+    setIsShowButton(!isShowButton);
+  };
+  let [isShowComments, setIsShowComments] = useState(false);
 
-      <div className="flex flex-col items-start flex-1 p-32">
-        <p className="text-xs mt-19">at : 20 February 2023 </p>
-        <p className="text-justify ">
-          {`Introducing AdventureGear.com - your ultimate destination for all your
+  function closeModal() {
+    setIsShowComments(false);
+  }
+
+  function openModal() {
+    setIsShowComments(true);
+  }
+
+  return (
+    <>
+      <div className={` h-auto flex font-sans px-16 py-2 flex-col flex-1`}>
+        <div className="flex flex-col items-center justify-center flex-1 ">
+          <p className="mt-4 text-3xl font-bold ">
+            Website Promosi International BAG for backpaker
+          </p>
+          <p className="mt-1 text-sm font-medium">By : Ario Bayu</p>
+          <p className="mt-1 text-xs">Categories : Professional </p>
+          <p className="mt-1 text-xs">
+            Project Time Elapsed : 20 Februari 2023 - 20 December 2023{" "}
+          </p>
+          <Image
+            src={
+              "https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"
+            }
+            alt=""
+            width={900}
+            height={600}
+            className="object-cover w-1/2 mt-8"
+          />
+        </div>
+
+        <div className="flex flex-col items-start flex-1 p-32">
+          <p className="text-xs mt-19">at : 20 February 2023 </p>
+          <p className="text-justify ">
+            {`Introducing AdventureGear.com - your ultimate destination for all your
           adventurous journeys! If you're a passionate explorer seeking
           high-quality backpacks and gear, look no further. Our website offers a
           wide range of adventure-friendly backpacks designed to accompany you
@@ -56,62 +88,129 @@ export default function Detail() {
           options and fast shipping, you can gear up and hit the trails in no
           time. Visit AdventureGear.com today and embark on unforgettable
           adventures with confidence. Your next thrilling expedition awaits!`}
-        </p>
-        <Image
-          src={"https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc"}
-          alt=""
-          width={900}
-          height={600}
-          className="self-center object-cover w-1/2 mt-8"
-        />
-        <p className="mt-2 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec non finibus ligula. Quisque volutpat magna non mi
-          auctor consequat. Aenean metus mi, fringilla vel varius eget, scelerisque nec sem. Praesent at ligula non neque pulvinar molestie non ut lacus. Vestibulum quis vulputate odio, at placerat
-          risus. Nunc semper dolor sit amet neque volutpat sagittis. Maecenas eget est bibendum, lobortis arcu sed, cursus ipsum. Pellentesque vitae vehicula lacus. Morbi blandit libero eget turpis
-          porta, sed dapibus velit iaculis. Integer imperdiet est vitae pellentesque dignissim. In hac habitasse platea dictumst. Nulla laoreet urna in est rhoncus, sit amet ornare neque egestas.
-          Phasellus id viverra massa, eget posuere felis. Quisque eu nunc nec ipsum sodales sodales. Pellentesque non aliquet felis. Vestibulum lectus purus, pretium vel nulla ut, iaculis malesuada
-          orci. Suspendisse potenti. Maecenas egestas faucibus dui, ut vestibulum nunc porta nec. Nunc interdum ante at turpis porta, convallis blandit ante dapibus.
-        </p>
-        <p className="mt-2 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec non finibus ligula. Quisque volutpat magna non mi
-          auctor consequat. Aenean metus mi, fringilla vel varius eget, scelerisque nec sem. Praesent at ligula non neque pulvinar molestie non ut lacus. Vestibulum quis vulputate odio, at placerat
-          risus. Nunc semper dolor sit amet neque volutpat sagittis. Maecenas eget est bibendum, lobortis arcu sed, cursus ipsum. Pellentesque vitae vehicula lacus. Morbi blandit libero eget turpis
-          porta, sed dapibus velit iaculis. Integer imperdiet est vitae pellentesque dignissim. In hac habitasse platea dictumst. Nulla laoreet urna in est rhoncus, sit amet ornare neque egestas.
-          Phasellus id viverra massa, eget posuere felis. Quisque eu nunc nec ipsum sodales sodales. Pellentesque non aliquet felis. Vestibulum lectus purus, pretium vel nulla ut, iaculis malesuada
-          orci. Suspendisse potenti. Maecenas egestas faucibus dui, ut vestibulum nunc porta nec. Nunc interdum ante at turpis porta, convallis blandit ante dapibus.
-        </p>
-      </div>
-      <div className="fixed flex flex-col bottom-10 right-10">
-        <Link className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary" href={"mailto:support@example.com?subject=SendMail&body=Description"}>
-          <MdOutlineEmail />
-        </Link>
-        <button onClick={() => window.print()} className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
-          <BsPrinter />
-        </button>
-        <Link href={"/clientzone/project-list/1"}>
-          <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
-            <AiOutlineEdit />
-          </button>
-        </Link>
-        <button onClick={() => openModal()} className="p-6 text-xl font-semibold text-white rounded-full bg-primary">
-          <BsShareFill />
-        </button>
-        <>
-          <Modal isOpen={isOpenShare} onClose={closeModal}>
-            <h2 className="text-2xl mb-4">This is a url for your profile</h2>
-            <p>
-              lioke.codesmedioa.cloud/PXYNAM{" "}
-              <span>
-                {" "}
-                <button onClick={() => closeModal()} className="py-1 px-3 text-sm font-semibold text-white rounded-full bg-slate-400 flex mt-2 items-center">
-                  <MdCopyAll />
-                  Copy to clipboard
+          </p>
+          <Image
+            src={
+              "https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc"
+            }
+            alt=""
+            width={900}
+            height={600}
+            className="self-center object-cover w-1/2 mt-8"
+          />
+          <p className="mt-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
+            ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec
+            non finibus ligula. Quisque volutpat magna non mi auctor consequat.
+            Aenean metus mi, fringilla vel varius eget, scelerisque nec sem.
+            Praesent at ligula non neque pulvinar molestie non ut lacus.
+            Vestibulum quis vulputate odio, at placerat risus. Nunc semper dolor
+            sit amet neque volutpat sagittis. Maecenas eget est bibendum,
+            lobortis arcu sed, cursus ipsum. Pellentesque vitae vehicula lacus.
+            Morbi blandit libero eget turpis porta, sed dapibus velit iaculis.
+            Integer imperdiet est vitae pellentesque dignissim. In hac habitasse
+            platea dictumst. Nulla laoreet urna in est rhoncus, sit amet ornare
+            neque egestas. Phasellus id viverra massa, eget posuere felis.
+            Quisque eu nunc nec ipsum sodales sodales. Pellentesque non aliquet
+            felis. Vestibulum lectus purus, pretium vel nulla ut, iaculis
+            malesuada orci. Suspendisse potenti. Maecenas egestas faucibus dui,
+            ut vestibulum nunc porta nec. Nunc interdum ante at turpis porta,
+            convallis blandit ante dapibus.
+          </p>
+          <p className="mt-2 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac
+            ullamcorper velit. Duis consequat ipsum at iaculis euismod. Donec
+            non finibus ligula. Quisque volutpat magna non mi auctor consequat.
+            Aenean metus mi, fringilla vel varius eget, scelerisque nec sem.
+            Praesent at ligula non neque pulvinar molestie non ut lacus.
+            Vestibulum quis vulputate odio, at placerat risus. Nunc semper dolor
+            sit amet neque volutpat sagittis. Maecenas eget est bibendum,
+            lobortis arcu sed, cursus ipsum. Pellentesque vitae vehicula lacus.
+            Morbi blandit libero eget turpis porta, sed dapibus velit iaculis.
+            Integer imperdiet est vitae pellentesque dignissim. In hac habitasse
+            platea dictumst. Nulla laoreet urna in est rhoncus, sit amet ornare
+            neque egestas. Phasellus id viverra massa, eget posuere felis.
+            Quisque eu nunc nec ipsum sodales sodales. Pellentesque non aliquet
+            felis. Vestibulum lectus purus, pretium vel nulla ut, iaculis
+            malesuada orci. Suspendisse potenti. Maecenas egestas faucibus dui,
+            ut vestibulum nunc porta nec. Nunc interdum ante at turpis porta,
+            convallis blandit ante dapibus.
+          </p>
+          <div className="flex flex-col items-center justify-center mt-8 w-full">
+            <p className="text-4xl font-bold mb-2">Rate this</p>
+            <div className="text-center">
+              <ReactStars count={5} size={38} color2={"#ffd700"} />
+            </div>
+          </div>
+        </div>
+        <div className="fixed flex flex-col bottom-10 right-10">
+          
+          <>
+            <Modal isOpen={isOpenShare} onClose={closeModal}>
+              <h2 className="text-2xl mb-4">This is a url for your profile</h2>
+              <p>
+                lioke.codesmedioa.cloud/PXYNAM{" "}
+                <span>
+                  {" "}
+                  <button
+                    onClick={() => closeModalShare()}
+                    className="py-1 px-3 text-sm font-semibold text-white rounded-full bg-slate-400 flex mt-2 items-center"
+                  >
+                    <MdCopyAll />
+                    Copy to clipboard
+                  </button>
+                </span>{" "}
+              </p>
+            </Modal>
+          </>
+          <div className="fixed flex flex-col bottom-20 right-10">
+            <a
+              className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
+              onClick={onClickCta}
+            >
+              <FaPlus />
+            </a>
+
+            {isShowButton ? (
+              <>
+                <Link href={"/clientzone/project-list/1"}>
+                  <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
+                    <BsShareFill />
+                  </button>
+                </Link>
+                <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
+                  <BsPrinter />
                 </button>
-              </span>{" "}
-            </p>
-          </Modal>
-        </>
+                {/* <Link href={"/clientzone/project-list/1"}>
+              <button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary">
+                <AiOutlineEdit />
+              </button>
+            </Link> */}
+                <a
+                  className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
+                  onClick={openModal}
+                >
+                  <MdComment />
+                </a>
+                <Link
+                  className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
+                  href={
+                    "mailto:support@example.com?subject=SendMail&body=Description"
+                  }
+                >
+                  <MdOutlineEmail />
+                </Link>
+                <CommentsDialog
+                  setModalComments={setIsShowComments}
+                  showModalComments={isShowComments}
+                />
+              </>
+            ) : (
+              <></>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
