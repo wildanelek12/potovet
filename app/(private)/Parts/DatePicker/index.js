@@ -8,7 +8,7 @@ export default function DatePickerComponent({ asSingle, value, onChange }) {
         <label className={"capitalize font-semibold"}>Time Elapsed</label>
         <div className="border-2 border-[C6C6C6] rounded-lg ">
           <Datepicker
-            inputClassName="focus:outline-none focus:ring-0 focus:ring-offset-0 p-2"
+            inputClassName="focus:outline-none focus:ring-0 focus:ring-offset-0 p-2 w-full border-none"
             asSingle={asSingle}
             primaryColor={"teal"}
             value={value ?? ""}

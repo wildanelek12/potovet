@@ -12,7 +12,7 @@ export default function Input({
   inputClassName,
   labelClassName,
   disabled,
-  isHaveTemplate
+  isHaveTemplate,
 }) {
   return (
     <div className="grid gap-1 font-work-sans">
@@ -26,7 +26,7 @@ export default function Input({
       )}
       <div
         className={[
-          "flex gap-4 justify-between items-center border-2 border-[C6C6C6] p-3 rounded-md bg-white",
+          "flex gap-4 justify-between items-center border-2 border-[C6C6C6] pe-2 rounded-md bg-white",
           className,
         ].join(" ")}
       >
@@ -35,7 +35,7 @@ export default function Input({
           id={id}
           type={type}
           className={[
-            "w-full bg-white focus:outline-none",
+            "w-full bg-white focus:outline-none focus:border-none border-none",
             inputClassName,
           ].join(" ")}
           onChange={(e) => onChange(e.target.value)}
@@ -47,7 +47,6 @@ export default function Input({
         {afterElement && <span className="select-none">{afterElement}</span>}
         {value ? <BsCheckCircleFill color="#64CCC5" /> : ""}
       </div>
-      
     </div>
   );
 }
