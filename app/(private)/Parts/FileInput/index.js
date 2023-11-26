@@ -16,7 +16,7 @@ export default function FileInput({
   fileOrFiles,
 }) {
   const [previews, setPreviews] = useState([]);
-
+  const isValueNull = value === null || value === undefined || value === "";
   useEffect(() => {
     if (preview) {
       const temp = value.map((v) => URL.createObjectURL(v));
@@ -57,6 +57,8 @@ export default function FileInput({
           className={[
             "grid gap-4 w-full grid-cols-1 h-56",
             previewClassName,
+            isValueNull || (isUrl && !validatedUrl) ? "border-red-500" : "",
+            
           ].join(" ")}
         >
           {previewInitial.map((v, i) => {
@@ -64,7 +66,8 @@ export default function FileInput({
               return (
                 <div
                   key={i}
-                  className="relative grid items-center justify-center"
+                  className="relative grid items-center justify-cente border-500"
+                  
                 >
                   <Image
                     src={`/${v}`}
@@ -82,7 +85,7 @@ export default function FileInput({
       )}
       {previews.length > 0 && (
         <div
-          className={["grid gap-4 w-full grid-cols-1", previewClassName].join(
+          className={["grid gap-4 w-full grid-cols-1", previewClassName,].join(
             " "
           )}
         >
@@ -112,8 +115,9 @@ export default function FileInput({
         >
           <div
             className={[
-              "flex gap-4 justify-between items-center border-2 border-[C6C6C6] rounded-md",
+              "flex gap-4 justify-between items-center border-2  rounded-md",
               className,
+              previews.length == 0 ? "border-red-500" : "border-[C6C6C6]",
             ].join(" ")}
           >
             <div className="flex items-center w-full gap-4 p-3">

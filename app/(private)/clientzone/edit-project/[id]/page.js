@@ -1,13 +1,13 @@
 "use client";
 
 import { Fragment, useEffect, useState } from "react";
-import Card from "../../Parts/Card";
+import Card from "../../../Parts/Card";
 import Button from "@/components/Button";
 import ProjectOverview from "./project-overview/form";
 import { useRecoilValue } from "recoil";
 import { atomFormProject } from "@/recoil/atom";
 import ProjectProcess from "./process/form";
-import Stepper from "../../Parts/Stepper";
+import StepperEdit from "../../../Parts/StepperEdit";
 import Result from "./result/form";
 import { Dialog, Transition } from "@headlessui/react";
 import AlertSuccesDialog from "@/components/alert-succes-dialog";
@@ -147,31 +147,22 @@ export default function Page() {
   function openModal() {
     setIsOpen(true);
   }
+
   return (
     <>
       <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
-        Portofolios
+        Edit Portofolio
       </p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
-        <Stepper
+        <StepperEdit
           items={["Overview", "Process", "Result"]}
           activeIndex={index}
+          setCurrentIndex={setIndex}
         />
         <div>{rendered && renderComponent(index)}</div>
-        <div className="flex justify-between mt-8">
-          {index != 0 ? (
-            <Button
-              type="button"
-              onClick={() => {
-                setIndex(index - 1);
-              }}
-              className="px-10 text-white transition-all bg-secondary hover:bg-secondary/80 rounded-xl w-fit"
-              label="Back"
-            />
-          ) : (
-            <div></div>
-          )}
+        <div className="flex justify-end mt-8">
+          
 
           <Button
             type="button"
@@ -183,7 +174,7 @@ export default function Page() {
               "px-10 text-white transition-all  rounded-xl w-fit",
               isCompleteValidate ? "bg-primary hover:bg-primary/80" : "bg-gray-200",
             ].join(" ")}
-            label={index == 2 ? "Submit" : "Next"}
+            label={index == 2 ? "Save" : "Save"}
           />
         </div>
       </Card>

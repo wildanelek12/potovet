@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import DatePickerComponent from "@/app/(private)/Parts/DatePicker";
 
-export default function ProjectProcess() {
+export default function Result() {
   const optionCategories = [
     { id: 1, name: "Academic", unavailable: false },
     { id: 2, name: "Professional", unavailable: false },
@@ -23,32 +23,14 @@ export default function ProjectProcess() {
     <>
       <div className="grid gap-4">
         <RichTextEditor
-          label="Method"
-          value={project.method}
-          onChange={(e) => setProject({ ...project, method: e })}
+          label="Lesson That You Learned"
+          value={project.lesson_learn}
+          onChange={(e) => setProject({ ...project, lesson_learn: e })}
         />
         <RichTextEditor
-          label="Research Result"
-          value={project.research_results}
-          onChange={(e) => setProject({ ...project, research_results: e })}
-        />
-        <RichTextEditor
-          label="Wireframing"
-          value={project.wireframing}
-          onChange={(e) => setProject({ ...project, wireframing: e })}
-        />
-        <RichTextEditor
-          label="Prototype"
-          value={project.prototype}
-          onChange={(e) => setProject({ ...project, prototype: e })}
-        />
-        <Input
-          id="prototype-url"
-          label="Prototype URL"
-          type="text"
-          isUrl = {true}
-          value={project.prototype_url}
-          onChange={(e) => setProject({ ...project, prototype_url: e })}
+          label="Challenging and Impact"
+          value={project.challenging_impact}
+          onChange={(e) => setProject({ ...project, challenging_impact: e })}
         />
       </div>
     </>

@@ -8,7 +8,7 @@ import { atomFormProject } from "@/recoil/atom";
 import React, { useEffect, useState } from "react";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import DatePickerComponent from "@/app/(private)/Parts/DatePicker";
-import '../../../../../style.css'
+import '../../../../../../style.css'
 export default function ProjectOverview() {
   const optionCategories = [
     { id: 1, name: "Academic", unavailable: false },

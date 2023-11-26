@@ -68,7 +68,7 @@ export default function Page() {
               </div>
 
               <p className="text-base font-normal">
-                {"Don't forget to describe the relevance of the work you include in portofolio. Mention skills that each item illustrates and talk about what you've learned"}
+                {"Portofolio draft dan publish tersimpan otomatis dalam menu 'Portofolio Journey'"}
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { Tooltip } from "chart.js";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { BsFillPlusCircleFill, BsTrash } from "react-icons/bs";
+import { RiStackFill } from "react-icons/ri";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { FiRefreshCcw } from "react-icons/fi";
 import { Dialog, Transition } from "@headlessui/react";
@@ -38,7 +39,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
     CKEditor: require("@ckeditor/ckeditor5-react").CKEditor,
     Editor: require("ckeditor5-custom-build/build/ckeditor"),
   };
-
+  const isValueNull = value === null || value === undefined || value === "";
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -60,15 +61,15 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
     var replaced_text = data.replace(/(<([^>]+)>)/gi, "");
     const count = replaced_text.length;
     setCount(count);
-    if (count > 2000) {
-      var old_data = value;
-      console.log("here");
-      editor.setData(old_data);
-      return old_data;
-    } else {
-      console.log("else");
-      return editor.getData();
-    }
+    // if (count > 2000) {
+    //   var old_data = value;
+    //   console.log("here");
+    //   editor.setData(old_data);
+    //   return old_data;
+    // } else {
+    //   console.log("else");
+    return editor.getData();
+    // }
   }
 
   function insertTemplate() {
@@ -90,10 +91,10 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
         {label && <label className="capitalize font-semibold">{label}</label>}
         {/* Rounded button */}
         <AiFillQuestionCircle
-          color="orange"
+          color="blue"
           className="ml-1"
           size={24}
-          onMouseEnter={() => setIsOpen(true)}
+          onClick={() => setIsOpen(true)}
         />
 
         <>
@@ -136,13 +137,13 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
                         </p>
                       </div>
 
-                      <div className="mt-4">
+                      <div className="mt-4 text-end">
                         <button
                           type="button"
-                          className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                          className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-3 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                           onClick={closeModal}
                         >
-                          Got it, thanks!
+                          OK
                         </button>
                       </div>
                     </Dialog.Panel>
@@ -154,18 +155,17 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
         </>
 
         <button
-          className="rounded-md ml-auto bg-green-500 text-white text-sm font-bold px-3 py-1  flex items-center"
+          className="rounded-md ml-auto bg-secondary text-white text-sm font-bold px-3 py-1  flex items-center"
           onClick={insertTemplate}
         >
-          <BsFillPlusCircleFill className="mr-2" /> {/* Icon component */}
-          Copy Template
+          <RiStackFill className="mr-2" /> {/* Icon component */}
+          Template
         </button>
         <button
           className="rounded-md ml-2 px-2 py-2 bg-blue-500 text-white text-sm font-bold px-3 py-1  flex items-center"
           onClick={insertTemplate}
         >
           <FiRefreshCcw className="" />
-      
         </button>
       </div>
 
@@ -179,7 +179,17 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
           />
         )}
       </div>
-      <p className="font-normal text-xs">{count} / 2000 Character</p>
+
+      {isValueNull ? (
+        <>
+          <p className="font-normal text-sm text-red-500">
+            {" "}
+            Isikan Kolom dengan kombinasi huruf, video, dan angka{" "}
+          </p>
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

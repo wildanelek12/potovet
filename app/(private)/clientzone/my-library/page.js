@@ -1,3 +1,4 @@
+"use client"
 import Card from "../../Parts/Card";
 import { Chart } from "../../Parts/Chart";
 import { AiFillAlert } from "react-icons/ai";
@@ -7,8 +8,29 @@ import { BsFillTrashFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 export default function Page() {
+  function deleteData() {
+    Swal.fire({
+      title: "Perhatian",
+      text: "Apakah anda yakin akan menghapus data?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Oke",
+      cancelButtonText: "Batal",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Sukses",
+          text: "Berhasil menghapus data",
+          icon: "success",
+        });
+      }
+    });
+  }
   return (
     <>
       <p className="flex-1 col-span-12 mt-8 text-xl font-bold text-center">
@@ -68,6 +90,7 @@ export default function Page() {
                   <BsFillTrashFill
                     className="w-6 h-6 text-gray-400 "
                     color="#FE7263"
+                    onClick={() => deleteData()}
                   />
                 </div>
               </div>

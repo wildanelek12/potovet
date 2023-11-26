@@ -18,8 +18,14 @@ export default function Page() {
     { id: 2, name: "February", unavailable: false },
   ];
 
+  const optionStatus = [
+    { id: 1, name: "Draft", unavailable: false },
+    { id: 2, name: "Publish", unavailable: false },
+  ];
+
   const [year, setYear] = useState(optionYears[0]);
   const [month, setMonth] = useState(optionMonth[0]);
+  const [status, setStatus] = useState(optionStatus[0]);
   return (
     <>
       <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
@@ -40,6 +46,13 @@ export default function Page() {
             defaultValue={optionMonth[0]}
             selected={month}
             onChange={(e) => setMonth(e)}
+            label={""}
+          />
+          <Select
+            options={optionStatus}
+            defaultValue={optionStatus[0]}
+            selected={status}
+            onChange={(e) => setStatus(e)}
             label={""}
           />
           <div className="relative">

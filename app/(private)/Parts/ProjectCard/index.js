@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 import { AiOutlineEdit, AiFillStar } from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
-
+import Swal from "sweetalert2";
 import { FaLock, FaUnlock } from "react-icons/fa";
+import { Tooltip } from "react-tooltip";
 
 export default function ProjectListCard({
   status,
@@ -24,6 +25,26 @@ export default function ProjectListCard({
     setIsOpen(true);
   }
 
+  function deleteData() {
+    Swal.fire({
+      title: "Perhatian",
+      text: "Apakah anda yakin akan menghapus data?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Oke",
+      cancelButtonText: "Batal",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Sukses",
+          text: "Berhasil menghapus data",
+          icon: "success",
+        });
+      }
+    });
+  }
   return (
     <>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
@@ -50,11 +71,10 @@ export default function ProjectListCard({
           ></AiFillStar>
         </div>
         <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-md font-bold tracking-tight text-gray-500">
-              {title}
-            </h5>
-          </a>
+          <h5 className="mb-2 text-md font-bold tracking-tight text-gray-500 truncate">
+            {/* Apply truncate class to the title */}
+            {title}
+          </h5>
           <p className="mb-3 font-normal text-sm text-gray-700 dark:text-gray-400">
             {desc}
           </p>
@@ -73,6 +93,8 @@ export default function ProjectListCard({
                   <FaUnlock
                     className="w-5 h-5  mx-2 text-green-400"
                     onClick={openModal}
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Public"
                   />
                   {/* Render the unlock icon if privacy is public */}
                 </>
@@ -81,15 +103,18 @@ export default function ProjectListCard({
                   <FaLock
                     className="w-5 h-5  mx-2 text-red-400"
                     onClick={openModal}
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Private"
                   />
                   {/* Render the lock icon if privacy is private */}
                 </>
               )}
               <BsFillTrashFill
-                className="w-5 h-5  mx-2 text-gray-400"
-                onClick={openModal}
+                className="w-5 h-5  mx-2 text-gray-400 hover:text-red-500"
+                onClick={() => deleteData()}
               />
-              <Link href="/clientzone/project-list/1">
+              <Tooltip id="my-tooltip" />
+              <Link href="/clientzone/edit-project/1">
                 <AiOutlineEdit className="w-5 h-5  mx-2 text-gray-400" />
               </Link>
             </div>
@@ -99,66 +124,6 @@ export default function ProjectListCard({
           </h5>
         </div>
       </div>
-      <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-50" onClose={closeModal}>
-          <Transition.Child
-            as={Fragment}
-            enter="ease-out duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="ease-in duration-200"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <div className="fixed inset-0 w-screen h-screen bg-black bg-opacity-25" />
-          </Transition.Child>
-
-          <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex items-center justify-center min-h-full p-4 text-center">
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0 scale-95"
-                enterTo="opacity-100 scale-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100 scale-100"
-                leaveTo="opacity-0 scale-95"
-              >
-                <Dialog.Panel className="w-full max-w-md p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-lg font-bold leading-6 text-gray-900"
-                  >
-                    Warning!
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Are you sure to delete this project
-                    </p>
-                  </div>
-
-                  <div className="flex flex-row mt-4 gap-x-3">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      type="button"
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 bg-red-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      No
-                    </button>
-                  </div>
-                </Dialog.Panel>
-              </Transition.Child>
-            </div>
-          </div>
-        </Dialog>
-      </Transition>
     </>
   );
 }

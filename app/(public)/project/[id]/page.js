@@ -195,7 +195,7 @@ export default function Detail() {
                 <Link
                   className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
                   href={
-                    "mailto:support@example.com?subject=SendMail&body=Description"
+                    "mailto:wildan.romiza@gmail.com?subject=SendMail&body=Description"
                   }
                 >
                   <MdOutlineEmail />
