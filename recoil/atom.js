@@ -68,6 +68,7 @@ export const atomFormProject = atom({
     prototype_url: "",
     lesson_learn: "",
     challenging_impact: "",
+    partner: "",
   },
 });
 

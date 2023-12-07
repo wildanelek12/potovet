@@ -16,6 +16,7 @@ export default function Input({
   isHaveTemplate,
   isError, // Add this prop for handling error state
   isUrl = false,
+  isRequired = true,
 }) {
   const isValueNull = value === null || value === undefined || value === "";
   const isValidURL = (input) => {
@@ -48,10 +49,7 @@ export default function Input({
   return (
     <div className="grid gap-1 font-work-sans">
       {label && (
-        <label
-          className={["capitalize", labelClassName].join(" ") + "font-semibold"}
-          htmlFor={id}
-        >
+        <label className={["capitalize", labelClassName].join(" ") + "font-semibold"} htmlFor={id}>
           {label}
         </label>
       )}
@@ -59,17 +57,14 @@ export default function Input({
         className={[
           "flex gap-4 justify-between items-center border-2 focus:outline-none rounded-md bg-white outline-none",
           className,
-          isValueNull || (isUrl && !validatedUrl) ? "border-red-500" : "",
+          isRequired && (isValueNull || (isUrl && !validatedUrl)) ? "border-red-500" : "",
         ].join(" ")}
       >
         {beforeElement && <span className="select-none">{beforeElement}</span>}
         <input
           id={id}
           type={type}
-          className={[
-            "w-full bg-white focus:outline-none focus:border-none border-none outline-none",
-            inputClassName,
-          ].join(" ")}
+          className={["w-full bg-white focus:outline-none focus:border-none border-none outline-none", inputClassName].join(" ")}
           onChange={handleInputChange}
           value={value ?? ""}
           placeholder={placeholder}
@@ -85,13 +80,7 @@ export default function Input({
       </div>
       {isUrl ? (
         <>
-          <div className="row">
-            {validatedUrl ? (
-              ""
-            ) : (
-              <p className="text-red-500 text-sm">Format Url Salah</p>
-            )}
-          </div>
+          <div className="row">{validatedUrl ? "" : <p className="text-red-500 text-sm">Format Url Salah</p>}</div>
         </>
       ) : (
         ""

@@ -52,7 +52,7 @@ export default function ModalEducation(props) {
 										onClick={() => setIsOpen(false)}
 										className="inline-flex justify-center px-4 py-2 text-sm font-medium text-gray-600 border border-transparent rounded-md bg-secondary/50 hover:bg-secondary hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
 									>
-										Got it, thanks!
+										Close
 									</button>
 								</div>
 							</Dialog.Panel>
