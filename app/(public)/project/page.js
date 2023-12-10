@@ -13,6 +13,9 @@ import ModalSosmed from "@/components/modal-desc/modal-sosmed";
 import SelectYear from "@/components/select-step-project/select-year";
 import SelectMonth from "@/components/select-step-project/select-month";
 import { useGetProfileQuery } from "@/redux/services/profileApi";
+import { useState } from "react";
+import { MdOutlineEdit } from "react-icons/md";
+import UpdateProfileModal from "../components/EditPhotoProfile";
 
 export default function Home() {
   let setSkillOpen = useSetRecoilState(showModalSkill);
@@ -24,8 +27,9 @@ export default function Home() {
   const [isShowMonthContent, setShowMonthContent] = useRecoilState(showMonthContent);
   const [isShowYearContent, setShowYearContent] = useRecoilState(showYearContent);
   const [isShowProjectContent, setIsShowProject] = useRecoilState(showProjectContent);
-
+  const [isHovered, setIsHovered] = useState(false);
   const { data: user } = useGetProfileQuery();
+  const [isModalEditOpen, setModalEditOpen] = useState(false);
 
   const onClickBackGallery = () => {
     setShowYearContent(true);
@@ -101,7 +105,7 @@ export default function Home() {
             backgroundSize: "contain,cover",
           }}
         >
-          <div className="relative overflow-hidden rounded-full w-36 h-36">
+          <div className="relative overflow-hidden rounded-full w-36 h-36" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onClick={() => setModalEditOpen(true)}>
             <Image
               src={user?.data?.photo ?? "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"}
               alt="photo-profile"
@@ -109,7 +113,17 @@ export default function Home() {
               sizes="100%"
               fill
             />
+            {isHovered && (
+              <div className="absolute inset-0 flex items-center flex-col justify-center bg-black bg-opacity-50 cursor-pointer">
+                <MdOutlineEdit color="white" size={20} />
+                <p className="text-white">Update Photo </p>
+
+                {/* Add your update profile form or any content */}
+              </div>
+            )}
           </div>
+
+          {isModalEditOpen && <UpdateProfileModal onClose={() => setModalEditOpen(false)} isOpen={isModalEditOpen} />}
 
           <p className="mt-4 text-4xl font-bold tracking-wide text-white">{user?.data?.name}</p>
           <p className="text-sm font-semibold text-white ">{user?.data?.detail_user?.jobs}</p>
