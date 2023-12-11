@@ -9,7 +9,7 @@ export default function Page() {
     <>
       <div className="flex flex-row justify-center mt-4 col-span-full lg:col-12">
         <p className="flex-1 text-xl font-bold text-center ">
-          Portofolio Insights
+          Dashboard
         </p>
 
         <div
@@ -40,7 +40,7 @@ export default function Page() {
         <div className="flex h-full">
           <div className="flex-1 flex flex-col pt-4 ">
             <p className="ml-8 font-semibold text-primary">
-              Portofolio Summary
+              Portfolio Summary
             </p>
             <div className="grid h-full grid-cols-2 mt-2 bg-primary">
               <div className="grid p-2 text-center border bg">
@@ -68,7 +68,7 @@ export default function Page() {
               </div>
 
               <p className="text-base font-normal">
-                {"Portofolio draft dan publish tersimpan otomatis dalam menu 'Portofolio Journey'"}
+                {"Portfolio draft dan publish tersimpan otomatis dalam menu 'Portofolio Journey'"}
               </p>
             </div>
           </div>

@@ -126,7 +126,7 @@ export default function Page() {
       if (project.lesson_learn && project.challenging_impact) {
         Swal.fire({
           title: "Sukses!",
-          text: "Portofolio Berhasil Dibuat",
+          text: "Portfolio Berhasil Dibuat",
           icon: "success",
           confirmButtonText: "Oke",
         });
@@ -151,7 +151,7 @@ export default function Page() {
   return (
     <>
       <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
-        Edit Portofolio
+        Edit Portfolio
       </p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">

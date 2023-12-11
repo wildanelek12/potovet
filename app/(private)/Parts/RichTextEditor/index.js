@@ -31,7 +31,7 @@ const editorConfiguration = {
   //   height: "50px",
 };
 
-export default function RichTextEditor({ value, onChange, label, isTextArea }) {
+export default function RichTextEditor({ value, onChange, label, isTextArea,hintText }) {
   const editorRef = useRef();
   const [rendered, setRendered] = useState(false);
   const [count, setCount] = useState(0);
@@ -90,12 +90,32 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
       <div className="flex items-center  ">
         {label && <label className="capitalize font-semibold">{label}</label>}
         {/* Rounded button */}
-        <AiFillQuestionCircle
-          color="blue"
-          className="ml-1"
-          size={24}
+
+        <button
+          className="rounded-full ml-2 px-2 py-2 bg-transparent text-white text-sm font-bold px-3 py-1 z-999  flex items-center group relative"
           onClick={() => setIsOpen(true)}
-        />
+        >
+          <AiFillQuestionCircle
+            className=""
+            color="blue"
+  
+            size={24}
+          />
+          <span class="absolute  bottom-0 left-10  scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+            Get Info
+          </span>
+        </button>
+        {/* <div className="group relative">
+          <AiFillQuestionCircle
+            color="blue"
+            className="ml-1"
+            size={24}
+            onClick={() => setIsOpen(true)}
+          />
+          <span class="absolute top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+            Share
+          </span>
+        </div> */}
 
         <>
           <Transition appear show={isOpen} as={Fragment}>
@@ -132,8 +152,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          Please fill this as a description of your project, bla
-                          bla bla bla
+                         {hintText}
                         </p>
                       </div>
 
@@ -162,10 +181,13 @@ export default function RichTextEditor({ value, onChange, label, isTextArea }) {
           Template
         </button>
         <button
-          className="rounded-md ml-2 px-2 py-2 bg-blue-500 text-white text-sm font-bold px-3 py-1  flex items-center"
+          className="rounded-md ml-2 px-2 py-2 bg-blue-500 text-white text-sm font-bold px-3 py-1 z-999  flex items-center group relative"
           onClick={insertTemplate}
         >
           <FiRefreshCcw className="" />
+          <span class="absolute  bottom-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+            Reset
+          </span>
         </button>
       </div>
 

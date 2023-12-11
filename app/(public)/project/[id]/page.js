@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Montserrat } from "next/font/google";
-import { BsPrinter, BsShareFill } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsPrinter, BsShareFill } from "react-icons/bs";
 import { AiOutlineEdit } from "react-icons/ai";
 import { MdOutlineEmail, MdCopyAll, MdComment } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import Modal from "@/components/modal";
-import { FaPlus, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaPlus, FaArrowAltCircleLeft,FaFacebook,FaLinkedin,FaInstagram } from "react-icons/fa";
 import AlertDialog from "@/components/alert-dialog";
 import CommentsDialog from "./comments";
 import Rating from "./rating";
@@ -61,7 +61,14 @@ export default function Detail() {
           <p className="mt-1 text-sm font-medium">By : Ario Bayu</p>
           <p className="mt-1 text-xs">Categories : Professional </p>
           <p className="mt-1 text-xs">Project Time Elapsed : 20 Februari 2023 - 20 December 2023 </p>
-          <Image src={"https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"} alt="" width={900} height={600} className="object-cover w-1/2 mt-8" />
+          <div className="flex flex-row mt-4 gap-x-2 w-1/2 justify-end">
+            <BsInstagram className="cursor-pointer"/>  
+            <BsFacebook className="cursor-pointer"/>  
+            <BsLinkedin className="cursor-pointer "/>  
+          </div>
+          <Image src={"https://cdn.dribbble.com/users/3126500/screenshots/6023737/adventure.jpg"} alt="" width={900} height={600} className="object-cover w-1/2 mt-4" />
+       
+       
         </div>
 
         <div className="flex flex-col items-start flex-1 p-32">
@@ -137,8 +144,9 @@ export default function Detail() {
             </Modal>
           </>
           <div className="fixed flex flex-col bottom-20 right-10">
-            <a className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary" onClick={onClickCta}>
+            <a className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group relative" onClick={onClickCta}>
               <FaPlus />
+              <span class="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">More</span>
             </a>
 
             {isShowButton ? (

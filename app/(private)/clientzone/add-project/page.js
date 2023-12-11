@@ -88,8 +88,8 @@ export default function Page() {
         project.description
       ) {
         Swal.fire({
-          title: "Sukses!",
-          text: "Berhasil menyimpan data",
+          title: "Success!",
+          text: "Data Saved",
           icon: "success",
           confirmButtonText: "Oke",
         });
@@ -98,7 +98,7 @@ export default function Page() {
       } else {
         Swal.fire({
           title: "Oops!",
-          text: "Terdapat data yang belum diisi",
+          text: "Incomplete data",
           icon: "error",
           confirmButtonText: "Oke",
         });
@@ -112,8 +112,8 @@ export default function Page() {
         project.prototype_url
       ) {
         Swal.fire({
-          title: "Sukses!",
-          text: "Berhasil menyimpan data",
+          title: "Success!",
+          text: "Data saved",
           icon: "success",
           confirmButtonText: "Oke",
         });
@@ -125,8 +125,8 @@ export default function Page() {
     } else if (currIndex == 2) {
       if (project.lesson_learn && project.challenging_impact) {
         Swal.fire({
-          title: "Sukses!",
-          text: "Portofolio Berhasil Dibuat",
+          title: "Success!",
+          text: "Portfolio has been created",
           icon: "success",
           confirmButtonText: "Oke",
         });
@@ -150,12 +150,12 @@ export default function Page() {
   return (
     <>
       <p className="col-span-12 mt-8 font-bold text-xl flex-1 text-center">
-        Portofolios
+        Portfolios
       </p>
 
       <Card className="col-span-full p-8 h-fit border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <Stepper
-          items={["Overview", "Process", "Result"]}
+          items={["Introduction", "Process", "Evaluation"]}
           activeIndex={index}
         />
         <div>{rendered && renderComponent(index)}</div>
@@ -224,11 +224,11 @@ export default function Page() {
                     as="h3"
                     className="text-lg font-bold leading-6 text-gray-900"
                   >
-                    Perhatian
+                    Warning
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Data belum lengkap, silahkan lengkapi data anda
+                     Incomplete Data
                     </p>
                   </div>
 

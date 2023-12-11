@@ -7,7 +7,7 @@ export default function DatePickerComponent({ asSingle, value, onChange }) {
     
     <>
       <div>
-        <label className={"capitalize font-semibold"}>Time Elapsed</label>
+        <label className={"capitalize font-semibold"}>Project Time</label>
         <div className="border-2 border-[C6C6C6] rounded-lg ">
           <Datepicker
             inputClassName={`focus:outline-none focus:ring-0 p-2 w-full  ${isValueNull ? 'border-red-500' : 'border-transparent'}`}

@@ -7,22 +7,22 @@ export default function Sidebar() {
     <Wrapper>
       <Wrapper.Item
         id="portofolios-insight"
-        label="Portofolios Insight"
+        label="Dashboard"
         href="/clientzone/dashboard"
       />
       <Wrapper.Item
         id="add-project"
-        label="Portofolios"
+        label="Build Portfolio"
         href="/clientzone/add-project"
       />
       <Wrapper.Item
         id="project-list"
-        label="Portofolio Journey"
+        label="My Portofolio"
         href="/clientzone/project-list"
       />
       <Wrapper.Item
         id="my-library"
-        label="My Library"
+        label="My Drive"
         href="/clientzone/my-library"
       />
     </Wrapper>

@@ -57,8 +57,13 @@ export const atomFormProject = atom({
   key: "atomFormProject",
   default: {
     name_project: "",
-    categories: { id: 1, name: "Academic", unavailable: false },
+    categories: {
+      id: 0,
+      name: "- Select Project Categories -",
+      unavailable: false,
+    },
     time_elapsed: "",
+    github_url: "",
     project_image: [],
     description: "",
     method: "",

@@ -18,7 +18,7 @@ export default function Project() {
           className="object-cover mt-8 rounded-lg w-fit h-fit"
         />
         <div className="flex flex-row items-center mt-2">
-          <p className="font-semibold">Portofolio Website with elegan color </p>
+          <p className="font-semibold">Portfolio Website with elegan color </p>
         </div>
       </Link>
       <div className="flex flex-row items-center mt-2">

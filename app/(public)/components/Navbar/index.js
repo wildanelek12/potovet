@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useGetProfileQuery } from "@/redux/services/profileApi";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Navbar() {
   const router = useRouter();
@@ -37,19 +38,30 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={"py-6 px-16 shadow-md flex items-center bg-white text-white"}>
+    <nav
+      className={"py-6 px-16 shadow-md flex items-center bg-white text-white"}
+    >
       <Link href="/">
         <h1 className="mr-8 text-2xl font-bold text-primary">POTOVET</h1>
       </Link>
       <div className="flex-row flex-1 space-x-12">
-        <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">
-          Home
+        <Link
+          href={"/project"}
+          className="text-base font-medium text-[#6E6F70]"
+        >
+          Features
         </Link>
-        <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">
-          Pricing
+        <Link
+          href={"/project"}
+          className="text-base font-medium text-[#6E6F70]"
+        >
+          Portfolio's
         </Link>
-        <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">
-          About
+        <Link
+          href={"/project"}
+          className="text-base font-medium text-[#6E6F70]"
+        >
+          Help
         </Link>
       </div>
       <div className="flex flex-row items-center space-x-3">
@@ -59,9 +71,18 @@ export default function Navbar() {
               <Menu as="div" className="relative inline-block text-left">
                 <div>
                   <Menu.Button className="inline-flex items-center justify-center w-full px-2 py-2 text-sm font-medium text-white rounded-md bg-secondary hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                    <Image className="w-6 h-6 mx-2 rounded-full" src="https://picsum.photos/id/231/400/400" alt="Picture of the author" width={32} height={32} />
+                    <Image
+                      className="w-6 h-6 mx-2 rounded-full"
+                      src="https://picsum.photos/id/231/400/400"
+                      alt="Picture of the author"
+                      width={32}
+                      height={32}
+                    />
                     {user?.data?.name ?? "-"}
-                    <ChevronDoubleDownIcon className="w-5 h-5 ml-2 -mr-1 text-white hover:text-violet-100" aria-hidden="true" />
+                    <ChevronDoubleDownIcon
+                      className="w-5 h-5 ml-2 -mr-1 text-white hover:text-violet-100"
+                      aria-hidden="true"
+                    />
                   </Menu.Button>
                 </div>
                 <Transition
@@ -77,41 +98,95 @@ export default function Navbar() {
                     <div className="px-1 py-1">
                       <Link href={"/clientzone"}>
                         <Menu.Item>
-                          {({ active }) => <button className={`${active ? "bg-primary text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`}>Clientzone</button>}
+                          {({ active }) => (
+                            <button
+                              className={`${
+                                active
+                                  ? "bg-primary text-white"
+                                  : "text-gray-900"
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Portfolio
+                            </button>
+                          )}
                         </Menu.Item>
                       </Link>
                     </div>
                     <div className="px-1 py-1">
                       <Link href={"/project"}>
                         <Menu.Item>
-                          {({ active }) => <button className={`${active ? "bg-primary text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`}>Gallery</button>}
+                          {({ active }) => (
+                            <button
+                              className={`${
+                                active
+                                  ? "bg-primary text-white"
+                                  : "text-gray-900"
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Gallery
+                            </button>
+                          )}
                         </Menu.Item>
                       </Link>
                     </div>
                     <div className="px-1 py-1">
                       <Link href={"/profile"}>
                         <Menu.Item>
-                          {({ active }) => <button className={`${active ? "bg-primary text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`}>Profile</button>}
+                          {({ active }) => (
+                            <button
+                              className={`${
+                                active
+                                  ? "bg-primary text-white"
+                                  : "text-gray-900"
+                              } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                            >
+                              Settings
+                            </button>
+                          )}
                         </Menu.Item>
                       </Link>
                     </div>
                     <div className="px-1 py-1" onClick={handleOnclickLogout}>
                       <Menu.Item>
-                        {({ active }) => <button className={`${active ? "bg-primary text-white" : "text-gray-900"} group flex w-full items-center rounded-md px-2 py-2 text-sm`}>Logout</button>}
+                        {({ active }) => (
+                          <button
+                            className={`${
+                              active ? "bg-primary text-white" : "text-gray-900"
+                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                          >
+                            Logout
+                          </button>
+                        )}
                       </Menu.Item>
                     </div>
                   </Menu.Items>
                 </Transition>
               </Menu>
             ) : (
-              <Link href={"/login"}>
-                <button
-                  type="button"
-                  className="text-white bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 "
+              <>
+                <Link
+                  href={"/project"}
+                  className="text-base font-medium text-[#6E6F70] me-8"
+                >
+                  Contact Us
+                </Link>
+                <Link
+                 href={"/login"}
+                  className="text-base font-medium text-[#6E6F70] "
                 >
                   Login
-                </button>
-              </Link>
+                </Link>
+                <h1  className="text-base font-medium text-[#6E6F70] me-8">|</h1>
+                <Link href={"/sign-up"}>
+                  <button
+                    type="button"
+                    className="text-white bg-primary hover:bg-primary/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mr-2  "
+                  >
+                    Create a portfolio 
+                    <BsArrowRight className="ms-2"/>
+                  </button>
+                </Link>
+              </>
             )}
           </>
         ) : null}

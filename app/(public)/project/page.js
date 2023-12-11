@@ -76,7 +76,7 @@ export default function Home() {
                     <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                     </svg>
-                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Portofolio</span>
+                    <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Portfolio</span>
                   </div>
                 </li>
               </ol>
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-8 font-medium text-center">
-          <p className="text-xl font-extrabold">{"Portofolio's"}</p>
+          <p className="text-xl font-extrabold">{"Portfolio's"}</p>
         </div>
         <div className="flex h-0.5 mt-4 bg-gray-200 w-auto mx-16" />
         <div>{renderSelectContent()}</div>
