@@ -16,6 +16,7 @@ import { useGetProfileQuery } from "@/redux/services/profileApi";
 import { useState } from "react";
 import { MdOutlineEdit } from "react-icons/md";
 import UpdateProfileModal from "../components/EditPhotoProfile";
+import { MdCopyAll } from "react-icons/md";
 
 export default function Home() {
   let setSkillOpen = useSetRecoilState(showModalSkill);
@@ -155,9 +156,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-8 font-medium text-center">
+        <div className="mt-8 font-medium text-center flex items-end justify-between px-16">
+          <div></div>
           <p className="text-xl font-extrabold">{"Portfolio's"}</p>
+          <button onClick={() => closeModalShare()} className="py-1 px-3 text-sm font-semibold text-white rounded-full bg-primary flex ml-2 items-center">
+            <MdCopyAll />
+            <span className="ms-2"> URL</span>
+          </button>
         </div>
+
         <div className="flex h-0.5 mt-4 bg-gray-200 w-auto mx-16" />
         <div>{renderSelectContent()}</div>
       </div>

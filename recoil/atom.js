@@ -62,6 +62,11 @@ export const atomFormProject = atom({
       name: "- Select Project Categories -",
       unavailable: false,
     },
+    job_role: {
+      id: 0,
+      name: "- Select Job Role -",
+      unavailable: false,
+    },
     time_elapsed: "",
     github_url: "",
     project_image: [],
