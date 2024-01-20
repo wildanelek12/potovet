@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Card from "../../Parts/Card";
 import { Chart } from "../../Parts/Chart";
 import { AiFillAlert } from "react-icons/ai";
@@ -9,6 +9,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { FaDownload } from "react-icons/fa";
 import Link from "next/link";
 import Swal from "sweetalert2";
+import { Tooltip } from "react-tooltip";
 
 export default function Page() {
   function deleteData() {
@@ -33,9 +34,7 @@ export default function Page() {
   }
   return (
     <>
-      <p className="flex-1 col-span-12 mt-8 text-xl font-bold text-center">
-        My Library
-      </p>
+      <p className="flex-1 col-span-12 mt-8 text-xl font-bold text-center">My Drive</p>
       <Card className="col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
         <div className="p-8">
           <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
@@ -72,26 +71,13 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="relative">
-              <Image
-                className="h-full max-w-full rounded-lg object-cover"
-                src="https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png"
-                alt=""
-                width={500}
-                height={500}
-              />
+              <Image className="h-full max-w-full rounded-lg object-cover" src="https://i.pinimg.com/originals/1a/29/04/1a29046bb1bea902f9f3b4cd2dc2e727.png" alt="" width={500} height={500} />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <FaDownload
-                    className="w-6 h-6 text-gray-400 "
-                    color="#0CADB7"
-                  />
+                  <FaDownload className="w-6 h-6 text-gray-400 " color="#0CADB7" />
                 </div>
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <BsFillTrashFill
-                    className="w-6 h-6 text-gray-400 "
-                    color="#FE7263"
-                    onClick={() => deleteData()}
-                  />
+                  <BsFillTrashFill className="w-6 h-6 text-gray-400 " color="#FE7263" onClick={() => deleteData()} />
                 </div>
               </div>
             </div>
@@ -105,74 +91,40 @@ export default function Page() {
               />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <FaDownload
-                    className="w-6 h-6 text-gray-400 "
-                    color="#0CADB7"
-                  />
+                  <FaDownload className="w-6 h-6 text-gray-400 " color="#0CADB7" />
                 </div>
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <BsFillTrashFill
-                    className="w-6 h-6 text-gray-400 "
-                    color="#FE7263"
-                  />
+                  <BsFillTrashFill className="w-6 h-6 text-gray-400 " color="#FE7263" />
                 </div>
               </div>
             </div>
             <div className="relative">
-              <Image
-                className="h-full max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                alt=""
-                width={500}
-                height={500}
-              />
+              <Image className="h-full max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" width={500} height={500} />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <FaDownload
-                    className="w-6 h-6 text-gray-400 "
-                    color="#0CADB7"
-                  />
+                  <FaDownload className="w-6 h-6 text-gray-400 " color="#0CADB7" />
                 </div>
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <BsFillTrashFill
-                    className="w-6 h-6 text-gray-400 "
-                    color="#FE7263"
-                  />
+                  <BsFillTrashFill className="w-6 h-6 text-gray-400 " color="#FE7263" />
                 </div>
               </div>
             </div>
             <div className="relative">
-              <Image
-                className="h-full max-w-full rounded-lg object-cover"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                alt=""
-                width={500}
-                height={500}
-              />
+              <Image className="h-full max-w-full rounded-lg object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" width={500} height={500} />
               <div className="absolute flex flex-row bottom-2 right-2 gap-x-3">
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <FaDownload
-                    className="w-6 h-6 text-gray-400 "
-                    color="#0CADB7"
-                  />
+                  <FaDownload className="w-6 h-6 text-gray-400 " color="#0CADB7" />
                 </div>
                 <div className="items-center justify-center p-2 bg-white rounded-full shadow-lg">
-                  <BsFillTrashFill
-                    className="w-6 h-6 text-gray-400 "
-                    color="#FE7263"
-                  />
+                  <BsFillTrashFill className="w-6 h-6 text-gray-400 " color="#FE7263" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="fixed flex flex-col bottom-10 right-10">
-          <Link
-            className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary"
-            href={
-              "mailto:support@example.com?subject=SendMail&body=Description"
-            }
-          >
+        <Tooltip id="my-tooltip" />
+        <div className="fixed flex flex-col bottom-10 right-10" data-tooltip-id="my-tooltip" data-tooltip-content="Add Drive">
+          <Link className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary" href={"mailto:support@example.com?subject=SendMail&body=Description"}>
             <AiOutlinePlus />
           </Link>
         </div>

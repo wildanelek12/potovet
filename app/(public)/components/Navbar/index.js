@@ -170,7 +170,7 @@ export default function Navbar() {
               </Menu>
             ) : (
               <>
-                <Link href={"/project"} className="text-base font-medium text-[#6E6F70] me-8">
+                <Link href={"/contact-me"} className="text-base font-medium text-[#6E6F70] me-8">
                   Contact Me
                 </Link>
                 <Link href={"/login"} className="text-base font-medium text-[#6E6F70] ">

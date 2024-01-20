@@ -23,14 +23,16 @@ export default function Result() {
     <>
       <div className="grid gap-4">
         <RichTextEditor
-          label="Lesson That You Learned"
+          label="Project Experience"
           value={project.lesson_learn}
           onChange={(e) => setProject({ ...project, lesson_learn: e })}
+          hintText={"Isikan pengalaman yang didapat saat pengembangan produk"}
         />
         <RichTextEditor
-          label="Challenging and Impact"
+          label="Project Challenge"
           value={project.challenging_impact}
           onChange={(e) => setProject({ ...project, challenging_impact: e })}
+          hintText={"Isikan deskripsi yang memuat tentang tantangan atau kesulitan yang didapat saat pengembangan produk. poin ini juga menjelaskan manfaat penerapan produk dalam lingkup profesional"}
         />
       </div>
     </>
