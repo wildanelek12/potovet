@@ -20,8 +20,13 @@ export default function ProjectOverview() {
   ];
   const optionJobRole = [
     { id: 0, name: "Select Job Role", unavailable: false },
-    { id: 1, name: "Programmer", unavailable: false },
-    { id: 2, name: "Designer", unavailable: false },
+    { id: 1, name: "Front End Developer", unavailable: false },
+    { id: 2, name: "Back End Developer", unavailable: false },
+    { id: 2, name: "Full Stack Developer", unavailable: false },
+    { id: 2, name: "Game Developer", unavailable: false },
+    { id: 2, name: "Software Development Engineer", unavailable: false },
+    { id: 2, name: "Mobile Application Developer", unavailable: false },
+    { id: 2, name: "Interface Designer", unavailable: false },
   ];
   //const [projectName, setProjectName] = useRecoilState(atomProjectName);
   const [project, setProject] = useRecoilState(atomFormProject);
