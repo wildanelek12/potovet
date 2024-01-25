@@ -22,6 +22,7 @@ const nextConfig = {
       "img.freepik.com",
       "plus.unsplash.com",
       "flowbite.s3.amazonaws.com",
+      "static.vecteezy.com",
     ],
   },
 };

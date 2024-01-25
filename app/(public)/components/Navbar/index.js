@@ -93,13 +93,15 @@ export default function Navbar() {
           Portfolio's
         </Link>
         <div className="relative inline-flex items-center hover:text-primary">
-          <div className={`text-base font-medium text-[#6E6F70] flex items-center hover:text-primary `} onClick={handleGuideClick}>
+          <Link href={'/guide'}>
+          <div className={`text-base font-medium text-[#6E6F70] flex items-center hover:text-primary `} >
             Guide to Create a Portfolio
             <span className="inline-flex ml-1">
               <MdOutlineKeyboardArrowDown />
             </span>
           </div>
-          {isDropdownGuideOpen && (
+          </Link>
+          {/* {isDropdownGuideOpen && (
             <div
               className="absolute top-5 mt-2 p-5 gap-y-4 gap-x-4  bg-white divide-y grid grid-cols-1 text-black divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
               style={{ width: "325px" }}
@@ -114,7 +116,7 @@ export default function Navbar() {
                 <span className="font-normal">Bagaimana mengelola portfolio?</span>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       <div className="flex flex-row items-center space-x-3">
