@@ -90,33 +90,17 @@ export default function Navbar() {
         </div>
 
         <Link href={"/project"} className="text-base font-medium text-[#6E6F70]">
-          Portfolio's
+          {"Portfolio's"}
         </Link>
         <div className="relative inline-flex items-center hover:text-primary">
-          <Link href={'/guide'}>
-          <div className={`text-base font-medium text-[#6E6F70] flex items-center hover:text-primary `} >
-            Guide to Create a Portfolio
-            <span className="inline-flex ml-1">
-              <MdOutlineKeyboardArrowDown />
-            </span>
-          </div>
-          </Link>
-          {/* {isDropdownGuideOpen && (
-            <div
-              className="absolute top-5 mt-2 p-5 gap-y-4 gap-x-4  bg-white divide-y grid grid-cols-1 text-black divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "
-              style={{ width: "325px" }}
-            >
-              <div className="flex flex-col hover:text-primary">
-                <span className="font-normal">Apa itu portofolio?</span>
-              </div>
-              <div className="flex flex-col hover:text-primary">
-                <span className="font-normal">Bagaimana membuat portofolio?</span>
-              </div>
-              <div className="flex flex-col hover:text-primary">
-                <span className="font-normal">Bagaimana mengelola portfolio?</span>
-              </div>
+          <Link href={"/guide"}>
+            <div className={`text-base font-medium text-[#6E6F70] flex items-center hover:text-primary `}>
+              Guide to Create a Portfolio
+              <span className="inline-flex ml-1">
+                <MdOutlineKeyboardArrowDown />
+              </span>
             </div>
-          )} */}
+          </Link>
         </div>
       </div>
       <div className="flex flex-row items-center space-x-3">
