@@ -4,15 +4,10 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="p-16 flex flex-col">
+      <div className="p-16 flex flex-col text-xl">
         <div className="mx-16 font-semibold text-2xl text-center">Guide to create portfolio</div>
         <div className="flex justify-center w-full mt-4 ">
-          <Image
-            src={"https://static.vecteezy.com/system/resources/previews/000/201/483/original/vector-inside-office-illustration.jpg"}
-            className=" max-h-72 f place-content-center object-cover"
-            width={2000}
-            height={2000}
-          ></Image>
+          <Image src={"/guide.jpg"} className=" max-h-72 f place-content-center object-cover" width={2000} height={2000}></Image>
         </div>
         <div className="mt-8 flex-row flex justify-center mx-8">
           <a className="mx-2 text-primary font-medium" href="#1">
@@ -28,14 +23,14 @@ export default function page() {
           </a>
         </div>
         <div className="mt-8 flex-col flex justify-start mx-8" id="1">
-          <div className="font-bold text-lg">Apa itu portofolio</div>
+          <div className="font-bold text-xl">Apa itu portofolio</div>
           Portofolio adalah pengalaman belajar yang Anda miliki dalam bentuk dokumen. Portofolio terdiri atas 2 bagian utama yaitu pengalaman belajar (seperti gambar, video, grafik, dan lain-lain) dan
           deskripsi atau narasi yang menceritakan pengalaman belajar tersebut atau proses pembuatannya. Penelitian ini mengasumsikan pengalaman belajar sebagai produk (aplikasi, website, game, AR/VR,
           atau bentuk prototype lainnya) yang pernah kalian buat di sekolah atau di luar sekolah.
         </div>
         <hr className="mt-4" />
         <div className="mt-8 flex-col flex justify-start mx-8" id="2">
-          <div className="font-bold text-lg">Bagaimana membuat portofolio </div>
+          <div className="font-bold text-xl">Bagaimana membuat portofolio </div>
           Setelah kita mengetahui konsep portofolio dan komponen pendukung portofolio, kita dapat mengembangkan portfolio dengan mudah dengan bantuan POTOVET. POTOVET akan membuat pengembangan
           portofolio menjadi lebih mudah dan cepat. Kalian dapat mengembangkan portofolio menggunakan POTOVET dengan langkah-langkah di bawah ini.
           <ul className="mt-4 list-decimal mx-4 space-y-5">
@@ -90,7 +85,7 @@ export default function page() {
         </div>
         <hr className="mx-8 mt-4" />
         <div className="mt-8 flex-col flex justify-start mx-8" id="3">
-          <div className="font-bold text-lg">Bagaimana mengelola portofolio </div>
+          <div className="font-bold text-xl">Bagaimana mengelola portofolio </div>
           Pengelolaan portfolio adalah fitur lanjutan yang disediakan POTOVET untuk mengatur portofolio yang sudah kalian buat. Terdapat beberapa pengelolaan yang dapat kalian lakukan dalam POTOVET
           mulai pengaturan tampilan portofolio hingga mengedit portofolio yang kalian miliki. Kalian bisa mengikuti langkah-langkah berikut untuk membuat portfolio kalian mudah diakses.
           <ul className="mt-4 list-decimal mx-4 space-y-5">
@@ -197,7 +192,7 @@ export default function page() {
               Kalian juga dapat melakukan perbaikan pada portofolio yang dipublish dengan mengakses fitur “Gallery” lalu melakukan pemilihan letak proyek, kemudian melakukan perbaikan pada portofolio
               yang dipilih dengan menekan icon “edit”. Secara otomatis POTOVET akan menampilkan laman perbaikan yang sama seperti intruksi pada poin nomor 11.
               <span>
-                <Image src={"/panduan/2/18.jpg"} className="w-1/2" width={1000} height={1000} />
+                <Image src={"/panduan/2/18.jpg"} className="w-full" width={2000} height={2000} />
               </span>
             </li>
           </ul>
