@@ -32,10 +32,8 @@ export default function Page() {
           Explore the world’s leading <br /> design portfolios
         </p>
         <p className="mt-8 text-lg font-normal leading-snug tracking-wide text-center text-white">
-          Millions of designers and agencies around the world showcase their
-          portfolio work on <br />
-          Dribbble - the home to the world’s best design and creative
-          professionals.
+          Millions of designers and agencies around the world showcase their portfolio work on <br />
+          Dribbble - the home to the world’s best design and creative professionals.
         </p>
         <SearchBoxHero className="mt-4" />
         <div className="flex flex-row items-center mt-8 space-x-4">
@@ -44,6 +42,7 @@ export default function Page() {
           <RecentSearch title={"Professional"} />
           <RecentSearch title={"Research"} />
           <RecentSearch title={"Informal Trainings"} />
+          <RecentSearch title={"Case Study"} />
         </div>
       </div>
       <div id="company" className="flex flex-col px-32 py-8">

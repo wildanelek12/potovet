@@ -11,26 +11,26 @@ export default function page() {
         </div>
         <div className="mt-8 flex-row flex justify-center mx-8">
           <a className="mx-2 text-primary font-medium" href="#1">
-            Apa itu Portofolio
+            Apa itu Portofolio?
           </a>
           |
           <a className="mx-2 text-primary font-medium" href="#2">
-            Bagaimana membuat portofolio?
+            Bagaimana Membuat Portofolio?
           </a>
           |
           <a className="mx-2 text-primary font-medium" href="#3">
-            Bagaimana mengelola portfolio?
+            Bagaimana Mengelola Portfolio?
           </a>
         </div>
         <div className="mt-8 flex-col flex justify-start mx-8" id="1">
-          <div className="font-bold text-xl">Apa itu portofolio</div>
+          <div className="font-bold text-xl text-center">Apa Itu Portofolio?</div>
           Portofolio adalah pengalaman belajar yang Anda miliki dalam bentuk dokumen. Portofolio terdiri atas 2 bagian utama yaitu pengalaman belajar (seperti gambar, video, grafik, dan lain-lain) dan
           deskripsi atau narasi yang menceritakan pengalaman belajar tersebut atau proses pembuatannya. Penelitian ini mengasumsikan pengalaman belajar sebagai produk (aplikasi, website, game, AR/VR,
           atau bentuk prototype lainnya) yang pernah kalian buat di sekolah atau di luar sekolah.
         </div>
         <hr className="mt-4" />
         <div className="mt-8 flex-col flex justify-start mx-8" id="2">
-          <div className="font-bold text-xl">Bagaimana membuat portofolio </div>
+          <div className="font-bold text-xl text-center">Bagaimana membuat portofolio? </div>
           Setelah kita mengetahui konsep portofolio dan komponen pendukung portofolio, kita dapat mengembangkan portfolio dengan mudah dengan bantuan POTOVET. POTOVET akan membuat pengembangan
           portofolio menjadi lebih mudah dan cepat. Kalian dapat mengembangkan portofolio menggunakan POTOVET dengan langkah-langkah di bawah ini.
           <ul className="mt-4 list-decimal mx-4 space-y-5">
@@ -85,7 +85,7 @@ export default function page() {
         </div>
         <hr className="mx-8 mt-4" />
         <div className="mt-8 flex-col flex justify-start mx-8" id="3">
-          <div className="font-bold text-xl">Bagaimana mengelola portofolio </div>
+          <div className="font-bold text-xl text-center">Bagaimana mengelola portofolio?</div>
           Pengelolaan portfolio adalah fitur lanjutan yang disediakan POTOVET untuk mengatur portofolio yang sudah kalian buat. Terdapat beberapa pengelolaan yang dapat kalian lakukan dalam POTOVET
           mulai pengaturan tampilan portofolio hingga mengedit portofolio yang kalian miliki. Kalian bisa mengikuti langkah-langkah berikut untuk membuat portfolio kalian mudah diakses.
           <ul className="mt-4 list-decimal mx-4 space-y-5">
