@@ -1,16 +1,19 @@
 import { Toast } from '@/utils/SweetAlert'
 import { useAddProjectStore } from '../../../store'
 import { useProcessStore } from '../store'
+import { useCreateOrUpdateProjectMutation } from '@/redux/services/projectApi'
 
 export const useForm = () => {
 	const { currentId, forwardStep } = useAddProjectStore()
 	const { formData: userFormData } = useProcessStore()
+	const [createOrUpdateProject, { isLoading }] = useCreateOrUpdateProjectMutation()
 
 	const handleOnSubmit = (e) => {
 		e.preventDefault()
 
 		const formData = new FormData()
 
+		formData.append('id', currentId)
 		formData.append('methodology', userFormData.methodology)
 		formData.append('findings', userFormData.findings)
 		formData.append('sketches', userFormData.sketches)
@@ -19,11 +22,23 @@ export const useForm = () => {
 		formData.append('git_url', userFormData.git_url)
 
 		/**
-		 * TODO: store data to backend when success,
+		 * store data to backend when success,
 		 * change to next step
 		 */
-		forwardStep()
-		Toast.fire({ icon: 'success', title: 'Data berhasil disimpan.' })
+		if (!isLoading) {
+			createOrUpdateProject({
+				params: {
+					step: 'step-2',
+				},
+				data: formData,
+			}).then(({ data }) => {
+				if (data) {
+					forwardStep()
+
+					Toast.fire({ icon: 'success', title: 'Data berhasil disimpan.' })
+				}
+			})
+		}
 	}
 
 	return {
