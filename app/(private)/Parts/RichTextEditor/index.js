@@ -28,7 +28,6 @@ const editorConfiguration = {
 		'undo',
 		'redo',
 	],
-	//   height: "50px",
 }
 
 export default function RichTextEditor({ value, onChange, label, isTextArea, hintText }) {
@@ -39,7 +38,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 		CKEditor: require('@ckeditor/ckeditor5-react').CKEditor,
 		Editor: require('ckeditor5-custom-build/build/ckeditor'),
 	}
-	const isValueNull = value === null || value === undefined || value === ''
+
 	let [isOpen, setIsOpen] = useState(false)
 
 	function closeModal() {
@@ -60,130 +59,101 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 		var data = editor.getData()
 		var replaced_text = data.replace(/(<([^>]+)>)/gi, '')
 		const count = replaced_text.length
+
 		setCount(count)
-		// if (count > 2000) {
-		//   var old_data = value;
-		//   console.log("here");
-		//   editor.setData(old_data);
-		//   return old_data;
-		// } else {
-		//   console.log("else");
 		return editor.getData()
-		// }
 	}
 
 	function insertTemplate() {
-		const template = '<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>' // Define your template HTML
-		onChange(template) // Update the content using the onChange function
+		const template = '<p>Ini adalah contoh template yang sudah di copy dan akan diisi oleg pengguna</p>'
+
+		onChange(template)
 	}
 
-	// useEffect(() => {
-	//   var text = value;
-	//   const count = text.replace(/(<([^>]+)>)/gi, "").length;
-	//   console.log(text.replace(/(<([^>]+)>)/gi, ""));
-
-	//   setCount(count);
-	// }, [value]);
 	return (
 		<div className="grid mt-4">
-			<div className="flex items-center  ">
-				{label && <label className="capitalize font-semibold">{label}</label>}
-				{/* Rounded button */}
+			<div className="flex items-center ">
+				{label && <label className="font-semibold capitalize">{label}</label>}
 
 				<button
-					className="rounded-full ml-2 px-2 py-2 bg-transparent text-white text-sm font-bold px-3 py-1 z-999  flex items-center group relative"
-					onClick={() => setIsOpen(true)}
+					className="relative z-50 flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-transparent rounded-full group"
+					onClick={openModal}
 				>
 					<AiFillQuestionCircle className="" color="blue" size={24} />
-					<span className="absolute  bottom-0 left-10  scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+					<span className="absolute bottom-0 p-2 text-xs text-white scale-0 bg-gray-800 rounded left-10 group-hover:scale-100 whitespace-nowrap">
 						Get Info
 					</span>
 				</button>
-				{/* <div className="group relative">
-          <AiFillQuestionCircle
-            color="blue"
-            className="ml-1"
-            size={24}
-            onClick={() => setIsOpen(true)}
-          />
-          <span className="absolute top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
-            Share
-          </span>
-        </div> */}
 
-				<>
-					<Transition appear show={isOpen} as={Fragment}>
-						<Dialog as="div" className="relative z-50" onClose={closeModal}>
-							<Transition.Child
-								as={Fragment}
-								enter="ease-out duration-300"
-								enterFrom="opacity-0"
-								enterTo="opacity-100"
-								leave="ease-in duration-200"
-								leaveFrom="opacity-100"
-								leaveTo="opacity-0"
-							>
-								<div className="fixed inset-0 bg-black/25" />
-							</Transition.Child>
+				<Transition appear show={isOpen} as={Fragment}>
+					<Dialog as="div" className="relative z-50" onClose={closeModal}>
+						<Transition.Child
+							as={Fragment}
+							enter="ease-out duration-300"
+							enterFrom="opacity-0"
+							enterTo="opacity-100"
+							leave="ease-in duration-200"
+							leaveFrom="opacity-100"
+							leaveTo="opacity-0"
+						>
+							<div className="fixed inset-0 bg-black/25" />
+						</Transition.Child>
 
-							<div className="fixed inset-0 overflow-y-auto">
-								<div className="flex min-h-full items-center justify-center p-4 text-center">
-									<Transition.Child
-										as={Fragment}
-										enter="ease-out duration-300"
-										enterFrom="opacity-0 scale-95"
-										enterTo="opacity-100 scale-100"
-										leave="ease-in duration-200"
-										leaveFrom="opacity-100 scale-100"
-										leaveTo="opacity-0 scale-95"
-									>
-										<Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-											<Dialog.Title
-												as="h3"
-												className="text-lg font-medium leading-6 text-gray-900"
+						<div className="fixed inset-0 overflow-y-auto">
+							<div className="flex items-center justify-center min-h-full p-4 text-center">
+								<Transition.Child
+									as={Fragment}
+									enter="ease-out duration-300"
+									enterFrom="opacity-0 scale-95"
+									enterTo="opacity-100 scale-100"
+									leave="ease-in duration-200"
+									leaveFrom="opacity-100 scale-100"
+									leaveTo="opacity-0 scale-95"
+								>
+									<Dialog.Panel className="w-full max-w-md p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+										<Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+											Information
+										</Dialog.Title>
+										<div className="mt-2">
+											<p className="text-sm text-gray-500">{hintText}</p>
+										</div>
+
+										<div className="mt-4 text-end">
+											<button
+												type="button"
+												className="inline-flex justify-center px-3 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+												onClick={closeModal}
 											>
-												Information
-											</Dialog.Title>
-											<div className="mt-2">
-												<p className="text-sm text-gray-500">{hintText}</p>
-											</div>
-
-											<div className="mt-4 text-end">
-												<button
-													type="button"
-													className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-3 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-													onClick={closeModal}
-												>
-													OK
-												</button>
-											</div>
-										</Dialog.Panel>
-									</Transition.Child>
-								</div>
+												OK
+											</button>
+										</div>
+									</Dialog.Panel>
+								</Transition.Child>
 							</div>
-						</Dialog>
-					</Transition>
-				</>
+						</div>
+					</Dialog>
+				</Transition>
 
 				<button
-					className="rounded-md ml-auto bg-secondary text-white text-sm font-bold px-3 py-1  flex items-center"
+					className="flex items-center px-3 py-1 ml-auto text-sm font-bold text-white rounded-md bg-secondary"
 					onClick={insertTemplate}
 				>
 					<RiStackFill className="mr-2" /> {/* Icon component */}
 					Template
 				</button>
+
 				<button
-					className="rounded-md ml-2 px-2 py-2 bg-blue-500 text-white text-sm font-bold px-3 py-1 z-999  flex items-center group relative"
+					className="relative z-50 flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-blue-500 rounded-md group"
 					onClick={insertTemplate}
 				>
 					<FiRefreshCcw className="" />
-					<span className="absolute  bottom-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+					<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded bottom-10 group-hover:scale-100">
 						Reset
 					</span>
 				</button>
 			</div>
 
-			<div className="py-1 h-fit mt-2">
+			<div className="py-1 mt-2 h-fit">
 				{rendered && (
 					<CKEditor
 						editor={Editor}
@@ -194,16 +164,11 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 				)}
 			</div>
 
-			{isValueNull ? (
-				<>
-					<p className="font-normal text-sm text-red-500">
-						{' '}
-						Isikan Kolom dengan kombinasi huruf, video, dan angka{' '}
-					</p>
-				</>
-			) : (
-				''
-			)}
+			{!value ? (
+				<p className="text-sm font-normal text-red-500">
+					Isikan Kolom dengan kombinasi huruf, video, dan angka.
+				</p>
+			) : null}
 		</div>
 	)
 }

@@ -70,7 +70,7 @@ export default function Input({
 						onClick={() => setIsOpen(true)}
 					>
 						<AiFillQuestionCircle className="" color="blue" size={24} />
-						<span className="absolute bottom-0 p-2 text-xs text-white scale-0 bg-gray-800 rounded left-10 group-hover:scale-100">
+						<span className="absolute bottom-0 p-2 text-xs text-white scale-0 bg-gray-800 rounded left-10 group-hover:scale-100 whitespace-nowrap">
 							Get Info
 						</span>
 					</button>
