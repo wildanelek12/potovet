@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import _ from 'lodash'
 
 const initialData = {
 	currentId: undefined,
@@ -6,7 +7,7 @@ const initialData = {
 }
 
 export const useAddProjectStore = create((set) => ({
-	...initialData,
+	..._.clone(initialData),
 
 	setCurrentId: (currentId) => set({ currentId }),
 	setCurrentStep: (currentStep) => set({ currentStep }),

@@ -1,10 +1,4 @@
-import { useEffect } from 'react'
-
 export default function Stepper({ items, activeIndex }) {
-	useEffect(() => {
-		console.log(activeIndex)
-	}, [activeIndex])
-
 	return (
 		<ol className="flex items-center w-full mb-4 text-sm font-medium text-center sm:text-base">
 			{items.map((item, index) => (

@@ -14,7 +14,7 @@ const initialFormData = {
 }
 
 export const useIntroductionStore = create((set, get) => ({
-	formData: initialFormData,
+	formData: _.clone(initialFormData),
 
 	getIsFilledFormData: () => {
 		const requiredData = _.omit(get().formData, ['project_partner', 'recommendation_letter'])

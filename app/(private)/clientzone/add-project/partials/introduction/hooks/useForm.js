@@ -6,6 +6,7 @@ import { useCreateOrUpdateProjectMutation } from '@/redux/services/projectApi'
 export const useForm = () => {
 	const { currentId, setCurrentId, forwardStep } = useAddProjectStore()
 	const { formData: userFormData } = useIntroductionStore()
+
 	const [createOrUpdateProject, { isLoading }] = useCreateOrUpdateProjectMutation()
 
 	const handleOnSubmit = (e) => {
@@ -43,8 +44,7 @@ export const useForm = () => {
 				data: formData,
 			}).then(({ data }) => {
 				if (data) {
-					// TODO: set current id
-					console.log(data)
+					setCurrentId(data?.data?.id)
 					forwardStep()
 
 					Toast.fire({ icon: 'success', title: 'Data berhasil disimpan.' })

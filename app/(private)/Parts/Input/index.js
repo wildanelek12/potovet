@@ -1,3 +1,4 @@
+import { cn } from '@/utils'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { AiFillQuestionCircle } from 'react-icons/ai'
@@ -128,33 +129,28 @@ export default function Input({
 			</>
 
 			<div
-				className={[
-					'flex gap-4 justify-between items-center border-2 focus:outline-none rounded-md bg-white outline-none',
-					className,
-					isRequired && (isValueNull || (isUrl && !validatedUrl)) ? 'border-red-500' : '',
-				].join(' ')}
+				className={cn(
+					'flex gap-4 justify-between items-center border-2 rounded-md bg-white overflow-hidden',
+					isRequired && (isValueNull || (isUrl && !validatedUrl)) && 'border-red-500',
+					className
+				)}
 			>
 				{beforeElement && <span className="select-none">{beforeElement}</span>}
 				<input
 					id={id}
 					type={type}
-					className={[
-						'w-full bg-white focus:outline-none focus:border-none border-none outline-none',
-						inputClassName,
-					].join(' ')}
+					className={cn('w-full bg-white !outline-none !border-none !shadow-none', inputClassName)}
 					onChange={handleInputChange}
 					value={value ?? ''}
 					placeholder={placeholder}
 					autoComplete="off"
-					style={{
-						outline: 'none', // Adding inline style to override potential CSS conflicts
-						// Add other styles as needed
-					}}
 					disabled={disabled}
 				/>
+
 				{afterElement && <span className="select-none">{afterElement}</span>}
-				{value && validatedUrl ? <BsCheckCircleFill color="#64CCC5" /> : ''}
+				{value && validatedUrl ? <BsCheckCircleFill color="#64CCC5" /> : null}
 			</div>
+
 			{isUrl && !validatedUrl && (
 				<div className="row">
 					<p className="text-sm text-red-500">Format Url Salah</p>

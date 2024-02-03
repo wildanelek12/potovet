@@ -7,7 +7,7 @@ const initialFormData = {
 }
 
 export const useEvaluationStore = create((set, get) => ({
-	formData: initialFormData,
+	formData: _.clone(initialFormData),
 
 	getIsFilledFormData: () => _.every(get().formData, (v) => !!v),
 	setFormData: (key, data) => set({ formData: _.set(get().formData, key, data) }),
