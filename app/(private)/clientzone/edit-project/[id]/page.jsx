@@ -7,11 +7,12 @@ import { stepData } from './constants'
 import { useEditProjectStore } from './store'
 import Contents from './partials'
 import { useGetProjectQuery } from '@/redux/services/projectApi'
+import { notFound } from 'next/navigation'
 
 export default function Page({ params }) {
 	const { currentStep, setCurrentStep, setCurrentId, status, setStatus } = useEditProjectStore()
 
-	const { data } = useGetProjectQuery({ params }, { skip: !params?.id })
+	const { data, error } = useGetProjectQuery({ params }, { skip: !params?.id })
 
 	React.useEffect(() => {
 		if (data?.data) {
@@ -23,6 +24,8 @@ export default function Page({ params }) {
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data?.data])
+
+	if (error?.status === 404) notFound()
 
 	return (
 		<div className="flex flex-col gap-4 col-span-full">
