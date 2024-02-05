@@ -1,7 +1,10 @@
 import Swal from 'sweetalert2'
 import { Toast } from '@/utils/SweetAlert'
+import { useDeleteProjectMutation } from '@/redux/services/projectApi'
 
 export const useDeleteButton = ({ id }) => {
+	const [deleteProject, { isLoading }] = useDeleteProjectMutation()
+
 	return {
 		onClick: () => {
 			Swal.fire({
@@ -15,12 +18,16 @@ export const useDeleteButton = ({ id }) => {
 				cancelButtonText: 'Batal',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// TODO: implement delete service
-
-					Toast.fire({
-						icon: 'success',
-						title: 'Berhasil menghapus data.',
-					})
+					if (!isLoading) {
+						deleteProject({ params: { id } }).then(({ data }) => {
+							if (data) {
+								Toast.fire({
+									icon: 'success',
+									title: 'Berhasil menghapus data.',
+								})
+							}
+						})
+					}
 				}
 			})
 		},
