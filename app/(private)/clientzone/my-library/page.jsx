@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { CategoryFilter, LibraryCard, Card } from './components'
+import { CategoryFilter, LibraryCard, Card, Paginate } from './components'
 import { useGetLibrariesQuery } from '@/redux/services/libraryApi'
 import { useLibraryStore } from './store'
 
@@ -21,6 +21,8 @@ export default function Page() {
 						<LibraryCard key={library.id} data={library} />
 					))}
 				</div>
+
+				<Paginate />
 			</Card>
 		</div>
 	)
