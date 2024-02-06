@@ -1,13 +1,16 @@
 import Swal from 'sweetalert2'
 import { Toast } from '@/utils/SweetAlert'
+import { useUpdateVisibilityProjectMutation } from '@/redux/services/projectApi'
 
 export const useChangeVisibilityButton = ({ id, visibility }) => {
+	const [updateVisibilityProject, { isLoading }] = useUpdateVisibilityProjectMutation()
+
 	return {
 		onClick: () => {
 			Swal.fire({
 				title: 'Perhatian',
 				text: `Apakah anda yakin akan mengubah visibilitas portfolio menjadi ${
-					visibility === 'PUBLIC' ? 'private' : 'public'
+					visibility === 'FULL' ? 'private' : 'public'
 				}?`,
 				icon: 'warning',
 				showCancelButton: true,
@@ -17,12 +20,18 @@ export const useChangeVisibilityButton = ({ id, visibility }) => {
 				cancelButtonText: 'Batal',
 			}).then((result) => {
 				if (result.isConfirmed) {
-					// TODO: implement change visibility service
-
-					Toast.fire({
-						icon: 'success',
-						title: 'Visibilitas portfolio berhasil diubah.',
-					})
+					if (!isLoading) {
+						updateVisibilityProject({
+							data: { id, visibility: visibility === 'FULL' ? 'PRIVATE' : 'FULL' },
+						}).then(({ data }) => {
+							if (data) {
+								Toast.fire({
+									icon: 'success',
+									title: 'Berhasil mengubah data.',
+								})
+							}
+						})
+					}
 				}
 			})
 		},

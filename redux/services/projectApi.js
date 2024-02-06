@@ -28,6 +28,14 @@ export const projectApi = baseApi.injectEndpoints({
 			}),
 			invalidatesTags: ['Project'],
 		}),
+		updateVisibilityProject: builder.mutation({
+			query: ({ data }) => ({
+				url: '/api/project/visibility',
+				method: 'POST',
+				data,
+			}),
+			invalidatesTags: ['Project'],
+		}),
 		deleteProject: builder.mutation({
 			query: ({ params }) => ({
 				url: `/api/project/${params.id}`,
@@ -38,5 +46,10 @@ export const projectApi = baseApi.injectEndpoints({
 	}),
 })
 
-export const { useGetProjectsQuery, useGetProjectQuery, useCreateOrUpdateProjectMutation, useDeleteProjectMutation } =
-	projectApi
+export const {
+	useGetProjectsQuery,
+	useGetProjectQuery,
+	useCreateOrUpdateProjectMutation,
+	useDeleteProjectMutation,
+	useUpdateVisibilityProjectMutation,
+} = projectApi

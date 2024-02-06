@@ -7,7 +7,7 @@ import { Tooltip } from 'react-tooltip'
 import { cn } from '@/utils'
 import Button from '@/components/Button'
 import moment from 'moment'
-import { useChangeVisibilityButton, useDeleteButton } from './hooks'
+import { useChangeVisibilityButton, useDeleteButton } from '../hooks'
 
 export default function ProjectCard({ data }) {
 	const deleteButtonProps = useDeleteButton({ id: data.id })
@@ -57,7 +57,7 @@ export default function ProjectCard({ data }) {
 						) : null}
 
 						<div className="flex flex-row justify-end flex-1 gap-4">
-							{data.visibility === 'PUBLIC' ? (
+							{data.visibility === 'FULL' ? (
 								<FaUnlock
 									className="w-5 h-5 text-green-400 cursor-pointer"
 									data-tooltip-id="my-tooltip"
