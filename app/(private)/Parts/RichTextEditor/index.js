@@ -76,6 +76,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 				{label && <label className="font-semibold capitalize">{label}</label>}
 
 				<button
+					type="button"
 					className="relative z-50 flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-transparent rounded-full group"
 					onClick={openModal}
 				>
@@ -135,6 +136,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 				</Transition>
 
 				<button
+					type="button"
 					className="flex items-center px-3 py-1 ml-auto text-sm font-bold text-white rounded-md bg-secondary"
 					onClick={insertTemplate}
 				>
@@ -143,6 +145,7 @@ export default function RichTextEditor({ value, onChange, label, isTextArea, hin
 				</button>
 
 				<button
+					type="button"
 					className="relative z-50 flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-blue-500 rounded-md group"
 					onClick={insertTemplate}
 				>

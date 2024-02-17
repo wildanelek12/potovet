@@ -90,12 +90,12 @@ export default function Page() {
 						Educations
 					</p>
 					<p
-						className="px-3 py-3 text-white cursor-pointer select-none hover:text-white/40 group relative"
+						className="relative px-3 py-3 text-white cursor-pointer select-none hover:text-white/40 group"
 						style={{ borderLeft: '2px solid white' }}
 						onClick={handleOnAdd}
 					>
 						+
-						<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+						<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 							Tambah Data
 						</span>
 					</p>
@@ -135,11 +135,11 @@ export default function Page() {
 						</div>
 						<div className="flex items-center justify-center" style={{ minWidth: '63.91px' }}>
 							<div
-								className="p-2 cursor-pointer select-none group relative"
+								className="relative p-2 cursor-pointer select-none group"
 								onClick={() => handleOnDelete(i)}
 							>
 								<TrashIcon width={24} height={24} color="gray" />
-								<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+								<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 									Hapus Data
 								</span>
 							</div>
@@ -149,6 +149,7 @@ export default function Page() {
 			</div>
 			<div className="flex flex-row justify-center mt-5 ">
 				<button
+					type="button"
 					onClick={onCancel}
 					className={[
 						'text-white select-none text-center bg-red-400 disabled:bg-primary/50 hover:bg-red-900/50 focus:ring-4 focus:outline-none focus:ring-red-950 font-medium rounded-xl text-sm px-5 py-2.5 transition-all',
@@ -157,7 +158,13 @@ export default function Page() {
 				>
 					Batal
 				</button>
-				<Button onClick={handleOnSave} label="Simpan" className="px-8 mx-2 w-fit" disabled={isLoading} />
+				<Button
+					type="button"
+					onClick={handleOnSave}
+					label="Simpan"
+					className="px-8 mx-2 w-fit"
+					disabled={isLoading}
+				/>
 			</div>
 		</div>
 	)

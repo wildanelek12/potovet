@@ -44,10 +44,10 @@ export default function Detail() {
 		<>
 			<div className={` h-auto flex font-sans px-8 py-2 flex-col flex-1`}>
 				<div className="flex flex-col items-center justify-center flex-1 ">
-					<div className="flex flex-row justify-items-center justify-start items-center mt-4 ms-4  w-full">
+					<div className="flex flex-row items-center justify-start w-full mt-4 justify-items-center ms-4">
 						<button
 							type="button"
-							className="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 me-8"
+							className="px-5 py-2 text-sm font-medium text-white rounded-lg bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 me-8"
 							style={{ display: 'flex', alignItems: 'center' }}
 						>
 							<FaArrowAltCircleLeft style={{ marginRight: '0.5rem' }} />
@@ -55,14 +55,14 @@ export default function Detail() {
 						</button>
 					</div>
 
-					<div className="flex flex-row justify-items-center justify-center items-center mt-4  w-full">
-						<p className=" text-3xl font-bold ">Website Promosi International BAG for backpaker</p>
+					<div className="flex flex-row items-center justify-center w-full mt-4 justify-items-center">
+						<p className="text-3xl font-bold ">Website Promosi International BAG for backpaker</p>
 					</div>
 					<p className="mt-1 text-sm font-medium">By : Ario Bayu</p>
 					<p className="mt-1 text-xs">Categories : Professional </p>
 					<p className="mt-1 text-xs">Project Time Elapsed : 20 Februari 2023 - 20 December 2023 </p>
 					<p className="mt-1 text-xs">Job Role : Programmer </p>
-					<div className="flex flex-row mt-4 gap-x-2 w-1/2 justify-end">
+					<div className="flex flex-row justify-end w-1/2 mt-4 gap-x-2">
 						<BsInstagram className="cursor-pointer" />
 						<BsFacebook className="cursor-pointer" />
 						<BsLinkedin className="cursor-pointer " />
@@ -139,8 +139,8 @@ export default function Detail() {
 						orci. Suspendisse potenti. Maecenas egestas faucibus dui, ut vestibulum nunc porta nec. Nunc
 						interdum ante at turpis porta, convallis blandit ante dapibus.
 					</p>
-					<div className="flex flex-col items-center justify-center mt-8 w-full">
-						<p className="text-4xl font-bold mb-2">Rate this</p>
+					<div className="flex flex-col items-center justify-center w-full mt-8">
+						<p className="mb-2 text-4xl font-bold">Rate this</p>
 						<div className="text-center">
 							<ReactStars count={5} size={38} color2={'#ffd700'} />
 						</div>
@@ -149,14 +149,15 @@ export default function Detail() {
 				<div className="fixed flex flex-col bottom-10 right-10">
 					<>
 						<Modal isOpen={isOpenShare} onClose={closeModal}>
-							<h2 className="text-2xl mb-4">This is a url for your profile</h2>
+							<h2 className="mb-4 text-2xl">This is a url for your profile</h2>
 							<p>
 								lioke.codesmedioa.cloud/PXYNAM{' '}
 								<span>
 									{' '}
 									<button
+										type="button"
 										onClick={() => closeModalShare()}
-										className="py-1 px-3 text-sm font-semibold text-white rounded-full bg-slate-400 flex mt-2 items-center"
+										className="flex items-center px-3 py-1 mt-2 text-sm font-semibold text-white rounded-full bg-slate-400"
 									>
 										<MdCopyAll />
 										Copy to clipboard
@@ -167,11 +168,11 @@ export default function Detail() {
 					</>
 					<div className="fixed flex flex-col bottom-20 right-10">
 						<a
-							className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group relative"
+							className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
 							onClick={onClickCta}
 						>
 							<FaPlus />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								More
 							</span>
 						</a>
@@ -179,16 +180,22 @@ export default function Detail() {
 						{isShowButton ? (
 							<>
 								<Link href={'/clientzone/project-list/1'}>
-									<button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group relative">
+									<button
+										type="button"
+										className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+									>
 										<BsShareFill />
-										<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+										<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 											Share
 										</span>
 									</button>
 								</Link>
-								<button className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group relative">
+								<button
+									type="button"
+									className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+								>
 									<BsPrinter />
-									<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+									<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 										Print
 									</span>
 								</button>
@@ -201,11 +208,11 @@ export default function Detail() {
                   <MdComment />
                 </a> */}
 								<Link
-									className="p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group relative"
+									className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
 									href={'mailto:wildan.romiza@gmail.com?subject=SendMail&body=Description'}
 								>
 									<MdOutlineEmail />
-									<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+									<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 										Message
 									</span>
 								</Link>

@@ -61,6 +61,7 @@ export default function FileInput({
 					{label && <label className={cn('font-semibold capitalize', labelClassName)}>{label}</label>}
 					{isHint && (
 						<button
+							type="button"
 							className="relative flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-transparent rounded-full z-999 group"
 							onClick={openModal}
 						>
@@ -131,7 +132,10 @@ export default function FileInput({
 								)}
 							>
 								<div className="flex items-center w-full gap-4 px-3 py-2">
-									<button className="px-3 py-2 text-sm font-medium leading-4 transition duration-150 ease-in-out border border-gray-300 rounded-md select-none hover:text-secondary-orange hover:border-secondary-orange focus:outline-none">
+									<button
+										type="button"
+										className="px-3 py-2 text-sm font-medium leading-4 transition duration-150 ease-in-out border border-gray-300 rounded-md select-none hover:text-secondary-orange hover:border-secondary-orange focus:outline-none"
+									>
 										Upload
 									</button>
 									<span className="select-none text-[#7D7D7D] truncate text-sm">

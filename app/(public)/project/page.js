@@ -84,7 +84,7 @@ export default function Home() {
 								<li>
 									<div className="flex items-center">
 										<svg
-											className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+											className="w-3 h-3 mx-1 text-gray-400 rtl:rotate-180"
 											aria-hidden="true"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
@@ -101,7 +101,7 @@ export default function Home() {
 										<a
 											href="#"
 											onClick={() => onClickBackProject()}
-											className="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
+											className="text-sm font-medium text-gray-700 ms-1 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
 										>
 											Projects
 										</a>
@@ -110,7 +110,7 @@ export default function Home() {
 								<li aria-current="page">
 									<div className="flex items-center">
 										<svg
-											className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+											className="w-3 h-3 mx-1 text-gray-400 rtl:rotate-180"
 											aria-hidden="true"
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
@@ -124,7 +124,7 @@ export default function Home() {
 												d="m1 9 4-4-4-4"
 											/>
 										</svg>
-										<span className="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">
+										<span className="text-sm font-medium text-gray-500 ms-1 md:ms-2 dark:text-gray-400">
 											Portfolio
 										</span>
 									</div>
@@ -172,7 +172,7 @@ export default function Home() {
 							fill
 						/>
 						{isHovered && (
-							<div className="absolute inset-0 flex items-center flex-col justify-center bg-black bg-opacity-50 cursor-pointer">
+							<div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 cursor-pointer">
 								<MdOutlineEdit color="white" size={20} />
 								<p className="text-white">Update Photo </p>
 
@@ -192,47 +192,48 @@ export default function Home() {
 					</p>
 
 					<div className="flex flex-row mt-4 space-x-4 ">
-						<div onClick={() => setModalEducationOpen(true)} className="group relative">
+						<div onClick={() => setModalEducationOpen(true)} className="relative group">
 							<IconButtonDescription src="/education.svg" />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								Education
 							</span>
 						</div>
 
-						<div onClick={() => setWorkOpen(true)} className="group relative">
+						<div onClick={() => setWorkOpen(true)} className="relative group">
 							<IconButtonDescription src="/suitcase-3.png" />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								Work Experience
 							</span>
 						</div>
 
-						<div onClick={() => setSkillOpen(true)} className="group relative">
+						<div onClick={() => setSkillOpen(true)} className="relative group">
 							<IconButtonDescription src="/skills.png" />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								Skills
 							</span>
 						</div>
 
-						<div onClick={() => setModalIntertestOpen(true)} className="group relative">
+						<div onClick={() => setModalIntertestOpen(true)} className="relative group">
 							<IconButtonDescription src="/magnifying-glass.png" />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								Interest
 							</span>
 						</div>
-						<div onClick={() => setModalSocialMediaOpen(true)} className="group relative">
+						<div onClick={() => setModalSocialMediaOpen(true)} className="relative group">
 							<IconButtonDescription src="/sosmed.svg" />
-							<span className="absolute  top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100">
+							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
 								Social Media
 							</span>
 						</div>
 					</div>
 				</div>
-				<div className="mt-8 font-medium text-center flex items-end justify-between px-16">
+				<div className="flex items-end justify-between px-16 mt-8 font-medium text-center">
 					<div></div>
 					<p className="text-xl font-extrabold">{"Portfolio's"}</p>
 					<button
+						type="button"
 						onClick={() => closeModalShare()}
-						className="py-1 px-3 text-sm font-semibold text-white rounded-full bg-primary flex ml-2 items-center"
+						className="flex items-center px-3 py-1 ml-2 text-sm font-semibold text-white rounded-full bg-primary"
 					>
 						<MdCopyAll />
 						<span className="ms-2"> URL</span>
