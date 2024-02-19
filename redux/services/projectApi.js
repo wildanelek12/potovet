@@ -10,6 +10,14 @@ export const projectApi = baseApi.injectEndpoints({
 			}),
 			providesTags: ['Project'],
 		}),
+		getProjectsGroupByYear: builder.query({
+			query: ({ searchParams }) => ({
+				url: '/api/project/group-by-year',
+				method: 'GET',
+				params: searchParams,
+			}),
+			providesTags: ['Project'],
+		}),
 		getProject: builder.query({
 			query: ({ params }) => ({
 				url: `/api/project/${params.id}`,
@@ -48,6 +56,7 @@ export const projectApi = baseApi.injectEndpoints({
 
 export const {
 	useGetProjectsQuery,
+	useGetProjectsGroupByYearQuery,
 	useGetProjectQuery,
 	useCreateOrUpdateProjectMutation,
 	useDeleteProjectMutation,

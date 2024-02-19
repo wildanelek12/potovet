@@ -1,21 +1,21 @@
-import { baseApi } from "./baseApi"
+import { baseApi } from './baseApi'
 
 export const profileApi = baseApi.injectEndpoints({
 	endpoints: (builder) => ({
 		getProfile: builder.query({
 			query: () => ({
-				url: "/api/profile",
-				method: "GET",
+				url: '/api/profile',
+				method: 'GET',
 			}),
-			providesTags: ["Profile"],
+			providesTags: ['Profile'],
 		}),
 		updateProfile: builder.mutation({
 			query: ({ data }) => ({
-				url: "/api/profile",
-				method: "POST",
+				url: '/api/profile',
+				method: 'POST',
 				data,
 			}),
-			invalidatesTags: ["Profile"],
+			invalidatesTags: ['Profile'],
 		}),
 	}),
 })

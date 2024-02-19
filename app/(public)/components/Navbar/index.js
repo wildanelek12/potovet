@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useGetProfileQuery } from '@/redux/services/profileApi'
-import { BsArrowRight, BsArrowDown } from 'react-icons/bs'
+import { BsArrowRight } from 'react-icons/bs'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
 export default function Navbar() {

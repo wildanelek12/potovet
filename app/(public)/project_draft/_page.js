@@ -28,18 +28,19 @@ import UpdateProfileModal from '../components/EditPhotoProfile'
 import { MdCopyAll } from 'react-icons/md'
 
 export default function Home() {
-	let setSkillOpen = useSetRecoilState(showModalSkill)
-	let setWorkOpen = useSetRecoilState(showModalWork)
-	let setModalEducationOpen = useSetRecoilState(showModalEducation)
-	let setModalIntertestOpen = useSetRecoilState(showModalInterest)
-	let setModalSocialMediaOpen = useSetRecoilState(showModalSocialMedia)
+	const setSkillOpen = useSetRecoilState(showModalSkill)
+	const setWorkOpen = useSetRecoilState(showModalWork)
+	const setModalEducationOpen = useSetRecoilState(showModalEducation)
+	const setModalIntertestOpen = useSetRecoilState(showModalInterest)
+	const setModalSocialMediaOpen = useSetRecoilState(showModalSocialMedia)
 
 	const [isShowMonthContent, setShowMonthContent] = useRecoilState(showMonthContent)
 	const [isShowYearContent, setShowYearContent] = useRecoilState(showYearContent)
 	const [isShowProjectContent, setIsShowProject] = useRecoilState(showProjectContent)
 	const [isHovered, setIsHovered] = useState(false)
-	const { data: user } = useGetProfileQuery()
 	const [isModalEditOpen, setModalEditOpen] = useState(false)
+
+	const { data: user } = useGetProfileQuery()
 
 	const onClickBackGallery = () => {
 		setShowYearContent(true)
@@ -54,9 +55,9 @@ export default function Home() {
 	}
 	const renderSelectContent = () => {
 		if (isShowYearContent) {
-			return <SelectYear></SelectYear>
+			return <SelectYear />
 		} else if (isShowMonthContent) {
-			return <SelectMonth></SelectMonth>
+			return <SelectMonth />
 		} else if (isShowProjectContent) {
 			return (
 				<>
@@ -145,14 +146,15 @@ export default function Home() {
 
 	return (
 		<>
-			<div className={` h-auto flex font-sans  flex-col flex-1 mb-8`}>
+			<div className="flex flex-col flex-1 h-auto mb-8 font-sans">
 				<div
 					className="flex flex-col items-center justify-center flex-1 py-16"
 					style={{
-						backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.3)),url("/bg-profile.jpg")`,
+						backgroundImage:
+							'linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("/bg-profile.jpg")',
 						height: 'fit-content',
 						backgroundRepeat: 'no-repeat',
-						backgroundSize: 'contain,cover',
+						backgroundSize: 'contain, cover',
 					}}
 				>
 					<div
@@ -227,6 +229,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+
 				<div className="flex items-end justify-between px-16 mt-8 font-medium text-center">
 					<div></div>
 					<p className="text-xl font-extrabold">{"Portfolio's"}</p>

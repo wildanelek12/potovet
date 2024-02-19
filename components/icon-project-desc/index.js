@@ -1,16 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function IconButtonDescription(props) {
-    return (
-        <div className='p-2 rounded-lg bg-primary'>
-            <Image
-                src={`${props.src}`}
-                width={32}
-                height={32}
-                className="w-8 h-8"
-                alt=''
-            />
-        </div>
-    )
+export default function IconButtonDescription({ src, ...props }) {
+	return (
+		<button className="flex flex-row items-center justify-center p-2 rounded-lg bg-primary" {...props}>
+			<Image src={src} width={32} height={32} className="w-8 h-8" alt="" />
+		</button>
+	)
 }
