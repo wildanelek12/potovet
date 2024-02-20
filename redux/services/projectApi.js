@@ -25,6 +25,13 @@ export const projectApi = baseApi.injectEndpoints({
 			}),
 			providesTags: ['Project'],
 		}),
+		getProjectPreview: builder.query({
+			query: ({ params }) => ({
+				url: `/api/project/preview/${params.year}/${params.month}/${params.slug}`,
+				method: 'GET',
+			}),
+			providesTags: ['Project'],
+		}),
 		createOrUpdateProject: builder.mutation({
 			query: ({ params, data }) => ({
 				url: `/api/project/${params.step}`,
@@ -58,6 +65,7 @@ export const {
 	useGetProjectsQuery,
 	useGetProjectsGroupByYearQuery,
 	useGetProjectQuery,
+	useGetProjectPreviewQuery,
 	useCreateOrUpdateProjectMutation,
 	useDeleteProjectMutation,
 	useUpdateVisibilityProjectMutation,

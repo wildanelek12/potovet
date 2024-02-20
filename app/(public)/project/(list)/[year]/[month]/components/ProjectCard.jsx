@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineEdit } from 'react-icons/ai'
+// import { AiOutlineEdit } from 'react-icons/ai'
+import moment from 'moment'
 
-export default function ProjectCard() {
+export default function ProjectCard({ data }) {
 	return (
 		<Link
 			href={'/project/2023/02/website-hitung-otomatis'}
@@ -21,14 +22,18 @@ export default function ProjectCard() {
 				/>
 			</div>
 
-			<div className="bg-[#0CADB7] rounded-b-lg p-4 flex flex-col gap-2">
-				<p className="font-semibold tracking-normal text-white">Website Hitung Otomatis</p>
-				<p className="text-sm font-normal tracking-normal text-white">
-					Website Perhitungan otomatis gaji karyawan yang .... Read More.
-				</p>
+			<div className="bg-[#0CADB7] rounded-b-lg p-4 flex flex-col gap-2 w-full">
+				<p className="font-semibold tracking-normal text-white">{data.title}</p>
+
+				<div
+					className="text-sm font-normal tracking-normal text-white"
+					dangerouslySetInnerHTML={{ __html: data.overview }}
+				/>
 
 				<div className="flex flex-row justify-between flex-1 item-center">
-					<p className="text-xs font-thin tracking-normal text-white">at 20 Feb 2022</p>
+					<p className="text-xs font-thin tracking-normal text-white">
+						at {moment(data.created_at).format('DD MMM YYYY')}
+					</p>
 
 					{/* <div className="relative group">
 						<Link href="/clientzone/project-list/1">

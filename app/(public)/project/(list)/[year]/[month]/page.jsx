@@ -4,12 +4,15 @@ import React from 'react'
 import { ProjectCard } from './components'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
+import { useGetProjectsQuery } from '@/redux/services/projectApi'
 
 const Breadcrumb = dynamic(() => import('antd').then((mod) => mod.Breadcrumb), {
 	ssr: false,
 })
 
 export default function Page({ params }) {
+	const { data } = useGetProjectsQuery({ searchParams: params })
+
 	return (
 		<React.Fragment>
 			<Breadcrumb
@@ -33,8 +36,8 @@ export default function Page({ params }) {
 			/>
 
 			<div className="flex flex-row flex-wrap gap-6">
-				{[...new Array(5)].map((_, i) => (
-					<ProjectCard key={i} />
+				{data?.data?.data.map((val, i) => (
+					<ProjectCard key={i} data={val} />
 				))}
 			</div>
 		</React.Fragment>
