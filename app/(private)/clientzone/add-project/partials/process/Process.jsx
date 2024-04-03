@@ -23,6 +23,7 @@ export default function Process() {
 				yang dipilih untuk mengembangkan produk. 
 				poin ini dilengkapi dengan argumentasi 
 				mengapa cara atau pendekatan dapat dipilih.`}
+				template={"<ul><li><strong>- Metode yang digunakan:</strong></li><li><strong>&nbsp; </strong>( Contoh : Metode ini dilaksanakan selama 2 bulan kepada 20 partisipan yang mengalami kesulitan terhadap suatu aktifitas secara bergantian ditempat yang dipilih oleh partisipan. Produk ini dikembangkan dengan metode kualitatif dengan cara interview kepada partisipan yang terlibat. pertanyaan yang dikembangkan berkaitan dengan kebutuhan, pengalaman, atau apa yang dirasakan partisipan terhadap suatu aktivitas.&nbsp;</li><li>&nbsp; Metode ini dibantu dengan digital tools seperti handphone dan microsoft word untuk merekam dan melakukan rekap hasil interview.)</li></ul><p>&nbsp; * <i>metode yang digunakan dapat lebih dari 1.</i></p><p><i>&nbsp;* partisipan dapat disebutkan secara jelas seperti orangtua, siswa SMA, petani, dll.</i></p><p><i>&nbsp;* contoh pertanyaan dapat diletakkan dalam bagian ini.</i></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><ul><li><strong>- Analisis Data :</strong></li><li><strong>&nbsp; </strong>( Contoh : Data dianalisis dengan cara memetakan jawaban partisipan dalam susunan jawaban yang sama untuk mendapatkan kelompok kebutuhan aktivitas.)</li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>"}
 			/>
 
 			<RichTextEditor
@@ -31,6 +32,7 @@ export default function Process() {
 				onChange={(val) => setFormData('findings', val)}
 				hintText={`Isikan dengan hasil penelitian yang 
 				diperoleh selama pengembangan produk.`}
+				template={"<ul><li><strong>- Metode yang digunakan:</strong></li><li><strong>&nbsp; </strong>( Contoh : Metode ini dilaksanakan selama 2 bulan kepada 20 partisipan yang mengalami kesulitan terhadap suatu aktifitas secara bergantian ditempat yang dipilih oleh partisipan. Produk ini dikembangkan dengan metode kualitatif dengan cara interview kepada partisipan yang terlibat. pertanyaan yang dikembangkan berkaitan dengan kebutuhan, pengalaman, atau apa yang dirasakan partisipan terhadap suatu aktivitas.&nbsp;</li><li>&nbsp; Metode ini dibantu dengan digital tools seperti handphone dan microsoft word untuk merekam dan melakukan rekap hasil interview.)</li></ul><p>&nbsp; * <i>metode yang digunakan dapat lebih dari 1.</i></p><p><i>&nbsp;* partisipan dapat disebutkan secara jelas seperti orangtua, siswa SMA, petani, dll.</i></p><p><i>&nbsp;* contoh pertanyaan dapat diletakkan dalam bagian ini.</i></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><ul><li><strong>- Analisis Data :</strong></li><li><strong>&nbsp; </strong>( Contoh : Data dianalisis dengan cara memetakan jawaban partisipan dalam susunan jawaban yang sama untuk mendapatkan kelompok kebutuhan aktivitas.)</li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>"}
 			/>
 
 			<RichTextEditor
@@ -40,6 +42,7 @@ export default function Process() {
 				hintText={`Isikan tampilan produk dengan bentuk sketsa. 
 				poin ini memuat tampilan produk dengan layout berwarna 
 				hitam putih.`}
+				isHaveTemplate = {false}
 			/>
 
 			<RichTextEditor
@@ -48,6 +51,7 @@ export default function Process() {
 				onChange={(val) => setFormData('visual', val)}
 				hintText={`Isikan tampilan produk dengan desain layout 
 				berwarna.`}
+				isHaveTemplate = {false}
 			/>
 
 			<Input
