@@ -14,10 +14,11 @@ export default function PhotoProfile({ src, onChange }) {
 	}
 
 	const imageSource = React.useMemo(() => {
-		if (!src)
+		if (!src) {
 			return 'https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg'
+		}
 
-		return src
+		return `/${src}`
 	}, [src])
 
 	return (

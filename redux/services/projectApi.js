@@ -27,7 +27,7 @@ export const projectApi = baseApi.injectEndpoints({
 		}),
 		getProjectPreview: builder.query({
 			query: ({ params }) => ({
-				url: `/api/project/preview/${params.year}/${params.month}/${params.slug}`,
+				url: `/api/project/preview/${params.slug}`,
 				method: 'GET',
 			}),
 			providesTags: ['Project'],

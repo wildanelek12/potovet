@@ -7,16 +7,16 @@ import { FaCommentAlt } from 'react-icons/fa'
 export default function Project({ data }) {
 	return (
 		<div className="flex flex-col">
-			<Link href={'/project/2023/02/project-2'}>
-				<Image
-					src={
-						'https://lh5.googleusercontent.com/8gwdZIlrONenDA5NJsi6tLsSFXOijfkzeOOVTEG8P1u2lPntRLKdgL6ozNkldkvb8Fcf801B6s2pj2_dNtoaVTTKDlHSZ6ViSwgZZPi8JtlbUUKGiiyvInV2IbC_49BjB1xgcKgc'
-					}
-					alt=""
-					width={1200}
-					height={1200}
-					className="object-cover mt-8 rounded-lg w-fit h-fit"
-				/>
+			<Link href={`/project/${data.slug}`}>
+				<div className="relative w-full overflow-hidden rounded-t-lg max-h-60 h-60">
+					<Image
+						src={`/${data.image_path}`}
+						alt={data.title}
+						className="absolute object-cover w-fit h-fit"
+						fill
+					/>
+				</div>
+
 				<div className="flex flex-row items-center mt-2">
 					<p className="font-semibold">{data?.title}</p>
 				</div>

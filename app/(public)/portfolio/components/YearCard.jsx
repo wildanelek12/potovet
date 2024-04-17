@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function YearCard({ projectCount, year }) {
 	return (
 		<Link
-			href={`/project/${year}`}
+			href={`/portfolio/${year}`}
 			className="flex flex-row items-center justify-between min-w-[24rem] gap-4 px-8 py-6 bg-no-repeat bg-cover rounded-lg cursor-pointer"
 			scroll={false}
 			style={{
@@ -14,14 +14,14 @@ export default function YearCard({ projectCount, year }) {
 		>
 			<div className="flex flex-col gap-2">
 				<div className="flex flex-col gap-4">
-					<Image width={50} height={50} src={'/calendar-card.svg'} alt="" />
+					<Image width={50} height={50} src="/calendar-card.svg" alt="" />
 					<p className="text-6xl font-bold text-white">{year}</p>
 				</div>
 
 				<p className="text-2xl font-normal text-white">{projectCount} Project</p>
 			</div>
 
-			<Image width={50} height={50} src={'/arrow.svg'} alt="" />
+			<Image width={50} height={50} src="/arrow.svg" alt="" />
 		</Link>
 	)
 }

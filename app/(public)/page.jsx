@@ -21,12 +21,6 @@ export default function Page() {
 					backgroundSize: 'cover',
 				}}
 			>
-				{/* <div id="category" className="flex flex-row space-x-4">
-          <Kategori title="Mobile" isActive={true} />
-          <Kategori title="Website" />
-          <Kategori title="Design" />
-          <Kategori title="Paper" />
-        </div> */}
 				<p className="mt-12 text-4xl font-bold leading-snug tracking-wide text-center text-white">
 					Explore the world’s leading <br /> design portfolios
 				</p>
@@ -37,6 +31,7 @@ export default function Page() {
 				<SearchBoxHero className="mt-4" />
 				<div className="flex flex-row items-center mt-8 space-x-4">
 					<p className="text-white">Trending Search</p>
+
 					<RecentSearch title={'Academic'} />
 					<RecentSearch title={'Professional'} />
 					<RecentSearch title={'Research'} />
@@ -44,10 +39,12 @@ export default function Page() {
 					<RecentSearch title={'Case Study'} />
 				</div>
 			</div>
+
 			<div id="company" className="flex flex-col px-32 py-8">
 				<div className="w-fit">
 					<FilterProject />
 				</div>
+
 				<div className="grid gap-5 mt-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2">
 					{data?.data?.data?.map((val, i) => (
 						<Project key={i} data={val} />

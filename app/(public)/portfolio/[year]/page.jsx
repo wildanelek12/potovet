@@ -28,7 +28,7 @@ export default function Page({ params }) {
 						title: 'Galery',
 					},
 					{
-						title: <Link href="/project">Projects</Link>,
+						title: <Link href="/portfolio">Projects</Link>,
 						href: null,
 					},
 					{
