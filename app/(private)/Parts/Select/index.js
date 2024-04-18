@@ -5,7 +5,7 @@ import { cn } from '@/utils'
 
 export default function Select({ labelClassname, label, onChange, options, value, defaultValue, selected }) {
 	return (
-		<div className="flex flex-col gap-1">
+		<div className="flex flex-col w-full gap-1">
 			{label && <label className={cn('capitalize font-semibold', labelClassname)}>{label}</label>}
 
 			<Listbox value={value ?? defaultValue} onChange={(e) => onChange(e)}>

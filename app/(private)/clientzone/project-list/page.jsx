@@ -18,30 +18,32 @@ export default function Page() {
 		<div className="flex flex-col gap-4 col-span-full">
 			<p className="text-2xl font-bold text-primary">My Portfolio</p>
 
-			<Card layout="column" className="gap-6 p-8">
-				<div className="grid grid-cols-5 gap-2">
-					<Select
-						options={optionYears}
-						defaultValue={optionYears[0]}
-						selected={year}
-						onChange={(e) => setYear(e)}
-					/>
+			<Card layout="column" className="gap-6 p-4 sm:p-8">
+				<div className="flex flex-col gap-2 sm:items-center sm:flex-row">
+					<div className="flex flex-col items-center gap-2 sm:flex-row basis-2/3">
+						<Select
+							options={optionYears}
+							defaultValue={optionYears[0]}
+							selected={year}
+							onChange={(e) => setYear(e)}
+						/>
 
-					<Select
-						options={optionMonth}
-						defaultValue={optionMonth[0]}
-						selected={month}
-						onChange={(e) => setMonth(e)}
-					/>
+						<Select
+							options={optionMonth}
+							defaultValue={optionMonth[0]}
+							selected={month}
+							onChange={(e) => setMonth(e)}
+						/>
 
-					<Select
-						options={optionStatus}
-						defaultValue={optionStatus[0]}
-						selected={status}
-						onChange={(e) => setStatus(e)}
-					/>
+						<Select
+							options={optionStatus}
+							defaultValue={optionStatus[0]}
+							selected={status}
+							onChange={(e) => setStatus(e)}
+						/>
+					</div>
 
-					<div className="relative col-span-2">
+					<div className="relative flex-1">
 						<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
 							<svg
 								aria-hidden="true"

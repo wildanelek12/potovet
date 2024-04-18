@@ -143,9 +143,9 @@ export default function Navbar() {
 							>
 								<Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
 									<div className="px-1 py-1">
-										<Link href={'/clientzone'}>
-											<Menu.Item>
-												{({ active }) => (
+										<Menu.Item>
+											{({ active }) => (
+												<Link href={'/clientzone'} passHref>
 													<button
 														type="button"
 														className={`${
@@ -154,14 +154,14 @@ export default function Navbar() {
 													>
 														Portfolio
 													</button>
-												)}
-											</Menu.Item>
-										</Link>
+												</Link>
+											)}
+										</Menu.Item>
 									</div>
 									<div className="px-1 py-1">
-										<Link href={'/project'}>
-											<Menu.Item>
-												{({ active }) => (
+										<Menu.Item>
+											{({ active }) => (
+												<Link href={'/portfolio'} passHref>
 													<button
 														type="button"
 														className={`${
@@ -170,14 +170,14 @@ export default function Navbar() {
 													>
 														Gallery
 													</button>
-												)}
-											</Menu.Item>
-										</Link>
+												</Link>
+											)}
+										</Menu.Item>
 									</div>
 									<div className="px-1 py-1">
-										<Link href={'/profile'}>
-											<Menu.Item>
-												{({ active }) => (
+										<Menu.Item>
+											{({ active }) => (
+												<Link href={'/profile'} passHref>
 													<button
 														type="button"
 														className={`${
@@ -186,9 +186,9 @@ export default function Navbar() {
 													>
 														Settings
 													</button>
-												)}
-											</Menu.Item>
-										</Link>
+												</Link>
+											)}
+										</Menu.Item>
 									</div>
 									<div className="px-1 py-1" onClick={handleOnclickLogout}>
 										<Menu.Item>

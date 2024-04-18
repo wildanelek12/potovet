@@ -16,8 +16,8 @@ export default function ProjectCard({ data }) {
 	const project_cover = '/' + data.images.find(({ type }) => type === 'cover')?.image_path
 
 	return (
-		<div className="flex flex-col max-w-sm min-w-[15rem] bg-white border border-gray-200 rounded-lg shadow">
-			<div className="relative w-full h-60 min-h-[15rem]">
+		<div className="flex flex-col max-w-sm w-full sm:min-w-[16rem] sm:w-64 bg-white border border-gray-200 rounded-lg shadow">
+			<div className="relative w-full h-48 min-h-[12rem]">
 				<Image
 					className="object-cover w-full h-full rounded-t-lg"
 					src={project_cover}

@@ -44,6 +44,7 @@
     "sharp": "^0.32.4",
     "sweetalert2": "^11.7.20",
     "tailwind-merge": "^2.2.1",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "zustand": "^4.5.0"
   },
   "devDependencies": {

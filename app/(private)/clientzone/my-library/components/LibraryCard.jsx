@@ -9,7 +9,7 @@ export default function LibraryCard({ data }) {
 	const deleteButtonProps = useDeleteButton({ id: data.id })
 
 	return (
-		<div className="relative flex flex-row min-w-[16rem] w-64 h-48 rounded-lg overflow-hidden">
+		<div className="relative flex flex-row w-full sm:min-w-[16rem] sm:w-64 h-48 rounded-lg overflow-hidden">
 			<Image src={`/${data.image_path}`} alt="" className="object-cover" sizes="100dvh" fill />
 
 			<div className="absolute flex flex-row items-center gap-2 bottom-3 right-3">

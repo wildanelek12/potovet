@@ -13,14 +13,14 @@ export default function CategoryFilter() {
 	}
 
 	return (
-		<div className="flex flex-wrap items-center gap-2">
+		<div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
 			{categories.map(({ id, label }) => (
 				<button
 					key={id}
 					type="button"
 					onClick={() => handleOnChangeFilter(id)}
 					className={cn(
-						'border border-blue-600 px-4 py-2 text-sm font-medium rounded-md transition-colors',
+						'border border-blue-600 px-4 py-2 sm:text-sm text-xs font-medium rounded-md transition-colors whitespace-nowrap',
 						id === selectedId
 							? 'bg-blue-700 text-white'
 							: 'bg-white text-blue-700 hover:text-white hover:bg-blue-700'
