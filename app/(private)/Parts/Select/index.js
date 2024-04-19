@@ -5,7 +5,7 @@ import { cn } from '@/utils'
 
 export default function Select({ labelClassname, label, onChange, options, value, defaultValue, selected }) {
 	return (
-		<div className="flex flex-col w-full gap-1">
+		<div className="z-40 flex flex-col w-full gap-1">
 			{label && <label className={cn('capitalize font-semibold', labelClassname)}>{label}</label>}
 
 			<Listbox value={value ?? defaultValue} onChange={(e) => onChange(e)}>
@@ -23,7 +23,7 @@ export default function Select({ labelClassname, label, onChange, options, value
 						leaveFrom="opacity-100"
 						leaveTo="opacity-0"
 					>
-						<Listbox.Options className="absolute z-10 w-full py-1 mt-1 bg-white rounded-sm shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 !outline-none">
+						<Listbox.Options className="overflow-y-auto overflow-x-hidden absolute z-40 w-full py-1 mt-1 bg-white rounded-sm shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 !outline-none">
 							{options.map((option, optionIdx) => (
 								<Listbox.Option
 									key={optionIdx}
