@@ -12,7 +12,7 @@ export default function Page() {
 
 	return (
 		<div className="flex flex-col gap-4 col-span-full">
-			<p className="text-2xl font-bold text-primary">Create a Portfolio</p>
+			<p className="text-2xl font-bold text-primary text-center w-full">Create a Portfolio</p>
 
 			<Card layout="column" className="gap-2 p-8">
 				<Stepper items={stepData} activeIndex={currentStep} />

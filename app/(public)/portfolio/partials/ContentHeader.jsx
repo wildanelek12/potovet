@@ -10,7 +10,7 @@ export default function ContentHeader() {
 
 	const handleOnCopy = () => {
 		navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_BASE_URL}/profile/${data?.data?.slug}`)
-		message.info('profile url berhasi di salin!')
+		message.info('URL Berhasi di salin!')
 	}
 	return (
 		<div className="container flex items-end justify-between px-4 py-6 font-medium text-center border-b ">

@@ -91,9 +91,9 @@ export default function Navbar() {
           )}
         </div>
 
-        <Link href="/portfolio" className="text-base font-medium text-[#6E6F70] hover:text-primary">
+        {/* <Link href="/portfolio" className="text-base font-medium text-[#6E6F70] hover:text-primary">
           Portfolio&#39;s
-        </Link>
+        </Link> */}
 
         <div className="relative inline-flex items-center hover:text-primary">
           <Link href="/guide" className="text-base font-medium text-[#6E6F70] hover:text-primary">

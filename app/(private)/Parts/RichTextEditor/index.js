@@ -79,6 +79,12 @@ export default function RichTextEditor({
 		onChange(template_copied)
 	}
 
+
+	function reset() {
+		const a = ""
+
+		onChange(a)
+	}
 	return (
 		<div className="grid mt-4">
 			<div className="flex items-center ">
@@ -158,7 +164,7 @@ export default function RichTextEditor({
 						<button
 							type="button"
 							className="relative flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-blue-500 rounded-md group"
-							onClick={insertTemplate}
+							onClick={reset}
 						>
 							<FiRefreshCcw className="" />
 							<span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded bottom-10 group-hover:scale-100">

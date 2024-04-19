@@ -22,11 +22,10 @@ export default function Page() {
 				}}
 			>
 				<p className="mt-12 text-4xl font-bold leading-snug tracking-wide text-center text-white">
-					Explore the world’s leading <br /> design portfolios
+					Buat Portofoliomu Sekarang
 				</p>
-				<p className="mt-8 text-lg font-normal leading-snug tracking-wide text-center text-white">
-					Millions of designers and agencies around the world showcase their portfolio work on <br />
-					Dribbble - the home to the world’s best design and creative professionals.
+				<p className="mt-8 text-2xl font-normal leading-snug tracking-wide text-center text-white">
+					"Berbagi pengalaman belajarmu dalam sebuah portofolio dan miliki kesempatan karir terbaik"
 				</p>
 				<SearchBoxHero className="mt-4" />
 				<div className="flex flex-row items-center mt-8 space-x-4">

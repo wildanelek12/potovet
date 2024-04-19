@@ -60,7 +60,7 @@ export default function Page() {
 				</div>
 			</div>
 
-			<Card className="col-span-full lg:col-span-12 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
+			<Card className="col-span-full lg:col-span-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
 				<div className="flex h-full">
 					<div className="flex flex-col flex-1 pt-4 ">
 						<p className="ml-8 font-semibold text-primary">Portfolio Summary</p>
@@ -70,17 +70,10 @@ export default function Page() {
 								<p className="mt-2 text-4xl font-bold text-white">{data?.data?.total}</p>
 							</div>
 							<div className="grid p-2 text-center border bg">
-								<h2 className="text-sm font-light text-white ">Likes</h2>
+								<h2 className="text-sm font-light text-white ">Rating</h2>
 								<p className="text-4xl font-bold text-white">64</p>
 							</div>
-							<div className="grid p-2 text-center border bg">
-								<h2 className="text-sm font-light text-white ">Comments</h2>
-								<p className="text-4xl font-bold text-white">10</p>
-							</div>
-							<div className="grid p-2 text-center border bg">
-								<h2 className="text-sm font-light text-white ">Share</h2>
-								<p className="text-4xl font-bold text-white">66</p>
-							</div>
+				
 						</div>
 					</div>
 					<div className="flex-1 p-8 ">
@@ -90,15 +83,11 @@ export default function Page() {
 							</div>
 
 							<p className="text-base font-normal">
-								{"Portfolio draft dan publish tersimpan otomatis dalam menu 'Portofolio Journey'"}
+								{"Portfolio draft dan publish tersimpan otomatis dalam menu 'My Portofolio'"}
 							</p>
 						</div>
 					</div>
 				</div>
-			</Card>
-
-			<Card className="col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
-				<Chart data={data?.data?.projects} />
 			</Card>
 
 			{data?.data?.recent_projects?.length > 0 ? (
@@ -111,6 +100,12 @@ export default function Page() {
 					</div>
 				</Card>
 			) : null}
+
+			<Card className="col-span-full lg:col-span-12 p-8 border-none shadow-[0_6px_20px_rgba(154,154,154,0.25),0_-6px_20px_rgba(154,154,154,0.2)]">
+				<Chart data={data?.data?.projects} />
+			</Card>
+
+		
 		</React.Fragment>
 	)
 }

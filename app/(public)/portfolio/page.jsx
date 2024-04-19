@@ -30,7 +30,7 @@ export default function Page() {
 				separator=">"
 				items={[
 					{
-						title: 'Galery',
+						title: 'Gallery',
 					},
 					{
 						title: 'Projects',
