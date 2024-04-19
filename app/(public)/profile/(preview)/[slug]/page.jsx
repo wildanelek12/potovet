@@ -19,7 +19,7 @@ export default function Page({ params }) {
 				separator=">"
 				items={[
 					{
-						title: 'Galery',
+						title: 'Gallery',
 					},
 					{
 						title: 'Projects',
