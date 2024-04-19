@@ -25,7 +25,7 @@ export default function Page() {
 					Buat Portofoliomu Sekarang
 				</p>
 				<p className="mt-8 text-2xl font-normal leading-snug tracking-wide text-center text-white">
-					"Berbagi pengalaman belajarmu dalam sebuah portofolio dan miliki kesempatan karir terbaik"
+					{'"Berbagi pengalaman belajarmu dalam sebuah portofolio dan miliki kesempatan karir terbaik"'}
 				</p>
 				<SearchBoxHero className="mt-4" />
 				<div className="flex flex-row items-center mt-8 space-x-4">
