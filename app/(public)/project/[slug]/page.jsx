@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPlus, FaArrowAltCircleLeft } from "react-icons/fa";
@@ -12,6 +12,7 @@ import Modal from "@/components/modal";
 import { useRouter } from "next/navigation";
 import moment from "moment";
 import { jobsData } from "./constants";
+import { message } from "antd";
 // import CommentsDialog from './comments'
 
 export default function Page({ params }) {
@@ -19,15 +20,44 @@ export default function Page({ params }) {
   const [isOpenShare, setIsOpenShare] = React.useState(false);
 
   const router = useRouter();
+  const printRef = useRef(null);
+
+  const handleOnCopy = () => {
+    navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_BASE_URL}/project/${data?.data?.slug}`);
+    message.info("URL Berhasi di salin!");
+  };
 
   const closeModal = () => setIsShowComments(false);
   const onClickCta = () => setIsShowButton(!isShowButton);
-
+  const handlePrint = () => {
+    const content = printRef.current.innerHTML;
+    const printWindow = window.open("", "_blank");
+    printWindow.document.write(`
+      <html>
+        <head>
+          <title>Print</title>
+          <style>
+            @media print {
+              .navbar-selector {
+                display: none !important;
+              }
+            }
+          </style>
+        </head>
+        <body>${content}</body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.print();
+  };
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
   const { data } = useGetProjectPreviewQuery({ params });
 
   return (
     <>
-      <div className={` h-auto flex font-sans px-8 py-2 flex-col flex-1`}>
+      <div className={` h-auto flex font-sans px-8 py-2 flex-col flex-1`} ref={printRef}>
         <div className="flex flex-col items-center justify-center flex-1 ">
           <div className="flex flex-row items-center justify-start w-full mt-4 justify-items-center ms-4">
             <button
@@ -91,7 +121,7 @@ export default function Page({ params }) {
           <div className="flex flex-col items-center justify-center w-full mt-8">
             <p className="mb-2 text-4xl font-bold">Rate this</p>
             <div className="text-center">
-              <ReactStars count={5} size={38} color2={"#ffd700"} />
+              <ReactStars onChange={ratingChanged} count={5} size={38} color2={"#ffd700"} />
             </div>
           </div>
         </div>
@@ -119,14 +149,12 @@ export default function Page({ params }) {
 
             {isShowButton ? (
               <>
-                <Link href={"/clientzone/project-list/1"}>
-                  <button type="button" className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
-                    <BsShareFill />
-                    <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Share</span>
-                  </button>
-                </Link>
+                <button type="button" onClick={handleOnCopy} className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
+                  <BsShareFill />
+                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Share</span>
+                </button>
 
-                <button type="button" className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
+                <button type="button" onClick={handlePrint} className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
                   <BsPrinter />
                   <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Print</span>
                 </button>
