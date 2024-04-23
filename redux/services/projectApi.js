@@ -43,6 +43,14 @@ export const projectApi = baseApi.injectEndpoints({
 			}),
 			invalidatesTags: ['Project'],
 		}),
+		createRatingProject: builder.mutation({
+			query: ({ params, data }) => ({
+				url: `/api/project/rating/${params.slug}`,
+				method: 'POST',
+				data,
+			}),
+			invalidatesTags: ['Project'],
+		}),
 		updateVisibilityProject: builder.mutation({
 			query: ({ data }) => ({
 				url: '/api/project/visibility',
@@ -66,6 +74,7 @@ export const {
 	useGetProjectsGroupByYearQuery,
 	useGetProjectQuery,
 	useGetProjectPreviewQuery,
+	useCreateRatingProjectMutation,
 	useCreateOrUpdateProjectMutation,
 	useDeleteProjectMutation,
 	useUpdateVisibilityProjectMutation,
