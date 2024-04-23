@@ -20,6 +20,9 @@ export const profileApi = baseApi.injectEndpoints({
 			query: ({ data }) => ({
 				url: '/api/profile',
 				method: 'POST',
+				headers: {
+					'Content-Type': 'multipart/form-data',
+				},
 				data,
 			}),
 			invalidatesTags: ['Profile'],

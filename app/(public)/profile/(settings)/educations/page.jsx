@@ -68,7 +68,11 @@ export default function Page() {
 	}
 	const handleOnSave = () => {
 		if (!isLoading) {
-			update({ data: { educations: JSON.stringify(educations) } }).then(({ data }) => {
+			const formData = new FormData()
+
+			formData.append('educations', JSON.stringify(educations))
+
+			update({ data: formData }).then(({ data }) => {
 				if (data) {
 					Toast.fire({
 						icon: 'success',

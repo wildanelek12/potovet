@@ -28,7 +28,13 @@ export default function Page() {
 	}
 	const handleOnSave = () => {
 		if (!isLoading) {
-			update({ data: { instagram, linkedin, facebook } }).then(({ data }) => {
+			const formData = new FormData()
+
+			formData.append('instagram', instagram)
+			formData.append('linkedin', linkedin)
+			formData.append('facebook', facebook)
+
+			update({ data: formData }).then(({ data }) => {
 				if (data) {
 					Toast.fire({
 						icon: 'success',

@@ -37,7 +37,14 @@ export default function Page() {
 	}
 	const handleOnSave = () => {
 		if (!isLoading) {
-			update({ data: { name, jobs, descriptions, summary } }).then(({ data }) => {
+			const formData = new FormData()
+
+			formData.append('name', name)
+			formData.append('jobs', jobs)
+			formData.append('descriptions', descriptions)
+			formData.append('summary', summary)
+
+			update({ data: formData }).then(({ data }) => {
 				if (data) {
 					Toast.fire({
 						icon: 'success',
@@ -76,10 +83,7 @@ export default function Page() {
 				<button
 					type="button"
 					onClick={onCancel}
-					className={[
-						'text-white select-none text-center bg-red-400 disabled:bg-primary/50 hover:bg-red-900/50 focus:ring-4 focus:outline-none focus:ring-red-950 font-medium rounded-xl text-sm px-5 py-2.5 transition-all',
-						,
-					].join(' ')}
+					className="text-white select-none text-center bg-red-400 disabled:bg-primary/50 hover:bg-red-900/50 focus:ring-4 focus:outline-none focus:ring-red-950 font-medium rounded-xl text-sm px-5 py-2.5 transition-all"
 				>
 					Batal
 				</button>

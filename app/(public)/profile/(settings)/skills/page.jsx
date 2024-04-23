@@ -56,7 +56,11 @@ export default function Page() {
 	}
 	const handleOnSave = () => {
 		if (!isLoading) {
-			update({ data: { skills: JSON.stringify(skills) } }).then(({ data }) => {
+			const formData = new FormData()
+
+			formData.append('skills', JSON.stringify(skills))
+
+			update({ data: formData }).then(({ data }) => {
 				if (data) {
 					Toast.fire({
 						icon: 'success',
