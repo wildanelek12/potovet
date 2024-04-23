@@ -71,7 +71,7 @@ export default function Page() {
               </div>
               <div className="grid p-2 text-center border bg">
                 <h2 className="text-sm font-light text-white ">Rating</h2>
-                <p className="text-4xl font-bold text-white">64</p>
+                <p className="text-4xl font-bold text-white">{data?.data?.avg_rating}</p>
               </div>
             </div>
           </div>

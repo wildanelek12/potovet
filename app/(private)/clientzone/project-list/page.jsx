@@ -6,13 +6,40 @@ import { optionMonth, optionStatus, optionYears } from "./constants";
 import { useGetProjectsQuery } from "@/redux/services/projectApi";
 
 import { ProjectCard, Card } from "./components";
+import { DatePicker, Space } from "antd";
 
 export default function Page() {
-  const { data } = useGetProjectsQuery({ searchParams: {} });
+  const [year, setYear] = useState("");
+  const [month, setMonth] = useState("");
+  const [status, setStatus] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+  const { data } = useGetProjectsQuery({
+    searchParams: {
+      q: searchValue,
+      status,
+      year,
+      month,
+      perPage: 10000,
+    },
+  });
 
-  const [year, setYear] = useState(optionYears[0]);
-  const [month, setMonth] = useState(optionMonth[0]);
-  const [status, setStatus] = useState(optionStatus[0]);
+  const onChangeDate = (date, dateString) => {
+    console.log();
+    setYear(date.format("YYYY"));
+    setMonth(date.format("M "));
+  };
+
+  const onChangeStatus = (event) => {
+    console.log(event.id);
+    setStatus(event.id);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      console.log(event.target.value);
+      setSearchValue(event.target.value);
+    }
+  };
 
   return (
     <div className="flex flex-col gap-4 col-span-full">
@@ -21,11 +48,11 @@ export default function Page() {
       <Card layout="column" className="gap-6 p-4 sm:p-8">
         <div className="flex flex-col gap-2 sm:items-center sm:flex-row">
           <div className="flex flex-col items-center gap-2 sm:flex-row basis-2/3">
-            <Select options={optionYears} defaultValue={optionYears[0]} selected={year} onChange={(e) => setYear(e)} />
+            <div className="flex flex-col w-full gap-1">
+              <DatePicker onChange={onChangeDate} picker="month" />
+            </div>
 
-            <Select options={optionMonth} defaultValue={optionMonth[0]} selected={month} onChange={(e) => setMonth(e)} />
-
-            <Select options={optionStatus} defaultValue={optionStatus[0]} selected={status} onChange={(e) => setStatus(e)} />
+            <Select options={optionStatus} defaultValue={optionStatus[0]} selected={status} onChange={onChangeStatus} />
           </div>
 
           <div className="relative flex-1">
@@ -41,6 +68,7 @@ export default function Page() {
               className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search"
               required
+              onKeyPress={handleKeyPress}
             />
           </div>
         </div>

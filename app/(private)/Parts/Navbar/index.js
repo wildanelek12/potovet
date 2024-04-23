@@ -59,7 +59,17 @@ export default function Navbar() {
                     <Menu as="div" className="relative inline-block text-left">
                       <div>
                         <Menu.Button className="inline-flex items-center justify-center w-full px-2 py-2 text-sm font-medium text-white rounded-md bg-secondary hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-                          <Image className="w-6 h-6 mx-2 rounded-full" src="https://picsum.photos/id/231/400/400" alt="Picture of the author" width={32} height={32} />
+                          <Image
+                            className="w-6 h-6 mx-2 rounded-full"
+                            src={
+                              user?.data?.photo
+                                ? `/${user?.data?.photo}`
+                                : "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
+                            }
+                            alt="Picture of the author"
+                            width={32}
+                            height={32}
+                          />
                           {user?.data?.name ?? "-"}
                           <ChevronDoubleDownIcon className="w-5 h-5 ml-2 -mr-1 text-white hover:text-violet-100" aria-hidden="true" />
                         </Menu.Button>
