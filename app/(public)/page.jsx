@@ -76,11 +76,14 @@ export default function Page() {
       </div>
 
       <div id="company" className="flex flex-col px-32 py-8">
-        <div className="w-fit">
-          <FilterProject onChange={handleSorterChange} />
+        <div className="flex justify-between items-center mb-4">
+          <div></div> {/* This empty div acts as a spacer */}
+          <div className="w-fit">
+            <FilterProject onChange={handleSorterChange} />
+          </div>
         </div>
 
-        <div className="grid gap-5 mt-2 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2">
+        <div className="grid gap-5 mt-4 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2">
           {data?.data?.data?.map((val, i) => (
             <Project key={i} data={val} />
           ))}

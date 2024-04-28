@@ -27,7 +27,7 @@ export default function Page({ params }) {
 
   const handleOnCopy = () => {
     navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_BASE_URL}/project/${data?.data?.slug}`);
-    message.info("URL Berhasi di salin!");
+    message.info("URL Berhasil di salin!");
   };
 
   const closeModal = () => setIsShowComments(false);
@@ -65,7 +65,7 @@ export default function Page({ params }) {
       })
         .then(({ data }) => {
           if (data) {
-            message.success(data?.message);
+            message.success("Terimakasih atas respon anda");
           }
         })
         .catch((err) => {
