@@ -1,11 +1,8 @@
-import { Tooltip } from 'chart.js'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { BsFillPlusCircleFill, BsTrash } from 'react-icons/bs'
 import { RiStackFill } from 'react-icons/ri'
 import { AiFillQuestionCircle } from 'react-icons/ai'
 import { FiRefreshCcw } from 'react-icons/fi'
 import { Dialog, Transition } from '@headlessui/react'
-import { template } from 'lodash'
 const editorConfiguration = {
 	toolbar: [
 		'heading',
@@ -37,7 +34,7 @@ export default function RichTextEditor({
 	label,
 	isTextArea,
 	hintText,
-	template,
+	template = '',
 	isHaveTemplate = true,
 }) {
 	const editorRef = useRef()
@@ -79,9 +76,8 @@ export default function RichTextEditor({
 		onChange(template_copied)
 	}
 
-
 	function reset() {
-		const a = ""
+		const a = ''
 
 		onChange(a)
 	}

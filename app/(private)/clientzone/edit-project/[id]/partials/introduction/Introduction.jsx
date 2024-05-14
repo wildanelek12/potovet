@@ -2,7 +2,7 @@ import Button from '@/components/Button'
 import React from 'react'
 import { useForm } from './hooks'
 import { useIntroductionStore } from './store'
-import { categoriesData, jobsData } from './constants'
+import { categoriesData, jobsData, projectOverviewTemplate } from './constants'
 import { DatePicker, Input, Select } from '../../components'
 import dynamic from 'next/dynamic'
 
@@ -108,6 +108,7 @@ export default function Introduction({ data }) {
 				dipecahkan, peranan dalam pengembangan produk, hal menarik yang 
 				ditemukan dalam masalah, dan solusi yang dipilih untuk di 
 				implementasikan.`}
+				template={projectOverviewTemplate}
 			/>
 
 			<div className="flex flex-row justify-end">

@@ -17,3 +17,5 @@ export const jobsData = [
 	{ id: 6, name: 'Mobile Application Developer', unavailable: false },
 	{ id: 7, name: 'Interface Designer', unavailable: false },
 ]
+
+export { projectOverviewTemplate } from '../../../../add-project/partials/introduction/constants'
