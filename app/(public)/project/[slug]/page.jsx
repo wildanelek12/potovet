@@ -1,13 +1,22 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPlus, FaArrowAltCircleLeft } from "react-icons/fa";
-import { MdOutlineEmail, MdCopyAll } from "react-icons/md";
-import { BsFacebook, BsInstagram, BsLinkedin, BsPrinter, BsShareFill } from "react-icons/bs";
+import { MdOutlineEmail, MdCopyAll, MdEdit } from "react-icons/md";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsPrinter,
+  BsShareFill,
+} from "react-icons/bs";
 import ReactStars from "react-stars";
-import { useCreateRatingProjectMutation, useGetProjectPreviewQuery } from "@/redux/services/projectApi";
+import {
+  useCreateRatingProjectMutation,
+  useGetProjectPreviewQuery,
+} from "@/redux/services/projectApi";
 import Modal from "@/components/modal";
 import { useRouter } from "next/navigation";
 import moment from "moment";
@@ -18,6 +27,8 @@ import { message } from "antd";
 export default function Page({ params }) {
   const [isShowButton, setIsShowButton] = React.useState(false);
   const [isOpenShare, setIsOpenShare] = React.useState(false);
+  const [user, setUser] = React.useState();
+  const [userId, setUserId] = useState(null);
 
   const [ratingMutation, { isLoading }] = useCreateRatingProjectMutation();
   const { data } = useGetProjectPreviewQuery({ params });
@@ -26,7 +37,9 @@ export default function Page({ params }) {
   const printRef = useRef(null);
 
   const handleOnCopy = () => {
-    navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_BASE_URL}/project/${data?.data?.slug}`);
+    navigator.clipboard.writeText(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/project/${data?.data?.slug}`
+    );
     message.info("URL Berhasil di salin!");
   };
 
@@ -65,7 +78,7 @@ export default function Page({ params }) {
       })
         .then(({ data }) => {
           if (data) {
-            message.success("Terimakasih atas respon anda");
+            message.success("Terimakasih atas Feedback Anda");
           }
         })
         .catch((err) => {
@@ -74,9 +87,17 @@ export default function Page({ params }) {
     }
   };
 
+  useEffect(() => {
+    const userIdFromLocalStorage = localStorage.getItem("user"); // Replace with your key
+    setUserId(JSON.parse(userIdFromLocalStorage).id);
+  }, []);
+
   return (
     <>
-      <div className={` h-auto flex font-sans px-8 py-2 flex-col flex-1`} ref={printRef}>
+      <div
+        className={` h-auto flex font-sans px-8 py-2 flex-col flex-1`}
+        ref={printRef}
+      >
         <div className="flex flex-col items-center justify-center flex-1 ">
           <div className="flex flex-row items-center justify-start w-full mt-4 justify-items-center ms-4">
             <button
@@ -93,25 +114,43 @@ export default function Page({ params }) {
           <div className="flex flex-row items-center justify-center w-full mt-4 justify-items-center">
             <p className="text-3xl font-bold ">{data?.data?.title}</p>
           </div>
-          <p className="mt-1 text-sm font-medium">By : {data?.data?.user.name}</p>
-          <p className="mt-1 text-xs">Categories : {data?.data?.category.title} </p>
-          <p className="mt-1 text-xs">
-            Project Time Elapsed : {moment(data?.data?.project_start_at).format("DD MMMM YYYY")} - {moment(data?.data?.project_end_at).format("DD MMMM YYYY")}
+          <p className="mt-1 text-sm font-medium">
+            By : {data?.data?.user.name}
           </p>
-          <p className="mt-1 text-xs">Job Role : {jobsData.find((item) => item.id === data?.data?.job_role)?.name} </p>
+          <p className="mt-1 text-xs">
+            Categories : {data?.data?.category.title}{" "}
+          </p>
+          <p className="mt-1 text-xs">
+            Project Time Elapsed :{" "}
+            {moment(data?.data?.project_start_at).format("DD MMMM YYYY")} -{" "}
+            {moment(data?.data?.project_end_at).format("DD MMMM YYYY")}
+          </p>
+          <p className="mt-1 text-xs">
+            Job Role :{" "}
+            {jobsData.find((item) => item.id === data?.data?.job_role)?.name}{" "}
+          </p>
           <div className="flex flex-row justify-end w-1/2 mt-4 gap-x-2">
             {data?.data?.user?.detail_user?.instagram ? (
-              <Link href={data?.data?.user?.detail_user?.instagram} target="_blank">
+              <Link
+                href={data?.data?.user?.detail_user?.instagram}
+                target="_blank"
+              >
                 <BsInstagram className="cursor-pointer" />
               </Link>
             ) : null}
             {data?.data?.user?.detail_user?.facebook ? (
-              <Link href={data?.data?.user?.detail_user?.facebook} target="_blank">
+              <Link
+                href={data?.data?.user?.detail_user?.facebook}
+                target="_blank"
+              >
                 <BsFacebook className="cursor-pointer" />
               </Link>
             ) : null}
             {data?.data?.user?.detail_user?.linkedin ? (
-              <Link href={data?.data?.user?.detail_user?.linkedin} target="_blank">
+              <Link
+                href={data?.data?.user?.detail_user?.linkedin}
+                target="_blank"
+              >
                 <BsLinkedin className="cursor-pointer " />
               </Link>
             ) : null}
@@ -119,7 +158,10 @@ export default function Page({ params }) {
           <Image
             src={
               data?.data?.images?.find(({ type }) => type === "cover")
-                ? `/${data.data.images.find(({ type }) => type === "cover").image_path}`
+                ? `/${
+                    data.data.images.find(({ type }) => type === "cover")
+                      .image_path
+                  }`
                 : "https://st3.depositphotos.com/1017228/18878/i/950/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg"
             }
             alt=""
@@ -130,29 +172,63 @@ export default function Page({ params }) {
         </div>
 
         <div className="flex flex-col items-start flex-1 p-32">
-          <p className="text-xs mt-19">at : 20 February 2023 </p>
+          <p className="text-xs mt-19">
+            at : {moment(data?.data?.created_at).format("DD MMMM YYYY")}{" "}
+          </p>
           <h3 className="mt-4 font-bold">Project Overview</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.overview }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.overview }}
+          />
           <h3 className="mt-4 font-bold">Project Methodology</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.methodology }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.methodology }}
+          />
           <h3 className="mt-4 font-bold">Project Findings</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.findings }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.findings }}
+          />
           <h3 className="mt-4 font-bold">Project Sketches</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.sketches }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.sketches }}
+          />
           <h3 className="mt-4 font-bold">Project Visual</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.visual }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.visual }}
+          />
           <h3 className="mt-4 font-bold">Prototype URL</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.prototype_url }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.prototype_url }}
+          />
           <h3 className="mt-4 font-bold">Github URL</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.git_url }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.git_url }}
+          />
           <h3 className="mt-4 font-bold">Project Experience</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.experience }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.experience }}
+          />
           <h3 className="mt-4 font-bold">Project Challenge</h3>
-          <p className="text-justify" dangerouslySetInnerHTML={{ __html: data?.data?.challenge }} />
+          <p
+            className="text-justify"
+            dangerouslySetInnerHTML={{ __html: data?.data?.challenge }}
+          />
           <div className="flex flex-col items-center justify-center w-full mt-8">
             <p className="mb-2 text-4xl font-bold">Rate this</p>
             <div className="text-center">
-              <ReactStars onChange={ratingChanged} count={5} size={38} color2={"#ffd700"} />
+              <ReactStars
+                onChange={ratingChanged}
+                count={5}
+                size={38}
+                color2={"#ffd700"}
+              />
             </div>
           </div>
         </div>
@@ -165,7 +241,11 @@ export default function Page({ params }) {
                 lioke.codesmedioa.cloud/PXYNAM{" "}
                 <span>
                   {" "}
-                  <button type="button" onClick={() => closeModalShare()} className="flex items-center px-3 py-1 mt-2 text-sm font-semibold text-white rounded-full bg-slate-400">
+                  <button
+                    type="button"
+                    onClick={() => closeModalShare()}
+                    className="flex items-center px-3 py-1 mt-2 text-sm font-semibold text-white rounded-full bg-slate-400"
+                  >
                     <MdCopyAll />
                     Copy to clipboard
                   </button>
@@ -174,27 +254,62 @@ export default function Page({ params }) {
             </Modal>
           </>
           <div className="fixed flex flex-col bottom-20 right-10">
-            <a className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group" onClick={onClickCta}>
+            <a
+              className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+              onClick={onClickCta}
+            >
               <FaPlus />
-              <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">More</span>
+              <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
+                More
+              </span>
             </a>
 
             {isShowButton ? (
               <>
-                <button type="button" onClick={handleOnCopy} className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
+                <button
+                  type="button"
+                  onClick={handleOnCopy}
+                  className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+                >
                   <BsShareFill />
-                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Share</span>
+                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
+                    Share
+                  </span>
                 </button>
 
-                <button type="button" onClick={handlePrint} className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group">
+                <button
+                  type="button"
+                  onClick={handlePrint}
+                  className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+                >
                   <BsPrinter />
-                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Print</span>
+                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
+                    Print
+                  </span>
                 </button>
 
-                <Link className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group" href={"mailto:wildan.romiza@gmail.com?subject=SendMail&body=Description"}>
+                <Link
+                  className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+                  href={
+                    "mailto:wildan.romiza@gmail.com?subject=SendMail&body=Description"
+                  }
+                >
                   <MdOutlineEmail />
-                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">Message</span>
+                  <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
+                    Message
+                  </span>
                 </Link>
+                {userId === data?.data?.user.id && (
+                  <Link
+                    className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
+                    href={"/clientzone/edit-project/"+data?.data?.id}
+                  >
+                    <MdEdit />
+                    <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
+                      Edit
+                    </span>
+                  </Link>
+                )}
                 {/* <CommentsDialog
 									setModalComments={setIsShowComments}
 									showModalComments={isShowComments}
