@@ -10,7 +10,7 @@ export default function ContentHeader() {
 
 	const handleOnCopy = () => {
 		navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_BASE_URL}/profile/${data?.data?.slug}`)
-		message.info('URL Berhasi di salin!')
+		message.info('URL Berhasil di salin!')
 	}
 	
 	return (

@@ -64,7 +64,7 @@ export default function Input({
 				{isHint && (
 					<button
 						type="button"
-						className="relative z-50 flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-transparent rounded-full group"
+						className="relative flex items-center px-3 py-1 ml-2 text-sm font-bold text-white bg-transparent rounded-full group"
 						onClick={openModal}
 					>
 						<AiFillQuestionCircle color="blue" size={24} />
