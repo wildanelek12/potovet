@@ -1,12 +1,13 @@
 FROM node:18 as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn build
 
 FROM node:18-alpine as runtime
 WORKDIR /app
 COPY --from=build /app/out ./
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
+
