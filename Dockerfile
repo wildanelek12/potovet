@@ -25,5 +25,5 @@ ENV PORT 3001
 # Expose the Next.js port
 EXPOSE 3001
 
-# Start the Next.js application
-CMD ["npm", "start"]
+# Start the Next.js application on port 3001
+CMD ["npm", "start", "-p", "3001"]
