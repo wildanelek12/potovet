@@ -4,7 +4,6 @@ FROM node:20.0.0 as build
 WORKDIR /app
 
 # Copy package.json and yarn.lock
-COPY package*.json yarn.lock ./  # Make sure you include yarn.lock if you use Yarn
 RUN yarn install
 
 # Copy all files and build
