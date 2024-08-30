@@ -19,9 +19,6 @@ RUN npm run build
 # Remove devDependencies after build
 RUN npm prune --production
 
-# Set the environment variable to run on port 3001
-ENV PORT 3001
-
 # Expose the Next.js port
 EXPOSE 3001
 
