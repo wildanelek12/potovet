@@ -70,7 +70,7 @@ export default function Page({ params }) {
     if (!isLoading) {
       ratingMutation({
         params: {
-          slug: data?.data?.slug,
+          id: data?.data?.id,
         },
         data: {
           rating,
@@ -302,7 +302,7 @@ export default function Page({ params }) {
                 {userId === data?.data?.user.id && (
                   <Link
                     className="relative p-6 mb-2 text-xl font-semibold text-white rounded-full bg-primary group"
-                    href={"/clientzone/edit-project/"+data?.data?.id}
+                    href={"/clientzone/edit-project/" + data?.data?.id}
                   >
                     <MdEdit />
                     <span className="absolute p-2 text-xs text-white scale-0 bg-gray-800 rounded top-10 group-hover:scale-100">
